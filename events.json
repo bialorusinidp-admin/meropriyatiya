@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T22:24+01:00",
+ "updated": "2026-11-15T22:39+01:00",
  "status": {
   "pfm": "ok: 0",
   "cpk": "ok: 20",
@@ -8,7 +8,8 @@
   "batory": "ok: 13",
   "ngo-pl": "ok: 40",
   "ngo-praca": "ok: 45",
-  "irc": "ok: 12"
+  "irc": "ok: 12",
+  "ngo-fundusze": "ok: 20"
  },
  "events": [
   {
@@ -1254,6 +1255,122 @@
    "source": "manual"
   },
   {
+   "id": "g-wspoldzialamy",
+   "org": "other",
+   "kind": "grant",
+   "title": "WSPÓŁdziałamy! — инициативы беженцев и мигрантов",
+   "start": "2026-11-15",
+   "end": "2026-12-14",
+   "time": "",
+   "place": "Вся Польша",
+   "host": "Fundusz Obywatelski",
+   "tags": [
+    "грант",
+    "миграция",
+    "Беларусь"
+   ],
+   "url": "https://www.funduszobywatelski.pl/wspoldzialamy/",
+   "note": "До 15 000 zł для организаций, до 5 700 zł для неформальных групп. Собственный вклад не нужен. Срок — 14 декабря 2026, 14:00.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "g-cerv-values",
+   "org": "other",
+   "kind": "grant",
+   "title": "CERV-2026-CITIZENS-VALUES — защита ценностей ЕС",
+   "start": "2026-11-15",
+   "end": "2027-02-24",
+   "time": "",
+   "place": "ЕС",
+   "host": "Европейская комиссия",
+   "tags": [
+    "грант",
+    "ЕС",
+    "права человека"
+   ],
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals?callIdentifier=CERV-2026-CITIZENS-VALUES",
+   "note": "Программа ЕС «Граждане, равенство, права и ценности» для организаций гражданского общества. Подача на портале EU Funding & Tenders до 24 февраля 2027, 17:00 (Брюссель).",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "g-eog",
+   "org": "other",
+   "kind": "grant",
+   "title": "Fundusz Społeczeństwa Obywatelskiego EOG",
+   "start": "2026-11-15",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "Fundacja Batorego и партнёры",
+   "tags": [
+    "грант",
+    "права человека"
+   ],
+   "url": "https://eeagrants.org/pl/eea-civil-society-fund-poland",
+   "note": "Норвежские и EOG-гранты: малые 10 000–25 000 EUR, крупные 25 001–80 000 EUR. Ведёт консорциум во главе с Fundacja Batorego. Конкурсы идут по графику — следите за объявлениями.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "g-wspieramy-ukraine",
+   "org": "other",
+   "kind": "grant",
+   "title": "Wspieramy Ukrainę (PAFW и FED)",
+   "start": "2026-11-15",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "Fundacja Edukacja dla Demokracji",
+   "tags": [
+    "грант",
+    "миграция"
+   ],
+   "url": "https://fed.org.pl",
+   "note": "До 60 000 zł для польских НКО, которые помогают беженцам из Украины в Польше и людям в Украине. Собственный вклад не нужен. Раунд 2026 года закрылся 19 января — следующий, вероятно, зимой.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "g-pzu",
+   "org": "other",
+   "kind": "grant",
+   "title": "Dotacje Fundacji PZU",
+   "start": "2026-11-15",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "Fundacja PZU",
+   "tags": [
+    "грант",
+    "постоянный приём"
+   ],
+   "url": "https://www.eurodesk.pl/granty/c/aktywnosc-spoleczna/dzialania-lokalne",
+   "note": "Компетенции будущего, образование, социальный капитал, культура. Приём постоянный, оценка несколько раз в год.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "g-nowefio",
+   "org": "other",
+   "kind": "grant",
+   "title": "NOWEFIO (NIW-CRSO)",
+   "start": "2026-11-15",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "Narodowy Instytut Wolności",
+   "tags": [
+    "грант",
+    "Польша"
+   ],
+   "url": "https://niw.gov.pl/nasze-programy/nowefio/",
+   "note": "Крупная государственная программа. С 2026 года минимум 100 000 zł, бюджет организации свыше 30 000 zł за один из трёх последних лет и регистрация до 31.12.2024. Наборы обычно в I квартале.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
    "id": "ngo-praca-2026-11-15-pracuj-w-kampanii-przeciw-homo",
    "org": "other",
    "title": "Pracuj w Kampanii Przeciw Homofobii: dołącz jako osoba specjalistyczna ds. kampanii i mobilizacji",
@@ -1270,6 +1387,204 @@
    "ok": true,
    "source": "ngo-praca",
    "kind": "job"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-15-pomagamy-z-każdym-krokiem",
+   "org": "other",
+   "title": "Pomagamy z Każdym Krokiem",
+   "start": "2026-11-15",
+   "end": "2026-11-25",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/551720-pomagamy-z-kazdym-krokiem.html",
+   "note": "бюджет 2,488 mln PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-15-ii-edycja-programu-grantowego-",
+   "org": "other",
+   "title": "II edycja programu grantowego „Adaptacja Klimatyczna dla Północnej Polski”",
+   "start": "2026-11-15",
+   "end": "2027-01-08",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/551686-ii-edycja-programu-grantowego-adaptacja-klimatyczna-dla-polnocnej-polski.html",
+   "note": "бюджет 4 mln PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-15-do-80-000-zł-dla-organizacji-p",
+   "org": "other",
+   "title": "Do 80 000 zł dla organizacji pozarządowych. Trwa nabór w Europejskiej Inicjatywie Społecznej dla Subregionu...",
+   "start": "2026-11-15",
+   "end": "2026-12-04",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/551410-do-80-000-zl-dla-organizacji-pozarzadowych-trwa-nabor-w-europejskiej-inicjatywie-spolecznej-dla-subregionu-poludniowego-i-brzeskiego.html",
+   "note": "бюджет 1,402 mln PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-15-ponad-2-6-mln-zł-na-lokalne-in",
+   "org": "other",
+   "title": "Ponad 2,6 mln zł na lokalne inicjatywy. Kaufland rusza z programem „Lepiej po sąsiedzku”",
+   "start": "2026-11-15",
+   "end": "2026-12-18",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/551352-ponad-2-6-mln-zl-na-lokalne-inicjatywy-kaufland-rusza-z-programem-lepiej-po-sasiedzku.html",
+   "note": "бюджет 2,6 mln",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-15-nowefio-2027-priorytety-2-4-zł",
+   "org": "other",
+   "title": "NOWEFIO 2027 – Priorytety 2-4: złóż wniosek i wzmocnij swoją organizację",
+   "start": "2026-11-15",
+   "end": "2026-12-16",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/552270-nowefio-2027-priorytety-2-4-zloz-wniosek-i-wzmocnij-swoja-organizacje.html",
+   "note": "",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-15-program-grantowy-fundacja-canc",
+   "org": "other",
+   "title": "Program Grantowy Fundacja Cancer Fighters: 2 mln zł dla organizacji wspierających dzieci z chorobami onkologicznymi",
+   "start": "2026-11-15",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/549180-program-grantowy-fundacja-cancer-fighters-2-mln-zl-dla-organizacji-wspierajacych-dzieci-z-chorobami-onkologicznymi.html",
+   "note": "бюджет 2 mln PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-15-regrantingowe-centrum-inicjaty",
+   "org": "other",
+   "title": "Regrantingowe Centrum Inicjatyw Lokalnych 2026",
+   "start": "2026-11-15",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/535893-regrantingowe-centrum-inicjatyw-lokalnych-2026.html",
+   "note": "бюджет 200 tys. PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-15-prowadzenie-na-terenie-miasta-",
+   "org": "other",
+   "title": "Prowadzenie na terenie Miasta Kielce klubów samopomocy dla osób z różnego typu niepełnosprawnością",
+   "start": "2026-11-15",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/550881-prowadzenie-na-terenie-miasta-kielce-klubow-samopomocy-dla-osob-z-roznego-typu-niepelnosprawnoscia-550881.html",
+   "note": "бюджет 811,2 tys. PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-15-otwarty-konkurs-ofert-na-wspar",
+   "org": "other",
+   "title": "Otwarty konkurs ofert na wsparcie realizacji zadania z zakresu ustawy o pomocy społecznej, dotyczącego prowadzenia...",
+   "start": "2026-11-15",
+   "end": "2026-12-04",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/552103-otwarty-konkurs-ofert-na-wsparcie-realizacji-zadania-z-zakresu-ustawy-o-pomocy-spolecznej-dotyczacego-prowadzenia-osrodka-interwencji-kryzysowej-na-terenie-powiatu-kepinskiego-w-2027-roku.html",
+   "note": "бюджет 60 tys. PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-15-nabór-ofert-w-trybie-art-19a-u",
+   "org": "other",
+   "title": "Nabór ofert w trybie art. 19a ustawy o działalności pożytku publicznego i o wolontariacie w...",
+   "start": "2026-11-15",
+   "end": "2026-11-19",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/552259-nabor-ofert-w-trybie-art-19a-ustawy-o-dzialalnosci-pozytku-publicznego-i-o-wolontariacie-w-obszarze-dzialalnosc-wspomagajaca-rozwoj-wspolnot-i-spolecznosci-lokalnych-552259.html",
+   "note": "бюджет 16 tys. PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-15-popularyzowanie-idei-wolontari",
+   "org": "other",
+   "title": "Popularyzowanie idei wolontariatu",
+   "start": "2026-11-15",
+   "end": "2026-11-20",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/552213-popularyzowanie-idei-wolontariatu-552213.html",
+   "note": "бюджет 10 tys. PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
   },
   {
    "id": "cpk-2026-11-16-breath-design-4-tygodnie-do-do",
