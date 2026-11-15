@@ -87,7 +87,7 @@ button:disabled{opacity:.5}
 <section class="box editing" id="form-box">
 <h2 id="form-title">Новое событие</h2>
 <form id="f" autocomplete="off">
-<label for="kind">Что это</label><select id="kind"><option value="event">Событие</option><option value="course">Курс или набор</option><option value="job">Вакансия</option></select>
+<label for="kind">Что это</label><select id="kind"><option value="event">Событие</option><option value="course">Курс или набор</option><option value="job">Вакансия</option><option value="grant">Грант</option></select>
 <label for="title">Название</label><input id="title" required>
 <label for="org">Организация (вкладка)</label><select id="org"></select>
 <div class="row"><div><label for="start" id="l-start">Дата</label><input id="start" type="date" required></div>
@@ -177,8 +177,8 @@ $('tags').addEventListener('click',function(ev){var t=ev.target.getAttribute('da
 $('tag-new').addEventListener('keydown',function(ev){if(ev.key==='Enter'){ev.preventDefault();var v=this.value.trim();if(v&&selTags.indexOf(v)<0)selTags.push(v);this.value='';renderTags()}});
 renderTags();
 
-var LBL={event:['Дата','Дата окончания (если несколько дней)','Организатор (как показывать)'],course:['Дата начала','Идёт до / набор до','Организатор (как показывать)'],job:['Дата публикации','Приём заявок до','Работодатель']};
-function kindLabels(){var k=$('kind').value,l=LBL[k];$('l-start').textContent=l[0];$('l-end').textContent=l[1];$('l-host').textContent=l[2];$('time').parentNode.style.display=k==='job'?'none':''}
+var LBL={event:['Дата','Дата окончания (если несколько дней)','Организатор (как показывать)'],course:['Дата начала','Идёт до / набор до','Организатор (как показывать)'],job:['Дата публикации','Приём заявок до','Работодатель'],grant:['Дата объявления','Заявки до (пусто — без срока)','Грантодатель']};
+function kindLabels(){var k=$('kind').value,l=LBL[k];$('l-start').textContent=l[0];$('l-end').textContent=l[1];$('l-host').textContent=l[2];$('time').parentNode.style.display=(k==='job'||k==='grant')?'none':''}
 $('kind').addEventListener('change',kindLabels);kindLabels();
 
 function resetForm(){$('f').reset();setTimeout(kindLabels,0);$('org').value='other';$('host').value='';hostAuto=true;selTags=[];renderTags();editingId=null;
@@ -200,7 +200,7 @@ $('f').addEventListener('submit',function(ev){ev.preventDefault();
   if(end&&end<start){show($('form-msg'),'err','Дата окончания раньше даты начала.');return}
   var url=$('url').value.trim();if(url&&!/^https?:\/\//.test(url))url='https://'+url;
   var e={id:editingId||('m-'+start+'-'+slug($('title').value)),org:$('org').value,title:$('title').value.trim(),start:start,end:end&&end!==start?end:'',time:$('time').value,
-    place:$('place').value.trim()||($('kind').value==='job'?'Варшава':'Место уточните по ссылке'),host:$('host').value.trim(),tags:selTags.slice(),url:url,note:$('note').value.trim(),ok:!$('unsure').checked,source:'manual'};if($('kind').value!=='event')e.kind=$('kind').value;
+    place:$('place').value.trim()||($('kind').value==='job'?'Варшава':$('kind').value==='grant'?'Польша':'Место уточните по ссылке'),host:$('host').value.trim(),tags:selTags.slice(),url:url,note:$('note').value.trim(),ok:!$('unsure').checked,source:'manual'};if($('kind').value!=='event')e.kind=$('kind').value;
   var wasEdit=!!editingId;
   $('save').disabled=true;show($('form-msg'),'info','Сохраняю в GitHub…');
   commit((wasEdit?'Изменить':'Добавить')+' событие: '+e.title,function(list){
@@ -219,7 +219,7 @@ function renderList(){if(!file)return;
   var ev=file.events.slice().sort(function(a,b){var pa=parse(a.end||a.start)<today,pb=parse(b.end||b.start)<today;if(pa!==pb)return pa?1:-1;return pa?(a.start<b.start?1:-1):(a.start<b.start?-1:1)});
   $('list').innerHTML=ev.map(function(e){var d=parse(e.start),o=ORGS.filter(function(x){return x.id===e.org})[0];
     return '<li class="'+(parse(e.end||e.start)<today?'past':'')+'" data-id="'+esc(e.id)+'"><div class="d"><b>'+d.getDate()+'</b><span>'+MON[d.getMonth()]+'</span></div>'+
-    '<div class="t">'+esc(e.title)+'<small>'+(e.kind==='job'?'Вакансия · ':e.kind==='course'?'Курс · ':'')+(o?esc(o.name):'')+(e.time?' · '+esc(e.time):'')+(e.ok===false?' · даты не подтверждены':'')+'</small></div>'+
+    '<div class="t">'+esc(e.title)+'<small>'+(e.kind==='job'?'Вакансия · ':e.kind==='course'?'Курс · ':e.kind==='grant'?'Грант · ':'')+(o?esc(o.name):'')+(e.time?' · '+esc(e.time):'')+(e.ok===false?' · даты не подтверждены':'')+'</small></div>'+
     '<div class="li-btns"><button type="button" data-a="edit">Править</button><button type="button" class="danger" data-a="del">Удалить</button></div></li>'}).join('');
   $('list-lock').textContent=ev.length?'':'Пока пусто.'}
 $('list').addEventListener('click',function(ev){var a=ev.target.getAttribute('data-a');if(!a)return;var li=ev.target.closest('li'),id=li.getAttribute('data-id');
@@ -236,7 +236,7 @@ $('list').addEventListener('click',function(ev){var a=ev.target.getAttribute('da
      .catch(function(err){show($('form-msg'),'err',errText(err));renderList()})}});
 
 // --- статус робота ---
-var NAMES={pfm:'Polskie Forum Migracyjne',cpk:'Centrum Praw Kobiet','rpo-patronaty':'RPO — патронаты','rpo-news':'RPO — новости',batory:'Fundacja Batorego','ngo-pl':'ngo.pl — события','ngo-praca':'ngo.pl — вакансии',irc:'IRC — Telegram'};
+var NAMES={pfm:'Polskie Forum Migracyjne',cpk:'Centrum Praw Kobiet','rpo-patronaty':'RPO — патронаты','rpo-news':'RPO — новости',batory:'Fundacja Batorego','ngo-pl':'ngo.pl — события','ngo-praca':'ngo.pl — вакансии',irc:'IRC — Telegram','ngo-fundusze':'ngo.pl — гранты'};
 function loadBot(){fetch('events.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){
   var d=new Date(j.updated);$('bot-upd').textContent=isNaN(d)?'':'Последний сбор: '+d.getDate()+' '+MON[d.getMonth()]+', '+('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2)+'. Всего событий: '+(j.events||[]).length+'.';
   var st=j.status||{};$('bot').innerHTML=Object.keys(st).length?Object.keys(st).map(function(k){var good=/^ok/.test(st[k]);

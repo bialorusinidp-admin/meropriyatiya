@@ -1,67 +1,518 @@
 {
  "_how": "Раздел «Ресурсы» в приложении. Каждая секция: title, note (необязательно), items: name, desc, url. Робот этот файл не трогает — правьте вручную на GitHub.",
  "sections": [
-  {"title": "Бесплатные сертификаты", "items": [
-   {"name": "Core Humanitarian Certification (DisasterReady)", "desc": "Сначала курс «Core Humanitarian Essentials» (~6,5 ч), потом тест «Core Humanitarian Certification Test» (100 вопросов). Бесплатно, на английском. Действует 2 года; продление — 48 кредитов (12 ч обучения) за 2 года. Сертификат — в разделе Transcript.", "url": "https://www.disasterready.org/free-core-humanitarian-certification"},
-   {"name": "Project Management Essentials Certificate (DisasterReady)", "desc": "Управление проектами для НКО. Бесплатно.", "url": "https://www.disasterready.org/post/free-project-management-certificate"},
-   {"name": "Security Risk Management Essentials Certificate (DisasterReady)", "desc": "Безопасность в гуманитарной работе. Бесплатно.", "url": "https://www.disasterready.org/certifications"},
-   {"name": "Подготовка к PHAP «Understanding the Humanitarian Ecosystem»", "desc": "Бесплатная подготовка на DisasterReady; сам экзамен PHAP, вероятно, платный — уточнить.", "url": "https://www.disasterready.org/certifications"},
-   {"name": "Amnesty Human Rights Academy", "desc": "Сертификаты на многих курсах; есть русский и польский. Также приложение в App Store.", "url": "https://academy.amnesty.org"},
-   {"name": "Council of Europe HELP", "desc": "После курса — Statement of accomplishment.", "url": "https://help.elearning.ext.coe.int"},
-   {"name": "Kaya", "desc": "500+ курсов, сертификаты в PDF; приложение Kaya Mobile (офлайн).", "url": "https://kayaconnect.org"},
-   {"name": "Coursera", "desc": "Сертификат платный, но можно подать на Financial Aid (кнопка рядом с записью на курс).", "url": "https://www.coursera.org"},
-   {"name": "Coursera-UNHCR: бесплатный доступ", "desc": "Если вы имеете право и живёте в Польше, можно бесплатно получить доступ к тысячам онлайн-курсов Coursera через программу UNHCR. Для беженцев, лиц, ищущих защиты, и людей без гражданства. Нужны личная почта и интернет.", "url": "https://help.unhcr.org/poland/coursera-unhcr-free-educational-opportunities/"}
-  ]},
-  {"title": "Онлайн-курсы: права человека, беженцы, защита", "items": [
-   {"name": "Amnesty: The Rights of Refugees", "desc": "3 ч, Certificate of Participation.", "url": "https://academy.amnesty.org"},
-   {"name": "Amnesty: Prawa ucznia, prawa dziecka, prawa człowieka", "desc": "60 мин, на польском, сертификат.", "url": "https://academy.amnesty.org"},
-   {"name": "Amnesty: вводный курс по правам человека", "desc": "~1,5 ч.", "url": "https://academy.amnesty.org"},
-   {"name": "HELP: Asylum and Human Rights", "desc": "С UNHCR, ~6 ч, 5 модулей (non-refoulement, задержание и приём, семейная жизнь, эффективные средства защиты).", "url": "https://www.coe.int/web/help/courses"},
-   {"name": "HELP: Refugee and Migrant Children", "desc": "10 ч.", "url": "https://www.coe.int/web/help/courses"},
-   {"name": "HELP: Alternatives to Immigration Detention", "desc": "7 ч.", "url": "https://www.coe.int/web/help/courses"},
-   {"name": "UNHCR Learning Portal", "desc": "Курсы по защите беженцев, убежищу, защите детей, GBV, безгражданству. Бесплатная регистрация.", "url": "https://www.unhcr.org/learning"},
-   {"name": "Akademia Migracyjna (Konsorcjum Migracyjne)", "desc": "На польском, бесплатно. При проблеме со сбросом пароля — писать организаторам.", "url": "https://akademia.konsorcjum.org.pl"},
-   {"name": "Advocacy Assembly (только видео)", "desc": "Платформа закрыта с 31.03.2026, сертификатов нет. Видео — на YouTube, есть курс по цифровой безопасности на русском.", "url": "https://www.youtube.com/@advocacyassembly7595"}
-  ]},
-  {"title": "Онлайн-курсы: гуманитарная работа", "items": [
-   {"name": "DisasterReady", "desc": "1500+ бесплатных курсов, бесплатные сертификации.", "url": "https://www.disasterready.org"},
-   {"name": "Kaya (Humanitarian Leadership Academy)", "desc": "Начать: Core Humanitarian Standard, safeguarding, protection.", "url": "https://kayaconnect.org"},
-   {"name": "IFRC Learning Platform (Красный Крест)", "desc": "Бесплатно.", "url": "https://ifrc.csod.com"},
-   {"name": "UNICEF Agora", "desc": "Права ребёнка, гуманитарные действия.", "url": "https://agora.unicef.org"},
-   {"name": "MSF Tembo", "desc": "Медицинский и гуманитарный контекст.", "url": "https://tembo.msf.org"},
-   {"name": "Sphere", "desc": "Стандарты гуманитарного реагирования, Справочник Sphere, CHS.", "url": "https://spherestandards.org"},
-   {"name": "Save the Children Learning Hub", "desc": "Защита детей, образование в кризисах. Найти по названию.", "url": ""},
-   {"name": "Kiron", "desc": "Онлайн-обучение для беженцев.", "url": "https://kiron.ngo"}
-  ]},
-  {"title": "Coursera / edX / FutureLearn (бесплатно в режиме audit)", "items": [
-   {"name": "Refugees in the 21st Century (University of London)", "desc": "Для начинающих — лучший старт.", "url": "https://www.coursera.org/search?query=Refugees%20in%20the%2021st%20Century"},
-   {"name": "Internal Displacement, Conflict and Protection (University of London)", "desc": "Внутренне перемещённые лица.", "url": "https://www.coursera.org/search?query=Internal%20Displacement%2C%20Conflict%20and%20Protection"},
-   {"name": "Human Rights for Open Societies (Utrecht University)", "desc": "Для начинающих.", "url": "https://www.coursera.org/search?query=Human%20Rights%20for%20Open%20Societies"},
-   {"name": "International Humanitarian Law in Theory and Practice (Leiden University)", "desc": "Право вооружённых конфликтов.", "url": "https://www.coursera.org/search?query=International%20Humanitarian%20Law%20in%20Theory%20and%20Practice"},
-   {"name": "Refugee & Asylum Advocacy (UPenn)", "desc": "В основном про США.", "url": "https://www.coursera.org/search?query=Refugee%20Asylum%20Advocacy"},
-   {"name": "Working Supportively with Refugees (University of Glasgow, FutureLearn)", "desc": "Для начинающих.", "url": "https://www.futurelearn.com/search?q=Working%20Supportively%20with%20Refugees"},
-   {"name": "Asylum and Refugee Law (LouvainX, edX)", "desc": "Продвинутый.", "url": "https://www.edx.org/search?q=Asylum%20and%20Refugee%20Law"}
-  ]},
-  {"title": "Программы с набором — следить", "items": [
-   {"name": "Akademia Asystentów i Asystentek Integracji Kulturowej (Fundacja Ocalenie)", "desc": "Бесплатно; следующий набор, вероятно, февраль–март 2027.", "url": "https://ocalenie.org.pl"},
-   {"name": "Волонтёрство «Wiedza do potęgi» (Fundacja Ocalenie)", "desc": "Помощь детям-мигрантам с учёбой.", "url": "https://ocalenie.org.pl"},
-   {"name": "EaP Civil Society Fellowship (EC)", "desc": "Обучение + 5000 €, нужен английский B1. Ожидается зимний набор.", "url": "https://eapcivilsociety.eu"},
-   {"name": "Polskie Forum Migracyjne", "desc": "Периодические бесплатные szkolenia.", "url": "https://forummigracyjne.org"},
-   {"name": "EU4Belarus-SALT", "desc": "До 10 000 € на обучение для пострадавших от репрессий; следить за следующим раундом. Искать по названию.", "url": ""},
-   {"name": "Invisible University for Belarus (CEU)", "desc": "Бесплатная программа с ECTS для студентов и выпускников. Искать по названию.", "url": ""}
-  ]},
-  {"title": "Где искать вакансии", "note": "Ключевые слова: fundacja, stowarzyszenie, uchodźcy, migranci, cudzoziemcy, integracja, asystent, koordynator, język rosyjski, białoruski, ukraiński.", "items": [
-   {"name": "ngo.pl — Organizacja oferuje pracę", "desc": "Вакансии в НКО Варшавы. Их же робот собирает во вкладку «Вакансии».", "url": "https://ogloszenia.ngo.pl/praca-staz/dam-prace/warszawa"},
-   {"name": "ReliefWeb Jobs", "desc": "Международные и гуманитарные организации, часто на английском.", "url": "https://reliefweb.int/jobs"},
-   {"name": "Google «за неделю»", "desc": "Запрос: site:ngo.pl praca Warszawa (fundacja OR uchodźcy OR migranci) → Инструменты → За неделю.", "url": "https://www.google.com/search?q=site%3Ango.pl+praca+Warszawa+%28fundacja+OR+uchod%C5%BAcy+OR+migranci%29&tbs=qdr%3Aw"}
-  ]},
-  {"title": "Где искать новые возможности", "items": [
-   {"name": "euneighbourseast.eu → Opportunities", "desc": "Конкурсы ЕС для беларусов.", "url": "https://euneighbourseast.eu"},
-   {"name": "wydarzenia.ngo.pl", "desc": "Фильтр Warszawa + Bezpłatne.", "url": "https://wydarzenia.ngo.pl"},
-   {"name": "vuc.today", "desc": "Обучение для беларусов в Польше.", "url": "https://vuc.today"},
-   {"name": "newbelarus.vision → мероприятия", "desc": "", "url": "https://newbelarus.vision"},
-   {"name": "belhumanrights.house", "desc": "Наборы на правозащитные курсы.", "url": "https://belhumanrights.house"},
-   {"name": "IRC Polska — Telegram", "desc": "Job Cafe, нетворкинг, консультации по работе; события робот берёт отсюда во вкладку IRC.", "url": "https://t.me/IRCPoland"}
-  ]}
+  {
+   "title": "Бесплатные сертификаты",
+   "items": [
+    {
+     "name": "Core Humanitarian Certification (DisasterReady)",
+     "desc": "Сначала курс «Core Humanitarian Essentials» (~6,5 ч), потом тест «Core Humanitarian Certification Test» (100 вопросов). Бесплатно, на английском. Действует 2 года; продление — 48 кредитов (12 ч обучения) за 2 года. Сертификат — в разделе Transcript.",
+     "url": "https://www.disasterready.org/free-core-humanitarian-certification"
+    },
+    {
+     "name": "Project Management Essentials Certificate (DisasterReady)",
+     "desc": "Управление проектами для НКО. Бесплатно.",
+     "url": "https://www.disasterready.org/post/free-project-management-certificate"
+    },
+    {
+     "name": "Security Risk Management Essentials Certificate (DisasterReady)",
+     "desc": "Безопасность в гуманитарной работе. Бесплатно.",
+     "url": "https://www.disasterready.org/certifications"
+    },
+    {
+     "name": "Подготовка к PHAP «Understanding the Humanitarian Ecosystem»",
+     "desc": "Бесплатная подготовка на DisasterReady; сам экзамен PHAP, вероятно, платный — уточнить.",
+     "url": "https://www.disasterready.org/certifications"
+    },
+    {
+     "name": "Amnesty Human Rights Academy",
+     "desc": "Сертификаты на многих курсах; есть русский и польский. Также приложение в App Store.",
+     "url": "https://academy.amnesty.org"
+    },
+    {
+     "name": "Council of Europe HELP",
+     "desc": "После курса — Statement of accomplishment.",
+     "url": "https://help.elearning.ext.coe.int"
+    },
+    {
+     "name": "Kaya",
+     "desc": "500+ курсов, сертификаты в PDF; приложение Kaya Mobile (офлайн).",
+     "url": "https://kayaconnect.org"
+    },
+    {
+     "name": "Coursera",
+     "desc": "Сертификат платный, но можно подать на Financial Aid (кнопка рядом с записью на курс).",
+     "url": "https://www.coursera.org"
+    },
+    {
+     "name": "Coursera-UNHCR: бесплатный доступ",
+     "desc": "Если вы имеете право и живёте в Польше, можно бесплатно получить доступ к тысячам онлайн-курсов Coursera через программу UNHCR. Для беженцев, лиц, ищущих защиты, и людей без гражданства. Нужны личная почта и интернет.",
+     "url": "https://help.unhcr.org/poland/coursera-unhcr-free-educational-opportunities/"
+    }
+   ]
+  },
+  {
+   "title": "Онлайн-курсы: права человека, беженцы, защита",
+   "items": [
+    {
+     "name": "Amnesty: The Rights of Refugees",
+     "desc": "3 ч, Certificate of Participation.",
+     "url": "https://academy.amnesty.org"
+    },
+    {
+     "name": "Amnesty: Prawa ucznia, prawa dziecka, prawa człowieka",
+     "desc": "60 мин, на польском, сертификат.",
+     "url": "https://academy.amnesty.org"
+    },
+    {
+     "name": "Amnesty: вводный курс по правам человека",
+     "desc": "~1,5 ч.",
+     "url": "https://academy.amnesty.org"
+    },
+    {
+     "name": "HELP: Asylum and Human Rights",
+     "desc": "С UNHCR, ~6 ч, 5 модулей (non-refoulement, задержание и приём, семейная жизнь, эффективные средства защиты).",
+     "url": "https://www.coe.int/web/help/courses"
+    },
+    {
+     "name": "HELP: Refugee and Migrant Children",
+     "desc": "10 ч.",
+     "url": "https://www.coe.int/web/help/courses"
+    },
+    {
+     "name": "HELP: Alternatives to Immigration Detention",
+     "desc": "7 ч.",
+     "url": "https://www.coe.int/web/help/courses"
+    },
+    {
+     "name": "UNHCR Learning Portal",
+     "desc": "Курсы по защите беженцев, убежищу, защите детей, GBV, безгражданству. Бесплатная регистрация.",
+     "url": "https://www.unhcr.org/learning"
+    },
+    {
+     "name": "Akademia Migracyjna (Konsorcjum Migracyjne)",
+     "desc": "На польском, бесплатно. При проблеме со сбросом пароля — писать организаторам.",
+     "url": "https://akademia.konsorcjum.org.pl"
+    },
+    {
+     "name": "Advocacy Assembly (только видео)",
+     "desc": "Платформа закрыта с 31.03.2026, сертификатов нет. Видео — на YouTube, есть курс по цифровой безопасности на русском.",
+     "url": "https://www.youtube.com/@advocacyassembly7595"
+    }
+   ]
+  },
+  {
+   "title": "Онлайн-курсы: гуманитарная работа",
+   "items": [
+    {
+     "name": "DisasterReady",
+     "desc": "1500+ бесплатных курсов, бесплатные сертификации.",
+     "url": "https://www.disasterready.org"
+    },
+    {
+     "name": "Kaya (Humanitarian Leadership Academy)",
+     "desc": "Начать: Core Humanitarian Standard, safeguarding, protection.",
+     "url": "https://kayaconnect.org"
+    },
+    {
+     "name": "IFRC Learning Platform (Красный Крест)",
+     "desc": "Бесплатно.",
+     "url": "https://ifrc.csod.com"
+    },
+    {
+     "name": "UNICEF Agora",
+     "desc": "Права ребёнка, гуманитарные действия.",
+     "url": "https://agora.unicef.org"
+    },
+    {
+     "name": "MSF Tembo",
+     "desc": "Медицинский и гуманитарный контекст.",
+     "url": "https://tembo.msf.org"
+    },
+    {
+     "name": "Sphere",
+     "desc": "Стандарты гуманитарного реагирования, Справочник Sphere, CHS.",
+     "url": "https://spherestandards.org"
+    },
+    {
+     "name": "Save the Children Learning Hub",
+     "desc": "Защита детей, образование в кризисах. Найти по названию.",
+     "url": ""
+    },
+    {
+     "name": "Kiron",
+     "desc": "Онлайн-обучение для беженцев.",
+     "url": "https://kiron.ngo"
+    }
+   ]
+  },
+  {
+   "title": "Coursera / edX / FutureLearn (бесплатно в режиме audit)",
+   "items": [
+    {
+     "name": "Refugees in the 21st Century (University of London)",
+     "desc": "Для начинающих — лучший старт.",
+     "url": "https://www.coursera.org/search?query=Refugees%20in%20the%2021st%20Century"
+    },
+    {
+     "name": "Internal Displacement, Conflict and Protection (University of London)",
+     "desc": "Внутренне перемещённые лица.",
+     "url": "https://www.coursera.org/search?query=Internal%20Displacement%2C%20Conflict%20and%20Protection"
+    },
+    {
+     "name": "Human Rights for Open Societies (Utrecht University)",
+     "desc": "Для начинающих.",
+     "url": "https://www.coursera.org/search?query=Human%20Rights%20for%20Open%20Societies"
+    },
+    {
+     "name": "International Humanitarian Law in Theory and Practice (Leiden University)",
+     "desc": "Право вооружённых конфликтов.",
+     "url": "https://www.coursera.org/search?query=International%20Humanitarian%20Law%20in%20Theory%20and%20Practice"
+    },
+    {
+     "name": "Refugee & Asylum Advocacy (UPenn)",
+     "desc": "В основном про США.",
+     "url": "https://www.coursera.org/search?query=Refugee%20Asylum%20Advocacy"
+    },
+    {
+     "name": "Working Supportively with Refugees (University of Glasgow, FutureLearn)",
+     "desc": "Для начинающих.",
+     "url": "https://www.futurelearn.com/search?q=Working%20Supportively%20with%20Refugees"
+    },
+    {
+     "name": "Asylum and Refugee Law (LouvainX, edX)",
+     "desc": "Продвинутый.",
+     "url": "https://www.edx.org/search?q=Asylum%20and%20Refugee%20Law"
+    }
+   ]
+  },
+  {
+   "title": "Программы с набором — следить",
+   "items": [
+    {
+     "name": "Akademia Asystentów i Asystentek Integracji Kulturowej (Fundacja Ocalenie)",
+     "desc": "Бесплатно; следующий набор, вероятно, февраль–март 2027.",
+     "url": "https://ocalenie.org.pl"
+    },
+    {
+     "name": "Волонтёрство «Wiedza do potęgi» (Fundacja Ocalenie)",
+     "desc": "Помощь детям-мигрантам с учёбой.",
+     "url": "https://ocalenie.org.pl"
+    },
+    {
+     "name": "EaP Civil Society Fellowship (EC)",
+     "desc": "Обучение + 5000 €, нужен английский B1. Ожидается зимний набор.",
+     "url": "https://eapcivilsociety.eu"
+    },
+    {
+     "name": "Polskie Forum Migracyjne",
+     "desc": "Периодические бесплатные szkolenia.",
+     "url": "https://forummigracyjne.org"
+    },
+    {
+     "name": "EU4Belarus-SALT",
+     "desc": "До 10 000 € на обучение для пострадавших от репрессий; следить за следующим раундом. Искать по названию.",
+     "url": ""
+    },
+    {
+     "name": "Invisible University for Belarus (CEU)",
+     "desc": "Бесплатная программа с ECTS для студентов и выпускников. Искать по названию.",
+     "url": ""
+    }
+   ]
+  },
+  {
+   "title": "Где искать вакансии",
+   "note": "Ключевые слова: fundacja, stowarzyszenie, uchodźcy, migranci, cudzoziemcy, integracja, asystent, koordynator, język rosyjski, białoruski, ukraiński.",
+   "items": [
+    {
+     "name": "ngo.pl — Organizacja oferuje pracę",
+     "desc": "Вакансии в НКО Варшавы. Их же робот собирает во вкладку «Вакансии».",
+     "url": "https://ogloszenia.ngo.pl/praca-staz/dam-prace/warszawa"
+    },
+    {
+     "name": "ReliefWeb Jobs",
+     "desc": "Международные и гуманитарные организации, часто на английском.",
+     "url": "https://reliefweb.int/jobs"
+    },
+    {
+     "name": "Google «за неделю»",
+     "desc": "Запрос: site:ngo.pl praca Warszawa (fundacja OR uchodźcy OR migranci) → Инструменты → За неделю.",
+     "url": "https://www.google.com/search?q=site%3Ango.pl+praca+Warszawa+%28fundacja+OR+uchod%C5%BAcy+OR+migranci%29&tbs=qdr%3Aw"
+    }
+   ]
+  },
+  {
+   "title": "Где искать новые возможности",
+   "items": [
+    {
+     "name": "euneighbourseast.eu → Opportunities",
+     "desc": "Конкурсы ЕС для беларусов.",
+     "url": "https://euneighbourseast.eu"
+    },
+    {
+     "name": "wydarzenia.ngo.pl",
+     "desc": "Фильтр Warszawa + Bezpłatne.",
+     "url": "https://wydarzenia.ngo.pl"
+    },
+    {
+     "name": "vuc.today",
+     "desc": "Обучение для беларусов в Польше.",
+     "url": "https://vuc.today"
+    },
+    {
+     "name": "newbelarus.vision → мероприятия",
+     "desc": "",
+     "url": "https://newbelarus.vision"
+    },
+    {
+     "name": "belhumanrights.house",
+     "desc": "Наборы на правозащитные курсы.",
+     "url": "https://belhumanrights.house"
+    },
+    {
+     "name": "IRC Polska — Telegram",
+     "desc": "Job Cafe, нетворкинг, консультации по работе; события робот берёт отсюда во вкладку IRC.",
+     "url": "https://t.me/IRCPoland"
+    }
+   ]
+  },
+  {
+   "title": "Где искать гранты",
+   "items": [
+    {
+     "name": "fundusze.ngo.pl — актуальные конкурсы",
+     "desc": "Все открытые конкурсы в Польше: государственные, городские, частные, ЕС. Робот берёт их отсюда во вкладку «Гранты».",
+     "url": "https://fundusze.ngo.pl/aktualne"
+    },
+    {
+     "name": "grantowo.pl",
+     "desc": "Календарь конкурсов по датам и категориям.",
+     "url": "https://grantowo.pl"
+    },
+    {
+     "name": "granty.pl",
+     "desc": "База конкурсов с описаниями.",
+     "url": "https://granty.pl"
+    },
+    {
+     "name": "Eurodesk — granty",
+     "desc": "Гранты для молодёжи и местных инициатив, в т.ч. с постоянным приёмом.",
+     "url": "https://www.eurodesk.pl/granty"
+    },
+    {
+     "name": "witkac.pl",
+     "desc": "Система, через которую подают заявки во многие городские и частные конкурсы.",
+     "url": "https://witkac.pl"
+    },
+    {
+     "name": "generator.niw.gov.pl",
+     "desc": "Подача в государственные программы NIW: NOWEFIO, PROO и др.",
+     "url": "https://generator.niw.gov.pl"
+    },
+    {
+     "name": "niw.gov.pl — Granty",
+     "desc": "Новости о наборах NIW и CERV.",
+     "url": "https://niw.gov.pl/kategoria/granty/"
+    },
+    {
+     "name": "fundsforngos.org",
+     "desc": "Международные гранты, есть фильтр по Беларуси.",
+     "url": "https://www2.fundsforngos.org"
+    },
+    {
+     "name": "EU Funding & Tenders Portal",
+     "desc": "Все конкурсы Еврокомиссии (CERV, AMIF и др.).",
+     "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals"
+    },
+    {
+     "name": "eufundingportal.eu",
+     "desc": "Независимая база конкурсов ЕС и международных доноров.",
+     "url": "https://eufundingportal.eu"
+    },
+    {
+     "name": "EEAS — гранты по Беларуси",
+     "desc": "Конкурсы ЕС для гражданского общества, фильтр Belarus.",
+     "url": "https://www.eeas.europa.eu/filter-page/grants_en?f%5B0%5D=grant_site%3ABelarus"
+    }
+   ]
+  },
+  {
+   "title": "Гранты для беларуских организаций — следить",
+   "note": "Раунды повторяются; даты — из прошлых конкурсов.",
+   "items": [
+    {
+     "name": "SALT III (CPVA, Литва)",
+     "desc": "€30 000–96 500 на образовательные проекты для беларусов. Подаёт НКО, зарегистрированная в ЕС, в команде — гражданин Беларуси с опытом в образовании. Прошлый срок — 16 марта 2026.",
+     "url": "https://www2.fundsforngos.org/community-development/salt-iii-program-grants-for-belarusian-educational-initiatives/"
+    },
+    {
+     "name": "Human Rights Fund (Нидерланды)",
+     "desc": "Конкурс по Беларуси на 2026 год: свобода слова, независимые медиа, защита журналистов. Сначала концепт, потом полная заявка.",
+     "url": "https://www.netherlandsandyou.nl/web/belarus/hrf"
+    },
+    {
+     "name": "Estonian Centre for International Development",
+     "desc": "Поддержка беларуского демократического гражданского общества в эмиграции: гражданское участие, независимые медиа. Прошлый срок — 16 января 2026.",
+     "url": "https://www2.fundsforngos.org/democracy-good-governance/cfas-estonian-centre-for-international-development-project-funding-in-belarus/amp/"
+    },
+    {
+     "name": "Совет Европы — гранты на 2026–2027",
+     "desc": "Планируются гранты организациям, которые работают с ЛГБТИ, правозащитниками в эмиграции, людьми с инвалидностью и молодёжью.",
+     "url": "https://rm.coe.int/activities-for-2026-2027-belarusian-democratic-forces-and-civil-societ/48802ac23e"
+    },
+    {
+     "name": "Małe Granty Fundacji Batorego",
+     "desc": "20 000–40 000 zł на права человека и демократию; приём в 2025–2026 шёл в режиме постоянного набора.",
+     "url": "https://www.batory.org.pl/programydotacyjne/"
+    }
+   ]
+  },
+  {
+   "title": "Организации: мигранты, беженцы, права человека",
+   "items": [
+    {
+     "name": "Konsorcjum Migracyjne",
+     "desc": "16 организаций, работающих с мигрантами и беженцами. Ведёт Akademia Migracyjna.",
+     "url": "https://konsorcjum.org.pl"
+    },
+    {
+     "name": "Fundacja Zustricz",
+     "desc": "Член Konsorcjum Migracyjne.",
+     "url": "https://www.google.com/search?q=Fundacja+Zustricz"
+    },
+    {
+     "name": "Fundacja w Stronę Dialogu",
+     "desc": "Член Konsorcjum Migracyjne.",
+     "url": "https://www.google.com/search?q=Fundacja+w+Stronę+Dialogu"
+    },
+    {
+     "name": "Kuchnia Konfliktu (Conflict Kitchen)",
+     "desc": "Работа и интеграция беженцев через кухню. Член Konsorcjum Migracyjne.",
+     "url": "https://www.google.com/search?q=Kuchnia+Konfliktu"
+    },
+    {
+     "name": "Związek Ukraińców w Polsce",
+     "desc": "Член Konsorcjum Migracyjne.",
+     "url": "https://www.google.com/search?q=Związek+Ukraińców+w+Polsce"
+    },
+    {
+     "name": "Stowarzyszenie Egala",
+     "desc": "Член Konsorcjum Migracyjne.",
+     "url": "https://www.google.com/search?q=Stowarzyszenie+Egala"
+    },
+    {
+     "name": "Fundacja Emic",
+     "desc": "Член Konsorcjum Migracyjne.",
+     "url": "https://www.google.com/search?q=Fundacja+Emic"
+    },
+    {
+     "name": "Migrant Info Point (Познань)",
+     "desc": "Член Konsorcjum Migracyjne.",
+     "url": "https://www.google.com/search?q=Migrant+Info+Point+Poznań"
+    },
+    {
+     "name": "Fundacja Polska Gościnność",
+     "desc": "Ранее — инициатива «Chlebem i Solą».",
+     "url": "https://www.google.com/search?q=Fundacja+Polska+Gościnność"
+    },
+    {
+     "name": "Stowarzyszenie Homo Faber (Люблин)",
+     "desc": "С 2004 года работает в Люблине за права человека, в том числе беженцев.",
+     "url": "https://hf.org.pl"
+    },
+    {
+     "name": "Stowarzyszenie NOMADA",
+     "desc": "Вроцлав и Нижняя Силезия: интеграция, языковые занятия, помощь мигрантам.",
+     "url": "https://nomada.org.pl"
+    },
+    {
+     "name": "Ukraiński Dom / Fundacja Nasz Wybór",
+     "desc": "Варшава, помощь украинцам и мигрантам.",
+     "url": "https://www.google.com/search?q=Fundacja+Nasz+Wybór+Ukraiński+Dom"
+    },
+    {
+     "name": "Fundacja Inna Przestrzeń",
+     "desc": "Варшава, ul. Nowy Świat 23/25 lok. 32.",
+     "url": "https://innaprzestrzen.pl"
+    },
+    {
+     "name": "Fundacja Instytut na rzecz Państwa Prawa",
+     "desc": "Люблин, юридическая помощь иностранцам.",
+     "url": "https://www.google.com/search?q=Instytut+na+rzecz+Państwa+Prawa"
+    },
+    {
+     "name": "Fundacja Dialog",
+     "desc": "Помощь и интеграция беженцев, лиц с дополнительной защитой, репатриантов.",
+     "url": "https://www.google.com/search?q=Fundacja+Dialog+uchodźcy"
+    },
+    {
+     "name": "Fundacja Strefa WolnoSłowa",
+     "desc": "Культура и участие мигрантов.",
+     "url": "https://www.google.com/search?q=Fundacja+Strefa+WolnoSłowa"
+    },
+    {
+     "name": "Fundacja The Hope Project Polska",
+     "desc": "",
+     "url": "https://www.google.com/search?q=The+Hope+Project+Polska"
+    },
+    {
+     "name": "Fundacja Wolna Syria",
+     "desc": "",
+     "url": "https://www.google.com/search?q=Fundacja+Wolna+Syria"
+    },
+    {
+     "name": "Fundacja Centrum Badań Migracyjnych",
+     "desc": "Исследования миграции.",
+     "url": "https://www.google.com/search?q=Fundacja+Centrum+Badań+Migracyjnych"
+    },
+    {
+     "name": "Polski Instytut Praw Człowieka i Biznesu",
+     "desc": "",
+     "url": "https://www.google.com/search?q=Polski+Instytut+Praw+Człowieka+i+Biznesu"
+    },
+    {
+     "name": "Centrum Wsparcia Imigrantów i Imigrantek (Труймясто)",
+     "desc": "Бесплатные юридические консультации, курсы польского, психолог, карьерные консультации.",
+     "url": "https://www.google.com/search?q=Centrum+Wsparcia+Imigrantów+i+Imigrantek"
+    },
+    {
+     "name": "Caritas — Centra Pomocy Migrantom i Uchodźcom",
+     "desc": "Сеть центров: психолог, карьера, материальная помощь, курсы языка.",
+     "url": "https://www.google.com/search?q=Caritas+Centrum+Pomocy+Migrantom+i+Uchodźcom"
+    }
+   ]
+  },
+  {
+   "title": "Организации, созданные мигрантами и беженцами",
+   "note": "Получали гранты «WSPÓŁdziałamy!» в 2026 году.",
+   "items": [
+    {
+     "name": "Stowarzyszenie Białoruski Związek Solidarności (Вроцлав)",
+     "desc": "Проект «Razem lepiej», 15 000 zł.",
+     "url": "https://www.google.com/search?q=Białoruski+Związek+Solidarności+Wrocław"
+    },
+    {
+     "name": "Fundacja HUB Novaja Ziamlia (Белосток)",
+     "desc": "«Nowe wyzwanie – nowe możliwości dla uchodźców», 15 000 zł.",
+     "url": "https://www.google.com/search?q=Fundacja+HUB+Novaja+Ziamlia"
+    },
+    {
+     "name": "Fundacja Polikultura (Варшава)",
+     "desc": "«Przystań w Polsce» — интеграция семей беженцев.",
+     "url": "https://www.google.com/search?q=Fundacja+Polikultura"
+    },
+    {
+     "name": "Rada Uchodźców (Варшава)",
+     "desc": "«Dajemy uchodźcom siłę».",
+     "url": "https://www.google.com/search?q=Rada+Uchodźców"
+    },
+    {
+     "name": "Stowarzyszenie Mova",
+     "desc": "Фонд переводов для беженцев «Język bez barier».",
+     "url": "https://www.google.com/search?q=Stowarzyszenie+Mova"
+    }
+   ]
+  }
  ]
 }

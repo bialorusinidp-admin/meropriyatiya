@@ -489,8 +489,64 @@ def ad_telegram(src):
     return out
 
 
+def ad_ngo_funds(src):
+    """Открытые конкурсы грантов с fundusze.ngo.pl/aktualne."""
+    items, loaded = {}, 0
+    for n in range(1, src.get("pages", 3) + 1):
+        url = src["url"] + ("" if n == 1 else ("&" if "?" in src["url"] else "?") + f"page={n}")
+        try:
+            soup = BeautifulSoup(get(url).text, "html.parser")
+        except Exception as e:
+            log("   fundusze.ngo.pl: страница недоступна:", url, e)
+            continue
+        loaded += 1
+        for a in soup.find_all("a", href=True):
+            href = requests.compat.urljoin(url, a["href"]).split("#")[0].split("?")[0]
+            if not re.search(r"fundusze\.ngo\.pl/\d+-[^/]+\.html$", href) or href in items:
+                continue
+            node, card = a, None
+            for _ in range(6):
+                node = node.parent
+                if node is None:
+                    break
+                if re.search(r"Nabór do|Data zakończenia", node.get_text(" ")):
+                    card = node
+                    break
+            text = re.sub(r"\s+", " ", (card or a).get_text(" "))
+            title = clean(a.get_text(" "))
+            if len(title) < 8 and card:
+                h = card.find(["h2", "h3", "h4"])
+                title = clean(h.get_text(" ")) if h else title
+            items[href] = (title, text)
+    if not loaded:
+        raise RuntimeError("список конкурсов не открылся")
+    locs = [l.lower() for l in src.get("locations", ["Cała Polska", "Warszawa", "mazowieckie"])]
+    out = []
+    for href, (title, text) in items.items():
+        md = re.search(r"Nabór do\s*(\d{1,2})\.(\d{1,2})\.(\d{4})", text)
+        if not (title and md):
+            continue
+        deadline = dt.date(int(md[3]), int(md[2]), int(md[1]))
+        if deadline < TODAY:
+            continue
+        ml = re.search(r"Lokalizacja\s+(.+?)\s+(?:Data|Nabór|Rodzaj)", text)
+        loc = ml[1].strip() if ml else ""
+        mt = re.search(r"Rodzaj funduszu\s+(\S+)", text)
+        ftype = mt[1].strip() if mt else ""
+        mb = re.search(r"Łączny budżet(?: funduszu)?\s+(?:Łączny budżet\s+)?([\d ,.]+\s*(?:mln|tys\.?)?\s*(?:PLN|zł|EUR|€)?)", text)
+        budget = mb[1].strip() if mb else ""
+        if locs and loc and not any(l in loc.lower() for l in locs) and ftype != "zagraniczny":
+            continue
+        note = " · ".join(x for x in [("бюджет " + budget) if budget else "", ftype] if x)
+        ev = make_event({**src, "tags": ["грант"] + ([ftype] if ftype else [])}, title, TODAY, "", deadline, loc or "Польша", href, note)
+        if ev:
+            ev["kind"] = "grant"
+            out.append(ev)
+    return out
+
+
 ADAPTERS = {"tribe": ad_tribe, "ics": ad_ics, "jsonld_list": ad_jsonld_list,
-            "rpo_patronaty": ad_rpo_patronaty, "rpo_news": ad_rpo_news, "ngo_pl": ad_ngo_pl, "ngo_jobs": ad_ngo_jobs, "telegram": ad_telegram}
+            "rpo_patronaty": ad_rpo_patronaty, "rpo_news": ad_rpo_news, "ngo_pl": ad_ngo_pl, "ngo_jobs": ad_ngo_jobs, "telegram": ad_telegram, "ngo_funds": ad_ngo_funds}
 
 
 # ---------- сборка ----------
@@ -502,7 +558,7 @@ def norm_key(e):
 
 def keep(e):
     start = dt.date.fromisoformat(e["start"])
-    if e.get("kind") in ("course", "job"):
+    if e.get("kind") in ("course", "job", "grant"):
         end = dt.date.fromisoformat(e["end"]) if e.get("end") else start
         return end >= TODAY and start <= KEEP_TO
     return KEEP_FROM <= start <= KEEP_TO
@@ -516,6 +572,10 @@ def is_dup(a, b):
     ka, kb = norm_key(a), norm_key(b)
     if ka == kb:
         return True
+    if a.get("kind") == "grant" and b.get("kind") == "grant" and a.get("end") and a.get("end") == b.get("end"):
+        wa, wb = words(a["title"]), words(b["title"])
+        if ka[0][:12] == kb[0][:12] or (wa and wb and len(wa & wb) / min(len(wa), len(wb)) >= 0.5):
+            return True
     if a["start"] != b["start"]:
         return False
     ta, tb = ka[0], kb[0]

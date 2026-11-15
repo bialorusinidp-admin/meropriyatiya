@@ -665,6 +665,141 @@
    "note": "Бесплатные 8-часовые мастер-классы по защите населения, до конца ноября.",
    "ok": true,
    "source": "manual"
+  },
+  {
+   "id": "g-wspoldzialamy",
+   "org": "other",
+   "kind": "grant",
+   "title": "WSPÓŁdziałamy! — инициативы беженцев и мигрантов",
+   "start": "2026-11-15",
+   "end": "2026-12-14",
+   "time": "",
+   "place": "Вся Польша",
+   "host": "Fundusz Obywatelski",
+   "tags": [
+    "грант",
+    "миграция",
+    "Беларусь"
+   ],
+   "url": "https://www.funduszobywatelski.pl/wspoldzialamy/",
+   "note": "До 15 000 zł для организаций, до 5 700 zł для неформальных групп. Собственный вклад не нужен. Срок — 14 декабря 2026, 14:00.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "g-cerv-values",
+   "org": "other",
+   "kind": "grant",
+   "title": "CERV-2026-CITIZENS-VALUES — защита ценностей ЕС",
+   "start": "2026-11-15",
+   "end": "2027-02-24",
+   "time": "",
+   "place": "ЕС",
+   "host": "Европейская комиссия",
+   "tags": [
+    "грант",
+    "ЕС",
+    "права человека"
+   ],
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals?callIdentifier=CERV-2026-CITIZENS-VALUES",
+   "note": "Программа ЕС «Граждане, равенство, права и ценности» для организаций гражданского общества. Подача на портале EU Funding & Tenders до 24 февраля 2027, 17:00 (Брюссель).",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "g-eog",
+   "org": "other",
+   "kind": "grant",
+   "title": "Fundusz Społeczeństwa Obywatelskiego EOG",
+   "start": "2026-11-15",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "Fundacja Batorego и партнёры",
+   "tags": [
+    "грант",
+    "права человека"
+   ],
+   "url": "https://eeagrants.org/pl/eea-civil-society-fund-poland",
+   "note": "Норвежские и EOG-гранты: малые 10 000–25 000 EUR, крупные 25 001–80 000 EUR. Ведёт консорциум во главе с Fundacja Batorego. Конкурсы идут по графику — следите за объявлениями.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "g-wspieramy-ukraine",
+   "org": "other",
+   "kind": "grant",
+   "title": "Wspieramy Ukrainę (PAFW и FED)",
+   "start": "2026-11-15",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "Fundacja Edukacja dla Demokracji",
+   "tags": [
+    "грант",
+    "миграция"
+   ],
+   "url": "https://fed.org.pl",
+   "note": "До 60 000 zł для польских НКО, которые помогают беженцам из Украины в Польше и людям в Украине. Собственный вклад не нужен. Раунд 2026 года закрылся 19 января — следующий, вероятно, зимой.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "g-pzu",
+   "org": "other",
+   "kind": "grant",
+   "title": "Dotacje Fundacji PZU",
+   "start": "2026-11-15",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "Fundacja PZU",
+   "tags": [
+    "грант",
+    "постоянный приём"
+   ],
+   "url": "https://www.eurodesk.pl/granty/c/aktywnosc-spoleczna/dzialania-lokalne",
+   "note": "Компетенции будущего, образование, социальный капитал, культура. Приём постоянный, оценка несколько раз в год.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "g-mott",
+   "org": "other",
+   "kind": "grant",
+   "title": "Dotacje Fundacji Charlesa Stewarta Motta",
+   "start": "2026-11-15",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "C.S. Mott Foundation",
+   "tags": [
+    "грант",
+    "постоянный приём"
+   ],
+   "url": "https://www.eurodesk.pl/granty/c/aktywnosc-spoleczna/dzialania-lokalne",
+   "note": "Демократия и гражданское общество. Приём постоянный.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "g-nowefio",
+   "org": "other",
+   "kind": "grant",
+   "title": "NOWEFIO (NIW-CRSO)",
+   "start": "2026-11-15",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "Narodowy Instytut Wolności",
+   "tags": [
+    "грант",
+    "Польша"
+   ],
+   "url": "https://niw.gov.pl/nasze-programy/nowefio/",
+   "note": "Крупная государственная программа. С 2026 года минимум 100 000 zł, бюджет организации свыше 30 000 zł за один из трёх последних лет и регистрация до 31.12.2024. Наборы обычно в I квартале.",
+   "ok": true,
+   "source": "manual"
   }
  ]
 }

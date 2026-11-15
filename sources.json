@@ -1,5 +1,5 @@
 {
- "_how": "Откуда робот собирает мероприятия. type: tribe (WordPress + The Events Calendar), ics (ссылка на календарь .ics), jsonld_list (страница-список, link_re — какие ссылки считать событиями). org — id вкладки в приложении. disabled: true — временно выключить источник. ngo_pl — список szkoleń i wydarzeń с ngo.pl для Варшавы (max_days: длинные курсы дольше стольких дней пропускаются). replaces_ids — старые ручные записи, которые убираются, когда источник сработал. ngo_jobs — вакансии с ogloszenia.ngo.pl (вкладка «Вакансии»). telegram — публичный Telegram-канал (channel — имя из ссылки t.me/…): берутся посты, где есть дата будущего события.",
+ "_how": "Откуда робот собирает мероприятия. type: tribe (WordPress + The Events Calendar), ics (ссылка на календарь .ics), jsonld_list (страница-список, link_re — какие ссылки считать событиями). org — id вкладки в приложении. disabled: true — временно выключить источник. ngo_pl — список szkoleń i wydarzeń с ngo.pl для Варшавы (max_days: длинные курсы дольше стольких дней пропускаются). replaces_ids — старые ручные записи, которые убираются, когда источник сработал. ngo_jobs — вакансии с ogloszenia.ngo.pl (вкладка «Вакансии»). telegram — публичный Telegram-канал (channel — имя из ссылки t.me/…): берутся посты, где есть дата будущего события. ngo_funds — открытые конкурсы грантов с fundusze.ngo.pl (locations — какие регионы оставлять; зарубежные (zagraniczny) остаются всегда).",
  "sources": [
   {
    "id": "pfm",
@@ -119,6 +119,19 @@
    "tags": [
     "миграция",
     "поддержка"
+   ]
+  },
+  {
+   "id": "ngo-fundusze",
+   "org": "other",
+   "type": "ngo_funds",
+   "url": "https://fundusze.ngo.pl/aktualne",
+   "pages": 3,
+   "host": "fundusze.ngo.pl",
+   "locations": [
+    "Cała Polska",
+    "Warszawa",
+    "mazowieckie"
    ]
   }
  ]
