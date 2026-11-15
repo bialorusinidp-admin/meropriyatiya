@@ -11,6 +11,7 @@
 | `admin.html` | админка: добавлять, править и удалять события с телефона |
 | `events.json` | готовая подборка, её обновляет робот |
 | `manual.json` | события, добавленные вручную (робот их не трогает) |
+| `resources.json` | вкладка «Ресурсы»: сертификаты, курсы, программы, где искать работу |
 | `sources.json` | с каких сайтов собирать |
 | `collect.py`, `requirements.txt` | робот-сборщик |
 | `.github/workflows/collect.yml` | расписание: каждый день в 5:17 |
@@ -31,6 +32,8 @@
 Установка на телефон: откройте адрес в Safari → «Поделиться» → «На экран "Домой"».
 
 ## Откуда робот собирает сейчас
+
+- IRC Polska — посты с датами из Telegram-канала t.me/IRCPoland
 
 - Polskie Forum Migracyjne — календарь событий Centrum Wielokulturowego
 - Centrum Praw Kobiet — календарь Akademii Mocy Kobiet
@@ -57,7 +60,7 @@
 
 Вручную, без админки: откройте `manual.json` → значок карандаша → скопируйте любое событие и поменяйте поля:
 `id` (любой уникальный), `org` (id вкладки: rpo, amnesty, hia, sip, hfpc, pfm, ocalenie, cpk, kph, bialdom,
-batory, panoptykon, pah, fdds, scwo, ngopl, niebieska, city, other), `title`, `start` (ГГГГ-ММ-ДД), `end`, `time`,
+batory, irc, panoptykon, pah, fdds, scwo, ngopl, niebieska, city, other), `title`, `start` (ГГГГ-ММ-ДД), `end`, `time`,
 `place`, `host`, `tags`, `url`, `note`, а для курса или вакансии ещё `kind`: `course` или `job` (у вакансии `start` — дата публикации, `end` — срок подачи). В админке это поле «Что это». Сохраните — на следующем запуске событие появится в приложении
 (или запустите робота вручную, шаг 6).
 

@@ -411,8 +411,86 @@ def ad_ngo_jobs(src):
     return out
 
 
+MONTHS_ALL = dict(MONTHS_PL)
+MONTHS_ALL.update({
+    "січня": 1, "лютого": 2, "березня": 3, "квітня": 4, "травня": 5, "червня": 6, "липня": 7, "серпня": 8,
+    "вересня": 9, "жовтня": 10, "листопада": 11, "грудня": 12,
+    "января": 1, "февраля": 2, "марта": 3, "апреля": 4, "мая": 5, "июня": 6, "июля": 7, "августа": 8,
+    "сентября": 9, "октября": 10, "ноября": 11, "декабря": 12,
+})
+TG_DATE_RE = re.compile(
+    r"(\d{1,2})(?:\s*[–\-]\s*(\d{1,2}))?\s+(" + "|".join(MONTHS_ALL) + r")(?:\s+(\d{4}))?", re.I)
+TG_NUM_DATE_RE = re.compile(r"\b(\d{1,2})\.(\d{1,2})(?:\.(\d{2,4}))?\b")
+TIME_RE = re.compile(r"\b([01]?\d|2[0-3]):([0-5]\d)\b")
+
+
+def ad_telegram(src):
+    """Публичный Telegram-канал через веб-превью t.me/s/<канал>: посты с датой будущего события."""
+    url = f"https://t.me/s/{src['channel']}"
+    soup = BeautifulSoup(get(url).text, "html.parser")
+    msgs = soup.select(".tgme_widget_message")
+    if not msgs:
+        raise RuntimeError("в превью канала нет постов")
+    out = []
+    for m in msgs:
+        tnode = m.select_one(".tgme_widget_message_text")
+        if not tnode:
+            continue
+        for br in tnode.find_all("br"):
+            br.replace_with("\n")
+        text = tnode.get_text()
+        timetag = m.select_one("time[datetime]")
+        posted = dt.date.fromisoformat(timetag["datetime"][:10]) if timetag else TODAY
+        link = m.select_one("a.tgme_widget_message_date")
+        href = link["href"] if link and link.get("href") else url
+        d1 = d2 = None
+        md = TG_DATE_RE.search(text)
+        if md:
+            mon = MONTHS_ALL[md[3].lower()]
+            year = int(md[4]) if md[4] else posted.year
+            try:
+                d1 = dt.date(year, mon, int(md[1]))
+                if not md[4] and d1 < posted - dt.timedelta(days=7):
+                    d1 = d1.replace(year=year + 1)
+                if md[2]:
+                    d2 = d1.replace(day=int(md[2]))
+            except ValueError:
+                d1 = None
+        if not d1:
+            mn = TG_NUM_DATE_RE.search(text)
+            if mn and 1 <= int(mn[2]) <= 12:
+                year = int(mn[3]) + (2000 if mn[3] and len(mn[3]) == 2 else 0) if mn[3] else posted.year
+                try:
+                    d1 = dt.date(year, int(mn[2]), int(mn[1]))
+                    if not mn[3] and d1 < posted - dt.timedelta(days=7):
+                        d1 = d1.replace(year=year + 1)
+                except ValueError:
+                    d1 = None
+        if not d1 or d1 < posted - dt.timedelta(days=1):
+            continue  # пост без будущей даты — не мероприятие
+        after = text[md.end():] if md else text
+        tm = TIME_RE.search(after[:120]) or TIME_RE.search(text)
+        t1 = f"{int(tm[1]):02d}:{tm[2]}" if tm else ""
+        lines = [re.sub(r"^[^\wА-Яа-яЁёІіЇїЄєҐґ«\"]+", "", l).strip() for l in text.splitlines()]
+        lines = [l for l in lines if len(l) > 3]
+        if not lines:
+            continue
+        title = lines[0][:120]
+        note = " ".join(lines[1:])[:400]
+        low = text.lower()
+        online = bool(re.search(r"онлайн|online|zoom|teams|вебінар|вебинар|webinar", low))
+        place = "Онлайн" if online else ("Варшава" if re.search(r"варшав|warszaw", low) else src.get("place_default", "Место уточните по ссылке"))
+        tags = list(src.get("tags", [])) + (["онлайн"] if online else []) + (["бесплатно"] if re.search(r"безкоштовн|безоплатн|бесплатн|bezpłatn", low) else [])
+        ev = make_event({**src, "tags": tags}, title, d1, t1, d2, place, href, note)
+        if ev:
+            if re.search(r"\bкурс|навчальн[аи] програм", low[:300]):
+                ev["kind"] = "course"
+            out.append(ev)
+    return out
+
+
 ADAPTERS = {"tribe": ad_tribe, "ics": ad_ics, "jsonld_list": ad_jsonld_list,
-            "rpo_patronaty": ad_rpo_patronaty, "rpo_news": ad_rpo_news, "ngo_pl": ad_ngo_pl, "ngo_jobs": ad_ngo_jobs}
+            "rpo_patronaty": ad_rpo_patronaty, "rpo_news": ad_rpo_news, "ngo_pl": ad_ngo_pl, "ngo_jobs": ad_ngo_jobs, "telegram": ad_telegram}
 
 
 # ---------- сборка ----------

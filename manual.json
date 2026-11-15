@@ -629,6 +629,42 @@
    "note": "",
    "ok": true,
    "source": "manual"
+  },
+  {
+   "id": "seminarium-migracyjne-63",
+   "org": "other",
+   "title": "63. Seminarium Migracyjne UW",
+   "start": "2026-11-17",
+   "end": "",
+   "time": "17:00",
+   "place": "ul. Żurawia 4, sala 421",
+   "host": "Uniwersytet Warszawski",
+   "tags": [
+    "миграция",
+    "наука"
+   ],
+   "url": "https://ispan.waw.pl",
+   "note": "Семинар о миграциях Варшавского университета.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "pck-warsztaty-ochrony",
+   "org": "other",
+   "kind": "course",
+   "title": "PCK: Powszechne Warsztaty Ochrony Ludności",
+   "start": "2026-11-01",
+   "end": "2026-11-30",
+   "time": "",
+   "place": "Варшава",
+   "host": "Polski Czerwony Krzyż",
+   "tags": [
+    "бесплатно"
+   ],
+   "url": "https://pck.pl/co-robimy/bezplatne-warsztaty",
+   "note": "Бесплатные 8-часовые мастер-классы по защите населения, до конца ноября.",
+   "ok": true,
+   "source": "manual"
   }
  ]
 }

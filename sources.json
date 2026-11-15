@@ -1,5 +1,5 @@
 {
- "_how": "Откуда робот собирает мероприятия. type: tribe (WordPress + The Events Calendar), ics (ссылка на календарь .ics), jsonld_list (страница-список, link_re — какие ссылки считать событиями). org — id вкладки в приложении. disabled: true — временно выключить источник. ngo_pl — список szkoleń i wydarzeń с ngo.pl для Варшавы (max_days: длинные курсы дольше стольких дней пропускаются). replaces_ids — старые ручные записи, которые убираются, когда источник сработал. ngo_jobs — вакансии с ogloszenia.ngo.pl (вкладка «Вакансии»).",
+ "_how": "Откуда робот собирает мероприятия. type: tribe (WordPress + The Events Calendar), ics (ссылка на календарь .ics), jsonld_list (страница-список, link_re — какие ссылки считать событиями). org — id вкладки в приложении. disabled: true — временно выключить источник. ngo_pl — список szkoleń i wydarzeń с ngo.pl для Варшавы (max_days: длинные курсы дольше стольких дней пропускаются). replaces_ids — старые ручные записи, которые убираются, когда источник сработал. ngo_jobs — вакансии с ogloszenia.ngo.pl (вкладка «Вакансии»). telegram — публичный Telegram-канал (channel — имя из ссылки t.me/…): берутся посты, где есть дата будущего события.",
  "sources": [
   {
    "id": "pfm",
@@ -108,6 +108,18 @@
    "url": "https://ogloszenia.ngo.pl/praca-staz/dam-prace/warszawa",
    "pages": 3,
    "max": 45
+  },
+  {
+   "id": "irc",
+   "org": "irc",
+   "type": "telegram",
+   "channel": "IRCPoland",
+   "host": "International Rescue Committee Polska",
+   "place_default": "Место уточните по ссылке",
+   "tags": [
+    "миграция",
+    "поддержка"
+   ]
   }
  ]
 }
