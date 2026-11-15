@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T22:11+01:00",
+ "updated": "2026-11-15T22:24+01:00",
  "status": {
   "pfm": "ok: 0",
   "cpk": "ok: 20",
@@ -7,7 +7,8 @@
   "rpo-news": "ok: 6",
   "batory": "ok: 13",
   "ngo-pl": "ok: 40",
-  "ngo-praca": "ok: 45"
+  "ngo-praca": "ok: 45",
+  "irc": "ok: 12"
  },
  "events": [
   {
@@ -118,6 +119,25 @@
    "source": "batory"
   },
   {
+   "id": "irc-2026-09-29-шука-те-роботу-у-варшав-або-ду",
+   "org": "irc",
+   "title": "Шукаєте роботу у Варшаві або думаєте про наступний крок у кар’єрі?",
+   "start": "2026-09-29",
+   "end": "",
+   "time": "10:00",
+   "place": "Варшава",
+   "host": "International Rescue Committee Polska",
+   "tags": [
+    "миграция",
+    "поддержка",
+    "бесплатно"
+   ],
+   "url": "https://t.me/IRCPoland/703",
+   "note": "Вже 29 вересня на PGE Narodowy - Targi Pracy i Przedsiębiorczości 2026. На ярмарку ви зможете: поспілкуватися з роботодавцями та дізнатися про вакансії; отримати кар’єрну консультацію; зробити професійне фото для CV або…",
+   "ok": true,
+   "source": "irc"
+  },
+  {
    "id": "ngo-pl-2026-09-30-zapraszamy-na-bezpłatne-superw",
    "org": "ngopl",
    "title": "Zapraszamy na bezpłatne superwizje dla osób koordynujących wolontariat na Mazowszu",
@@ -152,6 +172,25 @@
    "note": "Wspieramy demokrację w Polsce",
    "ok": true,
    "source": "batory"
+  },
+  {
+   "id": "irc-2026-10-01-веб-нар-2-в-1-працевлаштування",
+   "org": "irc",
+   "title": "Вебінар 2 в 1: працевлаштування в Польщі + секрет успішної співбесіди | IRC + FIPP 💛",
+   "start": "2026-10-01",
+   "end": "",
+   "time": "17:00",
+   "place": "Онлайн",
+   "host": "International Rescue Committee Polska",
+   "tags": [
+    "миграция",
+    "поддержка",
+    "онлайн"
+   ],
+   "url": "https://t.me/IRCPoland/706",
+   "note": "Запрошуємо на нашу наступну практичну онлайн-зустріч українською мовою! Цього разу поговоримо про питання, відповіді на які ми часто шукаємо під час пошуку роботи в Польщі: 1 жовтня 17:00-19:00 Онлайн - Microsoft Teams…",
+   "ok": true,
+   "source": "irc"
   },
   {
    "id": "hia-fest",
@@ -241,6 +280,43 @@
    "source": "batory"
   },
   {
+   "id": "irc-2026-10-15-у-власному-б-знес-ви-сам-соб-к",
+   "org": "irc",
+   "title": "У власному бізнесі ви самі собі керівник. Але чи добрий ви керівник для себе?",
+   "start": "2026-10-15",
+   "end": "",
+   "time": "18:00",
+   "place": "Варшава",
+   "host": "International Rescue Committee Polska",
+   "tags": [
+    "миграция",
+    "поддержка"
+   ],
+   "url": "https://t.me/IRCPoland/708",
+   "note": "Особливо коли розвиваєш власну справу в іншій країні, де щодня доводиться приймати безліч рішень і багато чого залежить саме від тебе. Ми вчимося будувати довіру з клієнтами, партнерами, командою. Але чи приділяємо…",
+   "ok": true,
+   "source": "irc"
+  },
+  {
+   "id": "irc-2026-10-15-веб-нар-2-в-1-працевлаштування",
+   "org": "irc",
+   "title": "Вебінар 2 в 1: працевлаштування в Польщі + секрет успішної співбесіди | IRC + FIPP 💛",
+   "start": "2026-10-15",
+   "end": "",
+   "time": "17:00",
+   "place": "Онлайн",
+   "host": "International Rescue Committee Polska",
+   "tags": [
+    "миграция",
+    "поддержка",
+    "онлайн"
+   ],
+   "url": "https://t.me/IRCPoland/709",
+   "note": "Шукаєте роботу в Польщі? Хочете впевненіше проходити співбесіди та знати свої права? Тоді ця зустріч для вас! 👇 Частина 1. Працевлаштування в Польщі Юридичні нюанси, документи, договори та ваші права - з юристом FIPP…",
+   "ok": true,
+   "source": "irc"
+  },
+  {
    "id": "fdds-konf",
    "org": "fdds",
    "title": "23. Ogólnopolska Konferencja «Dzieciństwo bez przemocy»",
@@ -257,6 +333,26 @@
    "note": "Представили отчёт об отношении поляков к насилию над детьми.",
    "ok": true,
    "source": "manual"
+  },
+  {
+   "id": "irc-2026-10-19-warszawskie-centrum-pomocy-rod",
+   "org": "irc",
+   "title": "Warszawskie Centrum Pomocy Rodzinie",
+   "start": "2026-10-19",
+   "end": "",
+   "time": "",
+   "place": "Онлайн",
+   "host": "International Rescue Committee Polska",
+   "tags": [
+    "миграция",
+    "поддержка",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://t.me/IRCPoland/710",
+   "note": "zaprasza cudzoziemców na bezpłatne kursy zawodowe. Chcesz zdobyć praktyczne umiejętności, rozwinąć się zawodowo lub zwiększyć swoje szanse na znalezienie pracy w Polsce? Wybierz kurs dla siebie. ABC przedsiębiorczości –…",
+   "ok": true,
+   "source": "irc"
   },
   {
    "id": "ngo-praca-2026-10-21-specjalista-ka-ds-pozyskiwania",
@@ -329,6 +425,24 @@
    "kind": "job"
   },
   {
+   "id": "irc-2026-10-27-нова-робота-може-початися-з-зн",
+   "org": "irc",
+   "title": "Нова робота може початися зі знайомства! А впевненість — зі знання своїх прав і обов'язків.",
+   "start": "2026-10-27",
+   "end": "",
+   "time": "17:00",
+   "place": "Место уточните по ссылке",
+   "host": "International Rescue Committee Polska",
+   "tags": [
+    "миграция",
+    "поддержка"
+   ],
+   "url": "https://t.me/IRCPoland/713",
+   "note": "Шукаєте роботу в Польщі та хочете краще розуміти, як тут усе влаштовано? Запрошуємо на офлайн-зустріч 2 в 1 у Любліні. Частина 1. Нетворкінг як інструмент пошуку роботи Як знайомитися з потрібними людьми, розширювати…",
+   "ok": true,
+   "source": "irc"
+  },
+  {
    "id": "batory-2026-10-28-gdzie-szukać-sojuszników-wybor",
    "org": "batory",
    "title": "Gdzie szukać sojuszników? Wybory Polski - Fundacja im. Stefana Batorego",
@@ -361,6 +475,25 @@
    "note": "Wspieramy demokrację w Polsce",
    "ok": true,
    "source": "batory"
+  },
+  {
+   "id": "irc-2026-10-28-любл-н-чека-мо-на-вас",
+   "org": "irc",
+   "title": "ЛЮБЛІН – ЧЕКАЄМО НА ВАС! 🚀",
+   "start": "2026-10-28",
+   "end": "",
+   "time": "09:00",
+   "place": "Место уточните по ссылке",
+   "host": "International Rescue Committee Polska",
+   "tags": [
+    "миграция",
+    "поддержка",
+    "бесплатно"
+   ],
+   "url": "https://t.me/IRCPoland/711",
+   "note": "Шукаєте роботу або хочете розвинути свою кар'єру? Приходьте на Міжнародний ярмарок вакансій та поспілкуйтеся про ваші можливості! 28 жовтня 2026 р. 9:00 – 15:00 Targi Lublin S.A., вул. Dworcowa 11 Відвідайте стенд…",
+   "ok": true,
+   "source": "irc"
   },
   {
    "id": "forum-pl-by",
@@ -396,6 +529,24 @@
    ],
    "url": "https://waw4free.pl/wydarzenie-161104-bialoruskie-napary-ziola-tradycje-i-dawne-receptury",
    "note": "",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "pck-warsztaty-ochrony",
+   "org": "other",
+   "kind": "course",
+   "title": "PCK: Powszechne Warsztaty Ochrony Ludności",
+   "start": "2026-11-01",
+   "end": "2026-11-30",
+   "time": "",
+   "place": "Варшава",
+   "host": "Polski Czerwony Krzyż",
+   "tags": [
+    "бесплатно"
+   ],
+   "url": "https://pck.pl/co-robimy/bezplatne-warsztaty",
+   "note": "Бесплатные 8-часовые мастер-классы по защите населения, до конца ноября.",
    "ok": true,
    "source": "manual"
   },
@@ -470,6 +621,25 @@
    "ok": true,
    "source": "ngo-praca",
    "kind": "job"
+  },
+  {
+   "id": "irc-2026-11-05-четвер-чудовий-день-щоб-зробит",
+   "org": "irc",
+   "title": "Четвер — чудовий день, щоб зробити ще один крок до роботи в Польщі!",
+   "start": "2026-11-05",
+   "end": "",
+   "time": "17:00",
+   "place": "Онлайн",
+   "host": "International Rescue Committee Polska",
+   "tags": [
+    "миграция",
+    "поддержка",
+    "онлайн"
+   ],
+   "url": "https://t.me/IRCPoland/718",
+   "note": "Шукаєте роботу, але не знаєте, з чого почати? Надсилаєте десятки CV, проте не отримуєте відповідей? Не впевнені, чи все знаєте про свої права як іноземця на польському ринку праці? Маємо для вас чудову можливість! 💛 Вже…",
+   "ok": true,
+   "source": "irc"
   },
   {
    "id": "batory-2026-11-06-nie-tylko-misja-jak-rozmawiać-",
@@ -632,6 +802,25 @@
    "ok": true,
    "source": "ngo-praca",
    "kind": "job"
+  },
+  {
+   "id": "irc-2026-11-09-работа-в-польше-что-нужно-знат",
+   "org": "irc",
+   "title": "РАБОТА В ПОЛЬШЕ: ЧТО НУЖНО ЗНАТЬ ИНОСТРАНЦУ?",
+   "start": "2026-11-09",
+   "end": "",
+   "time": "15:00",
+   "place": "Варшава",
+   "host": "International Rescue Committee Polska",
+   "tags": [
+    "миграция",
+    "поддержка",
+    "бесплатно"
+   ],
+   "url": "https://t.me/IRCPoland/721",
+   "note": "Живёте в Польше и хотите чувствовать себя увереннее на местном рынке труда? Не знаете, какие правила трудоустройства действуют для иностранцев, как правильно оформить документы или с чего начать поиск работы? Приглашаем…",
+   "ok": true,
+   "source": "irc"
   },
   {
    "id": "ngo-praca-2026-11-10-specjalistka-specjalista-ds-me",
@@ -1136,6 +1325,42 @@
    "source": "ngo-pl"
   },
   {
+   "id": "irc-2026-11-16-шука-ш-роботу-в-польщ-але-не-з",
+   "org": "irc",
+   "title": "Шукаєш роботу в Польщі, але не знаєш, з чого почати?",
+   "start": "2026-11-16",
+   "end": "",
+   "time": "16:30",
+   "place": "Место уточните по ссылке",
+   "host": "International Rescue Committee Polska",
+   "tags": [
+    "миграция",
+    "поддержка"
+   ],
+   "url": "https://t.me/IRCPoland/723",
+   "note": "Міжнародний комітет порятунку (International Rescue Committee) у співпраці з DL Legalizacja & Biznes Daria Lukianova підготував для вас тренінг JRT: «Все, що треба знати іноземцю для пошуку праці в Польщі». Чому варто…",
+   "ok": true,
+   "source": "irc"
+  },
+  {
+   "id": "seminarium-migracyjne-63",
+   "org": "other",
+   "title": "63. Seminarium Migracyjne UW",
+   "start": "2026-11-17",
+   "end": "",
+   "time": "17:00",
+   "place": "ul. Żurawia 4, sala 421",
+   "host": "Uniwersytet Warszawski",
+   "tags": [
+    "миграция",
+    "наука"
+   ],
+   "url": "https://ispan.waw.pl",
+   "note": "Семинар о миграциях Варшавского университета.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
    "id": "cpk-2026-11-17-cotygodniowa-joga-8211-twoja-c",
    "org": "cpk",
    "title": "Cotygodniowa Joga – Twoja chwila wytchnienia// Warszawa",
@@ -1259,6 +1484,26 @@
    "note": "Związek Dziewcząt i Kobiet Chrześcijańskich Polska YWCA dzięki współpracy z Fundacją Feminoteka zaprasza na bezpłatne szkolenie do swojej YWCA Cafe - miejscu, w którym buduje się relacje wolne od przemocy i uczy się,…",
    "ok": true,
    "source": "ngo-pl"
+  },
+  {
+   "id": "irc-2026-11-17-онлайн",
+   "org": "irc",
+   "title": "онлайн",
+   "start": "2026-11-17",
+   "end": "",
+   "time": "13:00",
+   "place": "Онлайн",
+   "host": "International Rescue Committee Polska",
+   "tags": [
+    "миграция",
+    "поддержка",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://t.me/IRCPoland/724",
+   "note": "Job Cafe онлайн вівторок, 17 листопада 13:00–17:00 онлайн, Microsoft Teams Публічні інституції: яка підтримка доступна для іноземців і як нею скористатися Агенції працевлаштування: особливості співпраці, як потрапити до…",
+   "ok": true,
+   "source": "irc"
   },
   {
    "id": "pfm-music",
