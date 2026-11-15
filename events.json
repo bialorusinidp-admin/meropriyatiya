@@ -1,128 +1,99 @@
 {
- "updated": "2026-11-15T16:45:00+01:00",
+ "updated": "2026-11-15T18:46+01:00",
+ "status": {
+  "pfm": "ok: 0",
+  "cpk": "ok: 20",
+  "rpo-patronaty": "ok: 11",
+  "rpo-news": "ok: 6",
+  "batory": "ok: 13"
+ },
  "events": [
   {
-   "id": "rpo-pokrzywdzeni",
-   "org": "rpo",
-   "title": "Forum Rozwiązań Pomocowych dla Osób Pokrzywdzonych Przestępstwem",
-   "start": "2026-11-26",
-   "end": "",
+   "id": "batory-2026-09-16-wizyta-studyjna-w-gdańsku-loka",
+   "org": "batory",
+   "title": "Wizyta studyjna w Gdańsku: Lokalne koalicje, rzecznictwo i modele równego traktowania w praktyce - Fundacja im. Stefana Batorego",
+   "start": "2026-09-16",
+   "end": "2026-09-18",
    "time": "",
    "place": "Место уточните по ссылке",
-   "host": "Патронат RPO",
-   "tags": [
-    "права человека",
-    "поддержка"
-   ],
-   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-forum-rozwiazan-pomocowych-dla-osob-pokrzywdzonych-przestepstwem",
-   "note": "Форум о помощи пострадавшим от преступлений.",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "rpo-dyskryminacja",
-   "org": "rpo",
-   "title": "X konferencja «Najnowsze tendencje i wyzwania ochrony przed dyskryminacją»",
-   "start": "2026-11-26",
-   "end": "2026-11-27",
-   "time": "",
-   "place": "Место уточните по ссылке",
-   "host": "Патронат RPO",
-   "tags": [
-    "права человека",
-    "наука"
-   ],
-   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-tendencje-wyzwania-ochrona-przed-dyskryminacja",
-   "note": "Международная научная конференция о защите от дискриминации.",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "rpo-student",
-   "org": "rpo",
-   "title": "Konferencja «Pełno(s)prawny Student», XX edycja",
-   "start": "2026-12-01",
-   "end": "",
-   "time": "",
-   "place": "Место уточните по ссылке",
-   "host": "Патронат RPO",
-   "tags": [
-    "инклюзия"
-   ],
-   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-pelnosprawny-student",
-   "note": "О правах студентов с инвалидностью.",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "rpo-inclusion",
-   "org": "rpo",
-   "title": "IV Kongres Inclu(vi)sion",
-   "start": "2026-12-03",
-   "end": "",
-   "time": "",
-   "place": "Место уточните по ссылке",
-   "host": "Патронат RPO",
-   "tags": [
-    "инклюзия",
-    "бесплатно"
-   ],
-   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-kongres-incluvision",
-   "note": "Конгресс о потенциале людей с инвалидностью, с виртуальной ярмаркой вакансий.",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "rpo-soundup",
-   "org": "rpo",
-   "title": "«O tym się nie mówi. SoundUP! Technologia w służbie nie(do)słyszących»",
-   "start": "2026-12-04",
-   "end": "2026-12-05",
-   "time": "",
-   "place": "Место уточните по ссылке",
-   "host": "Патронат RPO",
-   "tags": [
-    "инклюзия"
-   ],
-   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-o-tym-sie-nie-mowi-soundup-technologia-niedoslyszacy",
-   "note": "Конференция о технологиях для людей с нарушениями слуха.",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "rpo-forum-edu",
-   "org": "rpo",
-   "title": "V Forum Edukacji Obywatelskiej i Prawnej",
-   "start": "2026-12-10",
-   "end": "",
-   "time": "",
-   "place": "Место уточните по ссылке",
-   "host": "Патронат RPO",
+   "host": "Fundacja Batorego",
    "tags": [
     "права человека"
    ],
-   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-forum-edukacji-obywatelskiej-prawnej",
-   "note": "Форум гражданского и правового просвещения.",
+   "url": "https://www.batory.org.pl/wydarzenia/wizyta-studyjna-w-gdansku-lokalne-koalicje-rzecznictwo-i-modele-rownego-traktowania-w-praktyce/",
+   "note": "Wspieramy demokrację w Polsce",
+   "ok": true,
+   "source": "batory"
+  },
+  {
+   "id": "kph-korony",
+   "org": "kph",
+   "title": "Gala Korony Równości 2026",
+   "start": "2026-09-25",
+   "end": "",
+   "time": "",
+   "place": "Варшава",
+   "host": "Kampania Przeciw Homofobii",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://koronyrownosci.pl/",
+   "note": "Награды за работу для ЛГБТ+ сообщества.",
    "ok": true,
    "source": "manual"
   },
   {
-   "id": "amnesty-mpl",
-   "org": "amnesty",
-   "title": "Maraton Pisania Listów",
-   "start": "2026-12-10",
+   "id": "sip-kongres",
+   "org": "sip",
+   "title": "I Kongres Prawa Migracyjnego i Uchodźczego",
+   "start": "2026-09-28",
+   "end": "2026-09-29",
+   "time": "",
+   "place": "WPiA UW, Lipowa 4",
+   "host": "SIP, WPiA UW, UNHCR",
+   "tags": [
+    "миграция",
+    "права человека",
+    "бесплатно"
+   ],
+   "url": "https://interwencjaprawna.pl/podsumowujemy-i-kongres-prawa-migracyjnego-i-uchodzczego",
+   "note": "Больше 70 экспертов и 280 участников, в том числе о границе с Беларусью.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "batory-2026-09-29-stronger-roots-academy-fundacj",
+   "org": "batory",
+   "title": "Stronger Roots Academy - Fundacja im. Stefana Batorego",
+   "start": "2026-09-29",
    "end": "",
    "time": "",
-   "place": "Варшава и онлайн",
-   "host": "Amnesty International Polska",
+   "place": "Место уточните по ссылке",
+   "host": "Fundacja Batorego",
    "tags": [
-    "права человека",
-    "Беларусь"
+    "права человека"
    ],
-   "url": "https://maraton.amnesty.org.pl/",
-   "note": "Акция писем в защиту людей, чьи права нарушены. Обычно идёт около двух недель и заканчивается 10 декабря.",
-   "ok": false,
-   "source": "manual"
+   "url": "https://www.batory.org.pl/wydarzenia/stronger-roots-academy/",
+   "note": "Wspieramy demokrację w Polsce",
+   "ok": true,
+   "source": "batory"
+  },
+  {
+   "id": "batory-2026-10-01-jak-komunikować-odpowiedzialni",
+   "org": "batory",
+   "title": "Jak komunikować odpowiedzialnie? Etyka i dylematy w działaniach społecznych - Fundacja im. Stefana Batorego",
+   "start": "2026-10-01",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Fundacja Batorego",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://www.batory.org.pl/wydarzenia/jak-komunikowac-odpowiedzialnie-etyka-i-dylematy-w-dzialaniach-spolecznych/",
+   "note": "Wspieramy demokrację w Polsce",
+   "ok": true,
+   "source": "batory"
   },
   {
    "id": "hia-fest",
@@ -139,6 +110,215 @@
    ],
    "url": "https://app.evenea.pl/event/festiwalhiapolska/",
    "note": "Панели, мастер-классы, прогулки и World Café. Почти 300 участников.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "batory-2026-10-02-radar-nagrody-im-marcina-króla",
+   "org": "batory",
+   "title": "Radar Nagrody im. Marcina Króla. Co warto przetłumaczyć? - Fundacja im. Stefana Batorego",
+   "start": "2026-10-02",
+   "end": "",
+   "time": "16:00",
+   "place": "Место уточните по ссылке",
+   "host": "Fundacja Batorego",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://www.batory.org.pl/wydarzenia/radar-nagrody-im-marcina-krola-co-warto-przetlumaczyc/",
+   "note": "Wspieramy demokrację w Polsce",
+   "ok": true,
+   "source": "batory"
+  },
+  {
+   "id": "batory-2026-10-08-współpraca-i-relacje-w-czasie-",
+   "org": "batory",
+   "title": "Współpraca i relacje w czasie napędzanej polaryzacji - Fundacja im. Stefana Batorego",
+   "start": "2026-10-08",
+   "end": "",
+   "time": "12:00",
+   "place": "Место уточните по ссылке",
+   "host": "Fundacja Batorego",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://www.batory.org.pl/wydarzenia/wspolpraca-i-relacje-w-czasie-napedzanej-polaryzacji/",
+   "note": "Wspieramy demokrację w Polsce",
+   "ok": true,
+   "source": "batory"
+  },
+  {
+   "id": "batory-2026-10-15-od-pomocy-do-zmiany-systemowej",
+   "org": "batory",
+   "title": "Od pomocy do zmiany systemowej. Lokalne działania na rzecz osób migranckich w praktyce - Fundacja im. Stefana Batorego",
+   "start": "2026-10-15",
+   "end": "2026-10-16",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Fundacja Batorego",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://www.batory.org.pl/wydarzenia/od-pomocy-do-zmiany-systemowej-lokalne-dzialania-na-rzecz-osob-migranckich-w-praktyce/",
+   "note": "Wspieramy demokrację w Polsce",
+   "ok": true,
+   "source": "batory"
+  },
+  {
+   "id": "fdds-konf",
+   "org": "fdds",
+   "title": "23. Ogólnopolska Konferencja «Dzieciństwo bez przemocy»",
+   "start": "2026-10-19",
+   "end": "2026-10-20",
+   "time": "",
+   "place": "Варшава",
+   "host": "Fundacja Dajemy Dzieciom Siłę",
+   "tags": [
+    "дети",
+    "права человека"
+   ],
+   "url": "https://konferencja.fdds.pl/",
+   "note": "Представили отчёт об отношении поляков к насилию над детьми.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "batory-2026-10-22-prawa-osób-z-niepełnosprawnośc",
+   "org": "batory",
+   "title": "Prawa osób z niepełnosprawnościami jako sprawdzian demokracji. Jak budować sojusze i czego uczy nas ruch osób z niepełnosprawnościami? - Fundacja im. Stefana Batorego",
+   "start": "2026-10-22",
+   "end": "",
+   "time": "14:00",
+   "place": "Место уточните по ссылке",
+   "host": "Fundacja Batorego",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://www.batory.org.pl/wydarzenia/prawa-osob-z-niepelnosprawnosciami-jako-sprawdzian-demokracji-jak-budowac-sojusze-i-czego-uczy-nas-ruch-osob-z-niepelnosprawnosciami/",
+   "note": "Wspieramy demokrację w Polsce",
+   "ok": true,
+   "source": "batory"
+  },
+  {
+   "id": "batory-igrzyska",
+   "org": "batory",
+   "title": "Дебаты Фонда Батория на Igrzyska Wolności",
+   "start": "2026-10-23",
+   "end": "2026-10-25",
+   "time": "",
+   "place": "EC1 Łódź",
+   "host": "Fundacja Batorego",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://www.batory.org.pl/wydarzenia/igrzyska-wolnosci-2026/",
+   "note": "Три дебата: Европа, гражданская устойчивость и зависимость от Big Tech.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "batory-2026-10-28-gdzie-szukać-sojuszników-wybor",
+   "org": "batory",
+   "title": "Gdzie szukać sojuszników? Wybory Polski - Fundacja im. Stefana Batorego",
+   "start": "2026-10-28",
+   "end": "",
+   "time": "17:30",
+   "place": "Место уточните по ссылке",
+   "host": "Fundacja Batorego",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://www.batory.org.pl/wydarzenia/gdzie-szukac-sojusznikow-wybory-polski/",
+   "note": "Wspieramy demokrację w Polsce",
+   "ok": true,
+   "source": "batory"
+  },
+  {
+   "id": "batory-2026-10-28-postaw-na-niezależność-nowe-ot",
+   "org": "batory",
+   "title": "Postaw na niezależność. Nowe otwarcie w fundraisingu Twojej organizacji - Fundacja im. Stefana Batorego",
+   "start": "2026-10-28",
+   "end": "",
+   "time": "11:00",
+   "place": "Место уточните по ссылке",
+   "host": "Fundacja Batorego",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://www.batory.org.pl/wydarzenia/postaw-na-niezaleznosc-nowe-otwarcie-w-fundraisingu-twojej-organizacji/",
+   "note": "Wspieramy demokrację w Polsce",
+   "ok": true,
+   "source": "batory"
+  },
+  {
+   "id": "forum-pl-by",
+   "org": "other",
+   "title": "Polsko-Białoruskie Forum Społeczeństwa Obywatelskiego",
+   "start": "2026-10-29",
+   "end": "",
+   "time": "",
+   "place": "Варшава",
+   "host": "Białoruska Platforma Narodowa, Ruch Solidarności Białoruskiej",
+   "tags": [
+    "Беларусь",
+    "НКО"
+   ],
+   "url": "https://publicystyka.ngo.pl/od-solidarnosci-do-partnerstwa-polskie-i-bialoruskie-organizacje-spoleczne-chca-dzialac-razem",
+   "note": "80 польских и беларуских организаций обсуждали легализацию пребывания и совместную работу.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "bel-napary",
+   "org": "other",
+   "title": "«Białoruskie napary. Zioła, tradycje i dawne receptury»",
+   "start": "2026-11-01",
+   "end": "",
+   "time": "14:00",
+   "place": "Tea Point, ul. Ząbkowska 2",
+   "host": "Fundacja Kultura w Nas",
+   "tags": [
+    "Беларусь",
+    "культура",
+    "бесплатно"
+   ],
+   "url": "https://waw4free.pl/wydarzenie-161104-bialoruskie-napary-ziola-tradycje-i-dawne-receptury",
+   "note": "",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "batory-2026-11-06-nie-tylko-misja-jak-rozmawiać-",
+   "org": "batory",
+   "title": "Nie tylko misja. Jak rozmawiać o wynagrodzeniach w organizacji społecznej? - Fundacja im. Stefana Batorego",
+   "start": "2026-11-06",
+   "end": "",
+   "time": "11:00",
+   "place": "Место уточните по ссылке",
+   "host": "Fundacja Batorego",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://www.batory.org.pl/wydarzenia/nie-tylko-misja-jak-rozmawiac-o-wynagrodzeniach-w-organizacji-spolecznej-2/",
+   "note": "Wspieramy demokrację w Polsce",
+   "ok": true,
+   "source": "batory"
+  },
+  {
+   "id": "bel-art",
+   "org": "other",
+   "title": "Выставка «Białoruscy artyści na wygnaniu»",
+   "start": "2026-11-14",
+   "end": "2026-12-06",
+   "time": "",
+   "place": "Kościół Wszystkich Świętych, pl. Grzybowski",
+   "host": "Archidiecezja Warszawska",
+   "tags": [
+    "Беларусь",
+    "культура"
+   ],
+   "url": "https://www.ekai.pl/z-blogoslawienstwem-leona-xiv-i-pod-patronatem-archidiecezji-warszawskiej-jutro-wernisaz-wystawy-bialoruscy-artysci-na-wygnaniu/",
+   "note": "Работы беларуских художников в эмиграции.",
    "ok": true,
    "source": "manual"
   },
@@ -162,114 +342,55 @@
    "source": "manual"
   },
   {
-   "id": "scwo-budget",
-   "org": "scwo",
-   "title": "«Sztuka pisania budżetu»",
-   "start": "2026-11-19",
+   "id": "cpk-breath",
+   "org": "cpk",
+   "title": "Breath Design — 4 недели к хорошей дыхательной привычке",
+   "start": "2026-11-16",
    "end": "",
-   "time": "",
+   "time": "17:30",
    "place": "Варшава",
-   "host": "SCWO",
+   "host": "Centrum Praw Kobiet",
    "tags": [
-    "НКО",
-    "бесплатно"
+    "поддержка"
    ],
-   "url": "https://wydarzenia.ngo.pl/",
-   "note": "Как спланировать финансовую часть заявки на грант.",
+   "url": "https://cpk.org.pl/wydarzenia/miesiac/",
+   "note": "Цикл занятий 16, 23 и 30 ноября.",
    "ok": true,
    "source": "manual"
   },
   {
-   "id": "scwo-project",
-   "org": "scwo",
-   "title": "«Projekt społeczny — baza do dobrego wniosku o dotację»",
-   "start": "2026-11-27",
+   "id": "cpk-2026-11-17-cotygodniowa-joga-8211-twoja-c",
+   "org": "cpk",
+   "title": "Cotygodniowa Joga – Twoja chwila wytchnienia// Warszawa",
+   "start": "2026-11-17",
    "end": "",
-   "time": "",
-   "place": "Онлайн",
-   "host": "SCWO",
-   "tags": [
-    "НКО",
-    "онлайн",
-    "бесплатно"
-   ],
-   "url": "https://warszawa.ngo.pl/",
-   "note": "",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "scwo-nowefio",
-   "org": "scwo",
-   "title": "«Pisanie wniosków — NOWEFIO»",
-   "start": "2026-11-30",
-   "end": "",
-   "time": "",
+   "time": "17:30",
    "place": "Варшава",
-   "host": "SCWO",
+   "host": "Centrum Praw Kobiet",
    "tags": [
-    "НКО",
-    "бесплатно"
+    "поддержка"
    ],
-   "url": "https://warszawa.ngo.pl/",
-   "note": "Как писать заявки в конкурс NOWEFIO.",
+   "url": "https://cpk.org.pl/wydarzenie/cotygodniowa-joga-twoja-chwila-wytchnienia-warszawa-17-11-26-2-2/",
+   "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w cotygodniowych zajęciach w ramach #AkademiaMocyKobiet „Joga – Twoja chwila wytchnienia ” . WAŻNA ZMIANA – JOGA TERAZ WE WTORKI! Zamiast w poniedziałki będziemy…",
    "ok": true,
-   "source": "manual"
+   "source": "cpk"
   },
   {
-   "id": "scwo-dotacja",
-   "org": "scwo",
-   "title": "Как пошагово подготовить заявку на грант Urzędu m.st. Warszawy",
-   "start": "2026-12-01",
-   "end": "",
+   "id": "batory-2026-11-17-perspektywa-włączania-warsztat",
+   "org": "batory",
+   "title": "Perspektywa Włączania. Warsztat o budowaniu organizacji otwartych na różnorodność - Fundacja im. Stefana Batorego",
+   "start": "2026-11-17",
+   "end": "2026-11-18",
    "time": "",
-   "place": "Онлайн",
-   "host": "SCWO",
+   "place": "Место уточните по ссылке",
+   "host": "Fundacja Batorego",
    "tags": [
-    "НКО",
-    "онлайн",
-    "бесплатно"
+    "права человека"
    ],
-   "url": "https://warszawa.ngo.pl/",
-   "note": "",
+   "url": "https://www.batory.org.pl/wydarzenia/perspektywa-wlaczania-warsztat-o-budowaniu-organizacji-otwartych-na-roznorodnosc/",
+   "note": "Wspieramy demokrację w Polsce",
    "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "niebieska",
-   "org": "niebieska",
-   "title": "«Przynieś–Wynieś–Porozmawiaj»",
-   "start": "2026-11-27",
-   "end": "",
-   "time": "15:00",
-   "place": "ul. Malinowskiego 5, Ursynów",
-   "host": "Niebieska Linia",
-   "tags": [
-    "поддержка",
-    "бесплатно"
-   ],
-   "url": "https://um.warszawa.pl/kalendarz",
-   "note": "Встреча в рамках программы «PoMoc Ursynów».",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "wtpc",
-   "org": "city",
-   "title": "Warszawski Tydzień Praw Człowieka",
-   "start": "2026-12-03",
-   "end": "2026-12-10",
-   "time": "",
-   "place": "Разные площадки Варшавы",
-   "host": "Miasto Warszawa",
-   "tags": [
-    "права человека",
-    "бесплатно"
-   ],
-   "url": "https://wsparcie.um.warszawa.pl/wtpc",
-   "note": "Программы на 2026 год пока нет, даты указаны по прошлым годам.",
-   "ok": false,
-   "source": "manual"
+   "source": "batory"
   },
   {
    "id": "pfm-music",
@@ -288,6 +409,94 @@
    "note": "Открытые музыкальные встречи.",
    "ok": true,
    "source": "manual"
+  },
+  {
+   "id": "cpk-2026-11-18-nowość-pilates-w-centrum-praw-",
+   "org": "cpk",
+   "title": "NOWOŚĆ PILATES w Centrum Praw Kobiet – zajęcia poranne",
+   "start": "2026-11-18",
+   "end": "",
+   "time": "09:00",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/zajecia-pilates-warszawa-18-11-26-rano-2-2-2/",
+   "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w bezpłatnych zajęciach w ramach #AkademiaMocyKobiet „Pilatesu” Termin: 18 listopada, środa godz. 9:00-10:00 oraz 17:30-18:30 Miejsce: Hoża 57/15, Warszawa Koszt: 35zł…",
+   "ok": true,
+   "source": "cpk"
+  },
+  {
+   "id": "scwo-budget",
+   "org": "scwo",
+   "title": "«Sztuka pisania budżetu»",
+   "start": "2026-11-19",
+   "end": "",
+   "time": "",
+   "place": "Варшава",
+   "host": "SCWO",
+   "tags": [
+    "НКО",
+    "бесплатно"
+   ],
+   "url": "https://wydarzenia.ngo.pl/",
+   "note": "Как спланировать финансовую часть заявки на грант.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "cpk-mbct",
+   "org": "cpk",
+   "title": "«Uważność w Życiu» (MBCT-L) — 8-недельный курс",
+   "start": "2026-11-19",
+   "end": "",
+   "time": "18:00",
+   "place": "Онлайн",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка",
+    "онлайн"
+   ],
+   "url": "https://cpk.org.pl/wydarzenia/miesiac/",
+   "note": "Курс осознанности, встречи по четвергам.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "fdds-light",
+   "org": "fdds",
+   "title": "Подсветка зданий красным — финал кампании «Dzieciństwo bez Przemocy»",
+   "start": "2026-11-19",
+   "end": "",
+   "time": "17:00",
+   "place": "По всей Польше",
+   "host": "Fundacja Dajemy Dzieciom Siłę",
+   "tags": [
+    "права человека",
+    "дети"
+   ],
+   "url": "https://fdds.pl/aktualnosci/",
+   "note": "Символический протест против насилия над детьми, которым заканчивается кампания.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "cpk-2026-11-19-budzenie-się-z-trybu-automatyc",
+   "org": "cpk",
+   "title": "Budzenie się z trybu automatycznego pilota – Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness 19.11 ONLINE",
+   "start": "2026-11-19",
+   "end": "",
+   "time": "18:00",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/uwaznoscwzyciu_mbct_l_19-11-2/",
+   "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w 8-tygodniowym kursie uważności w ramach #AkademiaMocyKobiet „Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness”, który pomoże Ci rozwijać uważność, życzliwość…",
+   "ok": true,
+   "source": "cpk"
   },
   {
    "id": "pfm-zus",
@@ -326,109 +535,19 @@
    "source": "manual"
   },
   {
-   "id": "pfm-glos-1124",
-   "org": "pfm",
-   "title": "Zabierz głos — курс гражданского участия",
-   "start": "2026-11-24",
+   "id": "hiphop",
+   "org": "other",
+   "title": "«Na legalu? Co o prawie i polityce mówi nam polski hip-hop»",
+   "start": "2026-11-20",
    "end": "",
-   "time": "18:00",
-   "place": "Jagiellońska 54 и онлайн",
-   "host": "Polskie Forum Migracyjne",
+   "time": "",
+   "place": "Wydział Historii UW, Sala Kolumnowa",
+   "host": "Uniwersytet Warszawski",
    "tags": [
-    "миграция",
-    "права человека",
-    "бесплатно"
+    "наука"
    ],
-   "url": "https://forummigracyjne.org/wydarzenie/zabierz-glos/",
-   "note": "Как влиять на город и закон: права, консультации, своя инициатива. Следующие встречи 1 и 15 декабря. На польском, английском, испанском, украинском.",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "pfm-friends",
-   "org": "pfm",
-   "title": "Speed-Friending в Centrum Wielokulturowe",
-   "start": "2026-11-25",
-   "end": "",
-   "time": "17:00",
-   "place": "Centrum Wielokulturowe, ul. Jagiellońska 54",
-   "host": "Polskie Forum Migracyjne",
-   "tags": [
-    "миграция"
-   ],
-   "url": "https://forummigracyjne.org/en/wydarzenie/speed-friending-at-the-multicultural-centre/",
-   "note": "Быстрые знакомства, чтобы найти друзей в Варшаве.",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "pfm-glos-1201",
-   "org": "pfm",
-   "title": "Zabierz głos — встреча курса",
-   "start": "2026-12-01",
-   "end": "",
-   "time": "18:00",
-   "place": "Jagiellońska 54 и онлайн",
-   "host": "Polskie Forum Migracyjne",
-   "tags": [
-    "миграция",
-    "бесплатно"
-   ],
-   "url": "https://forummigracyjne.org/wydarzenie/zabierz-glos/",
-   "note": "",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "pfm-glos-1215",
-   "org": "pfm",
-   "title": "Zabierz głos — встреча курса",
-   "start": "2026-12-15",
-   "end": "",
-   "time": "18:00",
-   "place": "Jagiellońska 54 и онлайн",
-   "host": "Polskie Forum Migracyjne",
-   "tags": [
-    "миграция",
-    "бесплатно"
-   ],
-   "url": "https://forummigracyjne.org/wydarzenie/zabierz-glos/",
-   "note": "",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "cpk-breath",
-   "org": "cpk",
-   "title": "Breath Design — 4 недели к хорошей дыхательной привычке",
-   "start": "2026-11-16",
-   "end": "",
-   "time": "17:30",
-   "place": "Варшава",
-   "host": "Centrum Praw Kobiet",
-   "tags": [
-    "поддержка"
-   ],
-   "url": "https://cpk.org.pl/wydarzenia/miesiac/",
-   "note": "Цикл занятий 16, 23 и 30 ноября.",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "cpk-mbct",
-   "org": "cpk",
-   "title": "«Uważność w Życiu» (MBCT-L) — 8-недельный курс",
-   "start": "2026-11-19",
-   "end": "",
-   "time": "18:00",
-   "place": "Онлайн",
-   "host": "Centrum Praw Kobiet",
-   "tags": [
-    "поддержка",
-    "онлайн"
-   ],
-   "url": "https://cpk.org.pl/wydarzenia/miesiac/",
-   "note": "Курс осознанности, встречи по четвергам.",
+   "url": "https://informator-konferencyjny.pl/konferencje-warszawa",
+   "note": "Научная конференция о праве и политике в хип-хопе.",
    "ok": true,
    "source": "manual"
   },
@@ -451,146 +570,321 @@
    "source": "manual"
   },
   {
-   "id": "sip-kongres",
-   "org": "sip",
-   "title": "I Kongres Prawa Migracyjnego i Uchodźczego",
-   "start": "2026-09-28",
-   "end": "2026-09-29",
-   "time": "",
-   "place": "WPiA UW, Lipowa 4",
-   "host": "SIP, WPiA UW, UNHCR",
+   "id": "cpk-2026-11-23-breath-design-4-tygodnie-do-do",
+   "org": "cpk",
+   "title": "Breath Design. 4 tygodnie do dobrego nawyku oddechowego | Edycja III",
+   "start": "2026-11-23",
+   "end": "",
+   "time": "17:30",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/breath-design-warsztaty-oddechu-23-list-2026-2/",
+   "note": "Centrum Praw Kobiet po raz kolejny zaprasza na cykl praktycznych warsztatów oddechowych dla kobiet – cztery spotkania, podczas których krok po kroku nauczysz się oddychać w sposób wspierający zdrowie, spokój i naturalną…",
+   "ok": true,
+   "source": "cpk"
+  },
+  {
+   "id": "pfm-glos-1124",
+   "org": "pfm",
+   "title": "Zabierz głos — курс гражданского участия",
+   "start": "2026-11-24",
+   "end": "",
+   "time": "18:00",
+   "place": "Jagiellońska 54 и онлайн",
+   "host": "Polskie Forum Migracyjne",
    "tags": [
     "миграция",
     "права человека",
     "бесплатно"
    ],
-   "url": "https://interwencjaprawna.pl/podsumowujemy-i-kongres-prawa-migracyjnego-i-uchodzczego",
-   "note": "Больше 70 экспертов и 280 участников, в том числе о границе с Беларусью.",
+   "url": "https://forummigracyjne.org/wydarzenie/zabierz-glos/",
+   "note": "Как влиять на город и закон: права, консультации, своя инициатива. Следующие встречи 1 и 15 декабря. На польском, английском, испанском, украинском.",
    "ok": true,
    "source": "manual"
   },
   {
-   "id": "kph-korony",
-   "org": "kph",
-   "title": "Gala Korony Równości 2026",
-   "start": "2026-09-25",
+   "id": "cpk-2026-11-24-cotygodniowa-joga-8211-twoja-c",
+   "org": "cpk",
+   "title": "Cotygodniowa Joga – Twoja chwila wytchnienia// Warszawa",
+   "start": "2026-11-24",
    "end": "",
-   "time": "",
+   "time": "17:30",
    "place": "Варшава",
-   "host": "Kampania Przeciw Homofobii",
+   "host": "Centrum Praw Kobiet",
    "tags": [
-    "права человека"
+    "поддержка"
    ],
-   "url": "https://koronyrownosci.pl/",
-   "note": "Награды за работу для ЛГБТ+ сообщества.",
+   "url": "https://cpk.org.pl/wydarzenie/cotygodniowa-joga-twoja-chwila-wytchnienia-warszawa-24-11-26-2-2-2/",
+   "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w cotygodniowych zajęciach w ramach #AkademiaMocyKobiet „Joga – Twoja chwila wytchnienia ” . WAŻNA ZMIANA – JOGA TERAZ WE WTORKI! Zamiast w poniedziałki będziemy…",
    "ok": true,
-   "source": "manual"
+   "source": "cpk"
   },
   {
-   "id": "fdds-light",
-   "org": "fdds",
-   "title": "Подсветка зданий красным — финал кампании «Dzieciństwo bez Przemocy»",
-   "start": "2026-11-19",
+   "id": "pfm-friends",
+   "org": "pfm",
+   "title": "Speed-Friending в Centrum Wielokulturowe",
+   "start": "2026-11-25",
    "end": "",
    "time": "17:00",
-   "place": "По всей Польше",
-   "host": "Fundacja Dajemy Dzieciom Siłę",
+   "place": "Centrum Wielokulturowe, ul. Jagiellońska 54",
+   "host": "Polskie Forum Migracyjne",
+   "tags": [
+    "миграция"
+   ],
+   "url": "https://forummigracyjne.org/en/wydarzenie/speed-friending-at-the-multicultural-centre/",
+   "note": "Быстрые знакомства, чтобы найти друзей в Варшаве.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "cpk-2026-11-25-nowość-pilates-w-centrum-praw-",
+   "org": "cpk",
+   "title": "NOWOŚĆ PILATES w Centrum Praw Kobiet – zajęcia poranne",
+   "start": "2026-11-25",
+   "end": "",
+   "time": "09:00",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/zajecia-pilates-warszawa-25-11-26-rano-2-2-2-2/",
+   "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w bezpłatnych zajęciach w ramach #AkademiaMocyKobiet „Pilatesu” Termin: 25 listopada, środa godz. 9:00-10:00 oraz 17:30-18:30 Miejsce: Hoża 57/15, Warszawa Koszt: 35zł…",
+   "ok": true,
+   "source": "cpk"
+  },
+  {
+   "id": "rpo-pokrzywdzeni",
+   "org": "rpo",
+   "title": "Forum Rozwiązań Pomocowych dla Osób Pokrzywdzonych Przestępstwem",
+   "start": "2026-11-26",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
    "tags": [
     "права человека",
-    "дети"
+    "поддержка"
    ],
-   "url": "https://fdds.pl/aktualnosci/",
-   "note": "Символический протест против насилия над детьми, которым заканчивается кампания.",
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-forum-rozwiazan-pomocowych-dla-osob-pokrzywdzonych-przestepstwem",
+   "note": "Форум о помощи пострадавшим от преступлений.",
    "ok": true,
    "source": "manual"
   },
   {
-   "id": "fdds-konf",
-   "org": "fdds",
-   "title": "23. Ogólnopolska Konferencja «Dzieciństwo bez przemocy»",
-   "start": "2026-10-19",
-   "end": "2026-10-20",
+   "id": "rpo-dyskryminacja",
+   "org": "rpo",
+   "title": "X konferencja «Najnowsze tendencje i wyzwania ochrony przed dyskryminacją»",
+   "start": "2026-11-26",
+   "end": "2026-11-27",
    "time": "",
-   "place": "Варшава",
-   "host": "Fundacja Dajemy Dzieciom Siłę",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
    "tags": [
-    "дети",
-    "права человека"
-   ],
-   "url": "https://konferencja.fdds.pl/",
-   "note": "Представили отчёт об отношении поляков к насилию над детьми.",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "batory-igrzyska",
-   "org": "batory",
-   "title": "Дебаты Фонда Батория на Igrzyska Wolności",
-   "start": "2026-10-23",
-   "end": "2026-10-25",
-   "time": "",
-   "place": "EC1 Łódź",
-   "host": "Fundacja Batorego",
-   "tags": [
-    "права человека"
-   ],
-   "url": "https://www.batory.org.pl/wydarzenia/igrzyska-wolnosci-2026/",
-   "note": "Три дебата: Европа, гражданская устойчивость и зависимость от Big Tech.",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "forum-pl-by",
-   "org": "other",
-   "title": "Polsko-Białoruskie Forum Społeczeństwa Obywatelskiego",
-   "start": "2026-10-29",
-   "end": "",
-   "time": "",
-   "place": "Варшава",
-   "host": "Białoruska Platforma Narodowa, Ruch Solidarności Białoruskiej",
-   "tags": [
-    "Беларусь",
-    "НКО"
-   ],
-   "url": "https://publicystyka.ngo.pl/od-solidarnosci-do-partnerstwa-polskie-i-bialoruskie-organizacje-spoleczne-chca-dzialac-razem",
-   "note": "80 польских и беларуских организаций обсуждали легализацию пребывания и совместную работу.",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "bel-art",
-   "org": "other",
-   "title": "Выставка «Białoruscy artyści na wygnaniu»",
-   "start": "2026-11-14",
-   "end": "2026-12-06",
-   "time": "",
-   "place": "Kościół Wszystkich Świętych, pl. Grzybowski",
-   "host": "Archidiecezja Warszawska",
-   "tags": [
-    "Беларусь",
-    "культура"
-   ],
-   "url": "https://www.ekai.pl/z-blogoslawienstwem-leona-xiv-i-pod-patronatem-archidiecezji-warszawskiej-jutro-wernisaz-wystawy-bialoruscy-artysci-na-wygnaniu/",
-   "note": "Работы беларуских художников в эмиграции.",
-   "ok": true,
-   "source": "manual"
-  },
-  {
-   "id": "hiphop",
-   "org": "other",
-   "title": "«Na legalu? Co o prawie i polityce mówi nam polski hip-hop»",
-   "start": "2026-11-20",
-   "end": "",
-   "time": "",
-   "place": "Wydział Historii UW, Sala Kolumnowa",
-   "host": "Uniwersytet Warszawski",
-   "tags": [
+    "права человека",
     "наука"
    ],
-   "url": "https://informator-konferencyjny.pl/konferencje-warszawa",
-   "note": "Научная конференция о праве и политике в хип-хопе.",
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-tendencje-wyzwania-ochrona-przed-dyskryminacja",
+   "note": "Международная научная конференция о защите от дискриминации.",
    "ok": true,
    "source": "manual"
+  },
+  {
+   "id": "cpk-2026-11-26-inny-sposób-bycia-branie-pod-u",
+   "org": "cpk",
+   "title": "Inny sposób bycia: branie pod uwagę ciała – Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness 26.11 ONLINE",
+   "start": "2026-11-26",
+   "end": "",
+   "time": "18:00",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/uwaznoscwzyciu_mbct_l_26-11-2/",
+   "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w 8-tygodniowym kursie uważności w ramach #AkademiaMocyKobiet „Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness”, który pomoże Ci rozwijać uważność, życzliwość…",
+   "ok": true,
+   "source": "cpk"
+  },
+  {
+   "id": "rpo-patronaty-2026-11-26-biuletyn-informacji-publicznej",
+   "org": "rpo",
+   "title": "Biuletyn Informacji Publicznej RPO",
+   "start": "2026-11-26",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-forum-rozwiazan-pomocowych-dla-osob-pokrzywdzonych-przestepstwem",
+   "note": "",
+   "ok": true,
+   "source": "rpo-patronaty"
+  },
+  {
+   "id": "scwo-project",
+   "org": "scwo",
+   "title": "«Projekt społeczny — baza do dobrego wniosku o dotację»",
+   "start": "2026-11-27",
+   "end": "",
+   "time": "",
+   "place": "Онлайн",
+   "host": "SCWO",
+   "tags": [
+    "НКО",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://warszawa.ngo.pl/",
+   "note": "",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "niebieska",
+   "org": "niebieska",
+   "title": "«Przynieś–Wynieś–Porozmawiaj»",
+   "start": "2026-11-27",
+   "end": "",
+   "time": "15:00",
+   "place": "ul. Malinowskiego 5, Ursynów",
+   "host": "Niebieska Linia",
+   "tags": [
+    "поддержка",
+    "бесплатно"
+   ],
+   "url": "https://um.warszawa.pl/kalendarz",
+   "note": "Встреча в рамках программы «PoMoc Ursynów».",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "rpo-patronaty-2026-11-27-biuletyn-informacji-publicznej",
+   "org": "rpo",
+   "title": "Biuletyn Informacji Publicznej RPO",
+   "start": "2026-11-27",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-gala-program-przedsiebiorstwo-fair-play",
+   "note": "",
+   "ok": true,
+   "source": "rpo-patronaty"
+  },
+  {
+   "id": "scwo-nowefio",
+   "org": "scwo",
+   "title": "«Pisanie wniosków — NOWEFIO»",
+   "start": "2026-11-30",
+   "end": "",
+   "time": "",
+   "place": "Варшава",
+   "host": "SCWO",
+   "tags": [
+    "НКО",
+    "бесплатно"
+   ],
+   "url": "https://warszawa.ngo.pl/",
+   "note": "Как писать заявки в конкурс NOWEFIO.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "cpk-2026-11-30-breath-design-4-tygodnie-do-do",
+   "org": "cpk",
+   "title": "Breath Design. 4 tygodnie do dobrego nawyku oddechowego | Edycja III",
+   "start": "2026-11-30",
+   "end": "",
+   "time": "17:30",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/breath-design-warsztaty-oddechu-30-list-2026-2-2/",
+   "note": "Centrum Praw Kobiet po raz kolejny zaprasza na cykl praktycznych warsztatów oddechowych dla kobiet – cztery spotkania, podczas których krok po kroku nauczysz się oddychać w sposób wspierający zdrowie, spokój i naturalną…",
+   "ok": true,
+   "source": "cpk"
+  },
+  {
+   "id": "rpo-student",
+   "org": "rpo",
+   "title": "Konferencja «Pełno(s)prawny Student», XX edycja",
+   "start": "2026-12-01",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "инклюзия"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-pelnosprawny-student",
+   "note": "О правах студентов с инвалидностью.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "scwo-dotacja",
+   "org": "scwo",
+   "title": "Как пошагово подготовить заявку на грант Urzędu m.st. Warszawy",
+   "start": "2026-12-01",
+   "end": "",
+   "time": "",
+   "place": "Онлайн",
+   "host": "SCWO",
+   "tags": [
+    "НКО",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://warszawa.ngo.pl/",
+   "note": "",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "pfm-glos-1201",
+   "org": "pfm",
+   "title": "Zabierz głos — встреча курса",
+   "start": "2026-12-01",
+   "end": "",
+   "time": "18:00",
+   "place": "Jagiellońska 54 и онлайн",
+   "host": "Polskie Forum Migracyjne",
+   "tags": [
+    "миграция",
+    "бесплатно"
+   ],
+   "url": "https://forummigracyjne.org/wydarzenie/zabierz-glos/",
+   "note": "",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "rpo-patronaty-2026-12-01-biuletyn-informacji-publicznej",
+   "org": "rpo",
+   "title": "Biuletyn Informacji Publicznej RPO",
+   "start": "2026-12-01",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-pelnosprawny-student",
+   "note": "",
+   "ok": true,
+   "source": "rpo-patronaty"
   },
   {
    "id": "ludzie",
@@ -612,50 +906,386 @@
    "source": "manual"
   },
   {
-   "id": "bel-napary",
-   "org": "other",
-   "title": "«Białoruskie napary. Zioła, tradycje i dawne receptury»",
-   "start": "2026-11-01",
-   "end": "",
-   "time": "14:00",
-   "place": "Tea Point, ul. Ząbkowska 2",
-   "host": "Fundacja Kultura w Nas",
+   "id": "rpo-patronaty-2026-12-02-biuletyn-informacji-publicznej",
+   "org": "rpo",
+   "title": "Biuletyn Informacji Publicznej RPO",
+   "start": "2026-12-02",
+   "end": "2026-12-03",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
    "tags": [
-    "Беларусь",
-    "культура",
+    "права человека"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-opieka-dlugoterminowa-w-polsce",
+   "note": "",
+   "ok": true,
+   "source": "rpo-patronaty"
+  },
+  {
+   "id": "rpo-inclusion",
+   "org": "rpo",
+   "title": "IV Kongres Inclu(vi)sion",
+   "start": "2026-12-03",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "инклюзия",
     "бесплатно"
    ],
-   "url": "https://waw4free.pl/wydarzenie-161104-bialoruskie-napary-ziola-tradycje-i-dawne-receptury",
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-kongres-incluvision",
+   "note": "Конгресс о потенциале людей с инвалидностью, с виртуальной ярмаркой вакансий.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "wtpc",
+   "org": "city",
+   "title": "Warszawski Tydzień Praw Człowieka",
+   "start": "2026-12-03",
+   "end": "2026-12-10",
+   "time": "",
+   "place": "Разные площадки Варшавы",
+   "host": "Miasto Warszawa",
+   "tags": [
+    "права человека",
+    "бесплатно"
+   ],
+   "url": "https://wsparcie.um.warszawa.pl/wtpc",
+   "note": "Программы на 2026 год пока нет, даты указаны по прошлым годам.",
+   "ok": false,
+   "source": "manual"
+  },
+  {
+   "id": "cpk-2026-12-03-skupianie-rozproszonego-umysłu",
+   "org": "cpk",
+   "title": "Skupianie rozproszonego umysłu – Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness 03.12 ONLINE",
+   "start": "2026-12-03",
+   "end": "",
+   "time": "18:00",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/uwaznoscwzyciu_mbct_l_03-12/",
+   "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w 8-tygodniowym kursie uważności w ramach #AkademiaMocyKobiet „Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness”, który pomoże Ci rozwijać uważność, życzliwość…",
+   "ok": true,
+   "source": "cpk"
+  },
+  {
+   "id": "rpo-patronaty-2026-12-03-biuletyn-informacji-publicznej",
+   "org": "rpo",
+   "title": "Biuletyn Informacji Publicznej RPO",
+   "start": "2026-12-03",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-kongres-incluvision",
+   "note": "",
+   "ok": true,
+   "source": "rpo-patronaty"
+  },
+  {
+   "id": "rpo-soundup",
+   "org": "rpo",
+   "title": "«O tym się nie mówi. SoundUP! Technologia w służbie nie(do)słyszących»",
+   "start": "2026-12-04",
+   "end": "2026-12-05",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "инклюзия"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-o-tym-sie-nie-mowi-soundup-technologia-niedoslyszacy",
+   "note": "Конференция о технологиях для людей с нарушениями слуха.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "rpo-patronaty-2026-12-04-biuletyn-informacji-publicznej",
+   "org": "rpo",
+   "title": "Biuletyn Informacji Publicznej RPO",
+   "start": "2026-12-04",
+   "end": "2026-12-05",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-o-tym-sie-nie-mowi-soundup-technologia-niedoslyszacy",
+   "note": "",
+   "ok": true,
+   "source": "rpo-patronaty"
+  },
+  {
+   "id": "rpo-patronaty-2026-12-05-biuletyn-informacji-publicznej",
+   "org": "rpo",
+   "title": "Biuletyn Informacji Publicznej RPO",
+   "start": "2026-12-05",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-ogolnopolski-konkurs-prawa-europejskiego",
+   "note": "",
+   "ok": true,
+   "source": "rpo-patronaty"
+  },
+  {
+   "id": "cpk-2026-12-07-breath-design-4-tygodnie-do-do",
+   "org": "cpk",
+   "title": "Breath Design. 4 tygodnie do dobrego nawyku oddechowego | Edycja III",
+   "start": "2026-12-07",
+   "end": "",
+   "time": "17:30",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/breath-design-warsztaty-oddechu-07-grud-2026-2-2-2/",
+   "note": "Centrum Praw Kobiet po raz kolejny zaprasza na cykl praktycznych warsztatów oddechowych dla kobiet – cztery spotkania, podczas których krok po kroku nauczysz się oddychać w sposób wspierający zdrowie, spokój i naturalną…",
+   "ok": true,
+   "source": "cpk"
+  },
+  {
+   "id": "batory-2026-12-08-widzieć-rozumieć-reagować-prak",
+   "org": "batory",
+   "title": "Widzieć, rozumieć, reagować. Praktyczny warsztat o przeciwdziałaniu dyskryminacji - Fundacja im. Stefana Batorego",
+   "start": "2026-12-08",
+   "end": "2026-12-09",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Fundacja Batorego",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://www.batory.org.pl/wydarzenia/widziec-rozumiec-reagowac-praktyczny-warsztat-o-przeciwdzialaniu-dyskryminacji/",
+   "note": "Wspieramy demokrację w Polsce",
+   "ok": true,
+   "source": "batory"
+  },
+  {
+   "id": "rpo-forum-edu",
+   "org": "rpo",
+   "title": "V Forum Edukacji Obywatelskiej i Prawnej",
+   "start": "2026-12-10",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-forum-edukacji-obywatelskiej-prawnej",
+   "note": "Форум гражданского и правового просвещения.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "amnesty-mpl",
+   "org": "amnesty",
+   "title": "Maraton Pisania Listów",
+   "start": "2026-12-10",
+   "end": "",
+   "time": "",
+   "place": "Варшава и онлайн",
+   "host": "Amnesty International Polska",
+   "tags": [
+    "права человека",
+    "Беларусь"
+   ],
+   "url": "https://maraton.amnesty.org.pl/",
+   "note": "Акция писем в защиту людей, чьи права нарушены. Обычно идёт около двух недель и заканчивается 10 декабря.",
+   "ok": false,
+   "source": "manual"
+  },
+  {
+   "id": "cpk-2026-12-10-rozpoznawanie-reaktywności-821",
+   "org": "cpk",
+   "title": "Rozpoznawanie reaktywności – Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness 10.12 ONLINE",
+   "start": "2026-12-10",
+   "end": "",
+   "time": "18:00",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/uwaznoscwzyciu_mbct_l_10-12/",
+   "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w 8-tygodniowym kursie uważności w ramach #AkademiaMocyKobiet „Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness”, który pomoże Ci rozwijać uważność, życzliwość…",
+   "ok": true,
+   "source": "cpk"
+  },
+  {
+   "id": "rpo-patronaty-2026-12-10-biuletyn-informacji-publicznej",
+   "org": "rpo",
+   "title": "Biuletyn Informacji Publicznej RPO",
+   "start": "2026-12-10",
+   "end": "2026-12-11",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-kongres-prawa-medycznego",
+   "note": "",
+   "ok": true,
+   "source": "rpo-patronaty"
+  },
+  {
+   "id": "cpk-2026-12-13-krąg-kobiet-13-grudnia-warszaw",
+   "org": "cpk",
+   "title": "Krąg Kobiet //13 grudnia//Warszawa",
+   "start": "2026-12-13",
+   "end": "",
+   "time": "16:00",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/krag-kobiet-warszawa-20-09-26-2-2/",
+   "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w spotkaniach Kręgu Kobiet. Termin: 13 grudnia 2026 (niedziela ) w godz. 16.00-19:00 Miejsce: Warszawa, ul. Hoża 57/15 Spotkanie darmowe Zapisy:…",
+   "ok": true,
+   "source": "cpk"
+  },
+  {
+   "id": "pfm-glos-1215",
+   "org": "pfm",
+   "title": "Zabierz głos — встреча курса",
+   "start": "2026-12-15",
+   "end": "",
+   "time": "18:00",
+   "place": "Jagiellońska 54 и онлайн",
+   "host": "Polskie Forum Migracyjne",
+   "tags": [
+    "миграция",
+    "бесплатно"
+   ],
+   "url": "https://forummigracyjne.org/wydarzenie/zabierz-glos/",
    "note": "",
    "ok": true,
    "source": "manual"
+  },
+  {
+   "id": "cpk-2026-12-17-przyzwalanie-i-pozostawianie-w",
+   "org": "cpk",
+   "title": "Przyzwalanie i pozostawianie własnemu biegowi – Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness 17.12 ONLINE",
+   "start": "2026-12-17",
+   "end": "",
+   "time": "18:00",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/uwaznoscwzyciu_mbct_l_17-12-2/",
+   "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w 8-tygodniowym kursie uważności w ramach #AkademiaMocyKobiet „Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness”, który pomoże Ci rozwijać uważność, życzliwość…",
+   "ok": true,
+   "source": "cpk"
+  },
+  {
+   "id": "cpk-2027-01-07-umiejętne-reagowanie-myśli-nie",
+   "org": "cpk",
+   "title": "Umiejętne reagowanie: myśli nie są faktami – Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness 07.01.2027 ONLINE",
+   "start": "2027-01-07",
+   "end": "",
+   "time": "18:00",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/uwaznoscwzyciu_mbct_l_07-01-2027/",
+   "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w 8-tygodniowym kursie uważności w ramach #AkademiaMocyKobiet „Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness”, który pomoże Ci rozwijać uważność, życzliwość…",
+   "ok": true,
+   "source": "cpk"
+  },
+  {
+   "id": "cpk-2027-01-14-jak-mogę-najlepiej-o-siebie-za",
+   "org": "cpk",
+   "title": "Jak mogę najlepiej o siebie zadbać? – Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness 14.01.2027 ONLINE",
+   "start": "2027-01-14",
+   "end": "",
+   "time": "18:00",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/uwaznoscwzyciu_mbct_l_14-01-2027-2/",
+   "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w 8-tygodniowym kursie uważności w ramach #AkademiaMocyKobiet „Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness”, który pomoże Ci rozwijać uważność, życzliwość…",
+   "ok": true,
+   "source": "cpk"
+  },
+  {
+   "id": "cpk-2027-01-16-8222-dzień-uważności-8221-8211",
+   "org": "cpk",
+   "title": "„Dzień Uważności” – Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness 16.01 ONLINE",
+   "start": "2027-01-16",
+   "end": "",
+   "time": "11:00",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenie/dzienuwaznosci_mbct_l_16-01-2027/",
+   "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w 8-tygodniowym kursie uważności w ramach #AkademiaMocyKobiet „Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness”, który pomoże Ci rozwijać uważność, życzliwość…",
+   "ok": true,
+   "source": "cpk"
   }
  ],
  "rpo_news": [
   {
-   "date": "5 ноября",
-   "title": "Повторное письмо в МВД о том, как RPO наблюдает за депортациями иностранцев",
-   "url": "https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli"
+   "date": "25 ноября",
+   "iso": "2026-11-25",
+   "title": "25 listopada - konferencja „Profilaktyka kryzysów psychicznych młodych osób w działaniach Ośrodków Interwencji Kryzysowej”. Zarejestruj swój udział",
+   "url": "https://bip.brpo.gov.pl/pl/content/konferencja-25-listopada-2026-zaproszenie"
   },
   {
-   "date": "5 ноября",
-   "title": "Проблемы людей без гражданства, бежавших из Украины: очередное письмо главе Urzędu do Spraw Cudzoziemców",
-   "url": "https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli"
+   "date": "19 ноября",
+   "iso": "2026-11-19",
+   "title": "5 listopada – przyjęcia interesantów w Białymstoku, Krakowie, Lublinie, Szczecinie i Wałbrzychu. W Bydgoszczy – 19 listopada",
+   "url": "https://bip.brpo.gov.pl/pl/content/ppi-listopad-26"
   },
   {
-   "date": "5 ноября",
-   "title": "Комиссия экспертов по делам пожилых людей наметила планы на 2027 год",
-   "url": "https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli"
+   "date": "16 ноября",
+   "iso": "2026-11-16",
+   "title": "16 listopada - gala wręczenia Nagrody RPO im. dr. Macieja Lisa. Zapraszamy na transmisję online",
+   "url": "https://bip.brpo.gov.pl/pl/content/rpo-nagroda-macieja-lisa-2026-zaproszenie"
   },
   {
-   "date": "4 ноября",
-   "title": "Сомнения по программе PFRON о прокате оборудования для людей с инвалидностью",
-   "url": "https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli"
+   "date": "13 ноября",
+   "iso": "2026-11-13",
+   "title": "Ogólnopolski Dzień Seniora. KMPT przypomina o osobach starszych w miejscach pozbawienia wolności",
+   "url": "https://bip.brpo.gov.pl/pl/content/ogolnopolski-dzien-seniora-kmpt"
   },
   {
-   "date": "3 ноября",
-   "title": "Встреча RPO с организациями инициативы «Nasz Rzecznik»",
-   "url": "https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli"
+   "date": "13 ноября",
+   "iso": "2026-11-13",
+   "title": "System kaucyjny nie dla wszystkich. RPO występuje do Ministerstwa Klimatu i Środowiska",
+   "url": "https://bip.brpo.gov.pl/pl/content/rpo-mkis-system-kaucyjny"
+  },
+  {
+   "date": "13 ноября",
+   "iso": "2026-11-13",
+   "title": "Kolejne problemy KMPT z dostępem do nagrań audio-video i dokumentacji podczas wizytacji jednostek Policji garnizonu stołecznego. Odpowiedź KGP",
+   "url": "https://bip.brpo.gov.pl/pl/content/rpo-policja-ogranicza-uprawnienia-kmpt-mswia-ksp-kgp-kolejne-odpowiedz"
   }
  ]
 }
