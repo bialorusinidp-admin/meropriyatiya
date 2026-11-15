@@ -480,13 +480,53 @@
           "name": "Caritas — Centra Pomocy Migrantom i Uchodźcom",
           "desc": "Сеть центров: психолог, карьера, материальная помощь, курсы языка.",
           "url": "https://www.google.com/search?q=Caritas+Centrum+Pomocy+Migrantom+i+Uchodźcom"
+        },
+        {
+          "name": "Stowarzyszenie Mudita (Краков)",
+          "desc": "Помогает людям с инвалидностью, хронически больным и их семьям, в том числе бежавшим из Украины: двуязычная горячая линия, жильё, доступное для коляски, группы поддержки.",
+          "url": "https://www.google.com/search?q=Stowarzyszenie+Mudita"
+        },
+        {
+          "name": "Fundacja Konflikt (бывшая Kuchnia Konfliktu)",
+          "desc": "Ведёт RefugeeFund — фонд для гражданских и общественных инициатив людей с опытом миграции: в 2024 году на эти деньги провели почти 200 мероприятий. Есть интервенционная квартира, поддержка ЛГБТК+.",
+          "url": "https://www.google.com/search?q=Fundacja+Konflikt+RefugeeFund"
         }
       ]
     },
     {
       "title": "Организации, созданные мигрантами и беженцами",
-      "note": "Получали гранты «WSPÓŁdziałamy!» в 2026 году.",
+      "note": "Часть из них получала гранты «WSPÓŁdziałamy!» в 2026 году.",
       "items": [
+        {
+          "name": "Stowarzyszenie Mova — język bez barier (Варшава)",
+          "desc": "Устные, письменные, аудиовизуальные и присяжные переводы, в том числе с редких языков. Специализация — гуманитарные, психологические и юридические переводы, в основном для НКО. Основана в 2022 году друзьями из Украины, Курдистана, Афганистана и Польши. ul. Jazdów 3/12.",
+          "url": "https://mova.org.pl/"
+        },
+        {
+          "name": "Fundacja Code Your Path (Варшава)",
+          "desc": "Бесплатное IT-обучение для беженцев и мигрантов: менторская программа по digital-маркетингу, фронтенду, low-code, анализу данных, кибербезопасности и дизайну, мастер-классы офлайн и онлайн.",
+          "url": "https://codeyourpath.eu/"
+        },
+        {
+          "name": "Ukraiński Dom / Fundacja „Nasz Wybór” (Варшава)",
+          "desc": "С 2009 года помогает мигрантам из Украины: консультации, помощь с учреждениями и медициной, психолог, юрист, карьерные консультации, материальная помощь. ul. Zamenhofa 1.",
+          "url": "https://ukrainskidom.pl/"
+        },
+        {
+          "name": "Fundacja Kobiety Wędrowne",
+          "desc": "Организация беженок, которой руководит Хеди Алиева из Чечни. Переняла бистро Kuchnia Konfliktu, где работают беженцы.",
+          "url": "https://www.google.com/search?q=Fundacja+Kobiety+Wędrowne"
+        },
+        {
+          "name": "Stowarzyszenie Patchwork (Краков)",
+          "desc": "Основали шесть мигранток — матерей детей с инвалидностью или особыми потребностями. Сеть поддержки для мигранток, которые растят таких детей: жильё, лекарства, формальности.",
+          "url": "https://www.google.com/search?q=Stowarzyszenie+Patchwork+Kraków"
+        },
+        {
+          "name": "Akademia Sztuk Migranckich (PFM и партнёры)",
+          "desc": "Мастер-классы по ремеслу, кулинарии, танцам и пению, которые ведут сами мигранты в Варшаве. Вместе с PFM её делают Mova, Code Your Path, Mudita и Fundacja dla Wolności.",
+          "url": "https://forummigracyjne.org/"
+        },
         {
           "name": "Fundacja HUB Novaja Ziamlia (Белосток)",
           "desc": "«Nowe wyzwanie – nowe możliwości dla uchodźców», 15 000 zł.",
@@ -496,13 +536,9 @@
           "name": "Fundacja Polikultura (Варшава)",
           "desc": "«Przystań w Polsce» — интеграция семей беженцев.",
           "url": "https://www.google.com/search?q=Fundacja+Polikultura"
-        },
-        {
-          "name": "Stowarzyszenie Mova",
-          "desc": "Фонд переводов для беженцев «Język bez barier».",
-          "url": "https://www.google.com/search?q=Stowarzyszenie+Mova"
         }
-      ]
+      ],
+      "tab": "migr"
     }
   ]
 }
