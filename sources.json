@@ -1,17 +1,113 @@
 {
- "_how": "Откуда робот собирает мероприятия. type: tribe (WordPress + The Events Calendar), ics (ссылка на календарь .ics), jsonld_list (страница-список, link_re — какие ссылки считать событиями). org — id вкладки в приложении. disabled: true — временно выключить источник.",
+ "_how": "Откуда робот собирает мероприятия. type: tribe (WordPress + The Events Calendar), ics (ссылка на календарь .ics), jsonld_list (страница-список, link_re — какие ссылки считать событиями). org — id вкладки в приложении. disabled: true — временно выключить источник. ngo_pl — список szkoleń i wydarzeń с ngo.pl для Варшавы (max_days: длинные курсы дольше стольких дней пропускаются). replaces_ids — старые ручные записи, которые убираются, когда источник сработал. ngo_jobs — вакансии с ogloszenia.ngo.pl (вкладка «Вакансии»).",
  "sources": [
-  {"id": "pfm", "org": "pfm", "type": "tribe", "base": "https://forummigracyjne.org",
-   "fallback": {"type": "jsonld_list", "pages": ["https://forummigracyjne.org/en/calendar/", "https://forummigracyjne.org/en/calendar/{Y}/{M}"], "link_re": "forummigracyjne\\.org/(en/)?wydarzenie/[^/?#]+/?$"},
-   "host": "Polskie Forum Migracyjne", "place_default": "Centrum Wielokulturowe, ul. Jagiellońska 54", "tags": ["миграция"]},
-  {"id": "cpk", "org": "cpk", "type": "tribe", "base": "https://cpk.org.pl",
-   "fallback": {"type": "ics", "url": "https://cpk.org.pl/wydarzenia/?ical=1"},
-   "host": "Centrum Praw Kobiet", "place_default": "Варшава", "tags": ["поддержка"]},
-  {"id": "rpo-patronaty", "org": "rpo", "type": "rpo_patronaty", "url": "https://bip.brpo.gov.pl/pl/tagi/patronaty",
-   "host": "Патронат RPO", "tags": ["права человека"]},
-  {"id": "rpo-news", "type": "rpo_news", "url": "https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli"},
-  {"id": "batory", "org": "batory", "type": "jsonld_list", "pages": ["https://www.batory.org.pl/wydarzenia/"],
-   "link_re": "batory\\.org\\.pl/wydarzenia/[^/?#]+/?$", "heuristic": true, "max": 15,
-   "host": "Fundacja Batorego", "tags": ["права человека"]}
+  {
+   "id": "pfm",
+   "org": "pfm",
+   "type": "tribe",
+   "base": "https://forummigracyjne.org",
+   "fallback": {
+    "type": "jsonld_list",
+    "pages": [
+     "https://forummigracyjne.org/en/calendar/",
+     "https://forummigracyjne.org/en/calendar/{Y}/{M}"
+    ],
+    "link_re": "forummigracyjne\\.org/(en/)?wydarzenie/[^/?#]+/?$"
+   },
+   "host": "Polskie Forum Migracyjne",
+   "place_default": "Centrum Wielokulturowe, ul. Jagiellońska 54",
+   "tags": [
+    "миграция"
+   ],
+   "replaces_ids": [
+    "pfm-music",
+    "pfm-zus",
+    "pfm-writing",
+    "pfm-friends"
+   ]
+  },
+  {
+   "id": "cpk",
+   "org": "cpk",
+   "type": "tribe",
+   "base": "https://cpk.org.pl",
+   "fallback": {
+    "type": "ics",
+    "url": "https://cpk.org.pl/wydarzenia/?ical=1"
+   },
+   "host": "Centrum Praw Kobiet",
+   "place_default": "Варшава",
+   "tags": [
+    "поддержка"
+   ],
+   "replaces_ids": [
+    "cpk-breath",
+    "cpk-mbct",
+    "cpk-krag"
+   ]
+  },
+  {
+   "id": "rpo-patronaty",
+   "org": "rpo",
+   "type": "rpo_patronaty",
+   "url": "https://bip.brpo.gov.pl/pl/tagi/patronaty",
+   "host": "Патронат RPO",
+   "tags": [
+    "права человека"
+   ],
+   "replaces_ids": [
+    "rpo-pokrzywdzeni",
+    "rpo-dyskryminacja",
+    "rpo-student",
+    "rpo-inclusion",
+    "rpo-soundup",
+    "rpo-forum-edu"
+   ]
+  },
+  {
+   "id": "rpo-news",
+   "type": "rpo_news",
+   "url": "https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli"
+  },
+  {
+   "id": "batory",
+   "org": "batory",
+   "type": "jsonld_list",
+   "pages": [
+    "https://www.batory.org.pl/wydarzenia/"
+   ],
+   "link_re": "batory\\.org\\.pl/wydarzenia/[^/?#]+/?$",
+   "heuristic": true,
+   "max": 15,
+   "host": "Fundacja Batorego",
+   "tags": [
+    "права человека"
+   ]
+  },
+  {
+   "id": "ngo-pl",
+   "org": "ngopl",
+   "type": "ngo_pl",
+   "url": "https://wydarzenia.ngo.pl/warszawa",
+   "max": 45,
+   "max_days": 21,
+   "host": "ngo.pl",
+   "replaces_ids": [
+    "scwo-team",
+    "scwo-budget",
+    "scwo-project",
+    "scwo-nowefio",
+    "scwo-dotacja"
+   ],
+   "_note": "события дольше max_days дней и курсы/наборы попадают во вкладку «Курсы»"
+  },
+  {
+   "id": "ngo-praca",
+   "org": "other",
+   "type": "ngo_jobs",
+   "url": "https://ogloszenia.ngo.pl/praca-staz/dam-prace/warszawa",
+   "pages": 3,
+   "max": 45
+  }
  ]
 }

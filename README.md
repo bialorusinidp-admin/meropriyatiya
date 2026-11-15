@@ -36,6 +36,8 @@
 - Centrum Praw Kobiet — календарь Akademii Mocy Kobiet
 - RPO — события под патронатом и последние новости
 - Fundacja Batorego — страница «Wydarzenia»
+- ngo.pl — обучения и события для НКО в Варшаве и онлайн (вкладка «ngo.pl», события SCWO попадают во вкладку SCWO); длинные курсы и наборы — во вкладку «Курсы»
+- ngo.pl — вакансии в НКО Варшавы и удалённо (вкладка «Вакансии»; объявления с истёкшим сроком убираются сами)
 
 Остальные организации (Amnesty, Humanity in Action, SCWO, Niebieska Linia и др.) не публикуют календарь
 в удобном для робота виде — их события добавляются в `manual.json`.
@@ -55,8 +57,8 @@
 
 Вручную, без админки: откройте `manual.json` → значок карандаша → скопируйте любое событие и поменяйте поля:
 `id` (любой уникальный), `org` (id вкладки: rpo, amnesty, hia, sip, hfpc, pfm, ocalenie, cpk, kph, bialdom,
-batory, panoptykon, pah, fdds, scwo, niebieska, city, other), `title`, `start` (ГГГГ-ММ-ДД), `end`, `time`,
-`place`, `host`, `tags`, `url`, `note`. Сохраните — на следующем запуске событие появится в приложении
+batory, panoptykon, pah, fdds, scwo, ngopl, niebieska, city, other), `title`, `start` (ГГГГ-ММ-ДД), `end`, `time`,
+`place`, `host`, `tags`, `url`, `note`, а для курса или вакансии ещё `kind`: `course` или `job` (у вакансии `start` — дата публикации, `end` — срок подачи). В админке это поле «Что это». Сохраните — на следующем запуске событие появится в приложении
 (или запустите робота вручную, шаг 6).
 
 ## Как добавить новый сайт

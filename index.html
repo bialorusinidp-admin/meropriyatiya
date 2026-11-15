@@ -69,6 +69,8 @@ input[type=search]{width:100%;margin-top:10px;font:inherit;font-size:16px;paddin
 .month{font-size:30px;text-align:center;margin:34px 0 14px;position:relative}
 .month::after{content:"";display:block;width:46px;height:4px;background:var(--mustard);margin:8px auto 0;border-radius:2px}
 .month.hidden{display:none}
+.hex.cj{background:var(--red)}
+.salary{display:inline-block;margin-top:8px;font-size:13.5px;font-weight:600;color:var(--navy);background:var(--blush);padding:2px 8px;border-radius:3px}
 section#upcoming,section#past,#mine{position:relative}
 .card{position:relative;display:grid;grid-template-columns:64px 1fr;gap:0 14px;padding:0 0 22px}
 .card::before{content:"";position:absolute;left:31px;top:64px;bottom:0;border-left:2px dotted var(--mustard)}
@@ -141,10 +143,14 @@ footer{font-size:12.5px;color:var(--mut);margin-top:24px}
 <div id="ins-pc">На компьютере: в Chrome или Edge — значок установки в адресной строке; в Safari на Mac — «Файл» → «Добавить в Dock».</div>
 </div>
 <div class="bar jsb">
-<div class="tabs" id="tabs"><button class="tab on" data-org="">Все</button><button class="tab" data-org="★">★</button><button class="tab" data-org="rpo">RPO</button><button class="tab" data-org="amnesty">Amnesty</button><button class="tab" data-org="hia">Humanity in Action</button><button class="tab" data-org="sip">Interwencja Prawna</button><button class="tab" data-org="hfpc">Helsińska Fundacja</button><button class="tab" data-org="pfm">Forum Migracyjne</button><button class="tab" data-org="ocalenie">Ocalenie</button><button class="tab" data-org="cpk">Centrum Praw Kobiet</button><button class="tab" data-org="kph">KPH</button><button class="tab" data-org="bialdom">Białoruski Dom</button><button class="tab" data-org="batory">Fundacja Batorego</button><button class="tab" data-org="panoptykon">Panoptykon</button><button class="tab" data-org="pah">PAH</button><button class="tab" data-org="fdds">Dajemy Dzieciom Siłę</button><button class="tab" data-org="scwo">SCWO</button><button class="tab" data-org="niebieska">Niebieska Linia</button><button class="tab" data-org="city">Город Варшава</button><button class="tab" data-org="other">Другие</button></div>
+<div class="tabs" id="tabs"><button class="tab on" data-org="">Все</button><button class="tab" data-org="★">★</button><button class="tab" data-org="@course">Курсы</button><button class="tab" data-org="@job">Вакансии</button><button class="tab" data-org="rpo">RPO</button><button class="tab" data-org="amnesty">Amnesty</button><button class="tab" data-org="hia">Humanity in Action</button><button class="tab" data-org="sip">Interwencja Prawna</button><button class="tab" data-org="hfpc">Helsińska Fundacja</button><button class="tab" data-org="pfm">Forum Migracyjne</button><button class="tab" data-org="ocalenie">Ocalenie</button><button class="tab" data-org="cpk">Centrum Praw Kobiet</button><button class="tab" data-org="kph">KPH</button><button class="tab" data-org="bialdom">Białoruski Dom</button><button class="tab" data-org="batory">Fundacja Batorego</button><button class="tab" data-org="panoptykon">Panoptykon</button><button class="tab" data-org="pah">PAH</button><button class="tab" data-org="fdds">Dajemy Dzieciom Siłę</button><button class="tab" data-org="scwo">SCWO</button><button class="tab" data-org="ngopl">ngo.pl</button><button class="tab" data-org="niebieska">Niebieska Linia</button><button class="tab" data-org="city">Город Варшава</button><button class="tab" data-org="other">Другие</button></div>
 <input type="search" id="q" placeholder="Поиск по названию, месту, организатору">
 </div>
 
+<section class="panel" data-panel="@course" hidden>
+<h2 class="pname slab">Курсы и наборы</h2><p class="pabout">Длинные курсы, программы обучения и наборы участников: всё, что идёт дольше трёх недель или проходит набор. Робот собирает их с ngo.pl для Варшавы и онлайн. Отсортированы по сроку окончания.</p><a class="btn dark" href="https://wydarzenia.ngo.pl/szkolenia">wydarzenia.ngo.pl/szkolenia</a><p class="none" data-none>Сейчас открытых курсов не нашлось.</p></section>
+<section class="panel" data-panel="@job" hidden>
+<h2 class="pname slab">Вакансии в НКО</h2><p class="pabout">Работа и сотрудничество в общественных организациях Варшавы и удалённо. Робот каждый день берёт свежие объявления с ngo.pl и убирает те, у которых закончился срок. Отсортированы по сроку подачи.</p><a class="btn dark" href="https://ogloszenia.ngo.pl/praca-staz/dam-prace/warszawa">ogloszenia.ngo.pl — praca</a><p class="none" data-none>Свежих вакансий пока нет.</p></section>
 <section class="panel" data-panel="rpo" hidden>
 <h2 class="pname slab">Rzecznik Praw Obywatelskich</h2><p class="pabout">Государственный орган, который защищает права и свободы всех, кто находится в Польше, в том числе иностранцев. Сейчас должность занимает Sylwia Gregorczyk-Abram. Под её патронатом прошёл и Festiwal Praw Człowieka.</p><div class="hotline"><div class="hl-label">Бесплатная линия RPO</div>
 <a class="hl-num slab" href="tel:800676676">800 676 676</a>
@@ -164,13 +170,16 @@ footer{font-size:12.5px;color:var(--mut);margin-top:24px}
 <h2 class="pname slab">Fundacja Panoptykon</h2><p class="pabout">С 2009 года следит за тем, как государство и компании используют данные и технологии. Борется за законы, которые защищают свободу и приватность.</p><a class="btn dark" href="https://panoptykon.org/">panoptykon.org</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="pah" hidden>
 <h2 class="pname slab">Polska Akcja Humanitarna</h2><p class="pabout">Гуманитарная организация, основанная в 1992 году. Помогла людям в 52 странах: вода, еда, жильё, образование, психологическая помощь. Работает и в Польше, и в Украине.</p><a class="btn dark" href="https://www.pah.org.pl/">pah.org.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="fdds" hidden>
 <h2 class="pname slab">Fundacja Dajemy Dzieciom Siłę</h2><p class="pabout">Больше 30 лет защищает детей от насилия: психологическая и юридическая помощь детям и родителям, обучение взрослых, работа над законами. Ведёт детский телефон доверия 116 111.</p><a class="btn dark" href="https://fdds.pl/">fdds.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="scwo" hidden>
-<h2 class="pname slab">Stołeczne Centrum Współpracy Obywatelskiej</h2><p class="pabout">Городской центр поддержки организаций Варшавы. Проводит бесплатные семинары: как писать заявки на гранты, планировать бюджет, строить команду.</p><a class="btn dark" href="https://warszawa.ngo.pl/">warszawa.ngo.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="niebieska" hidden>
+<h2 class="pname slab">Stołeczne Centrum Współpracy Obywatelskiej</h2><p class="pabout">Городской центр поддержки организаций Варшавы. Проводит бесплатные семинары: как писать заявки на гранты, планировать бюджет, строить команду.</p><a class="btn dark" href="https://warszawa.ngo.pl/">warszawa.ngo.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="ngopl" hidden>
+<h2 class="pname slab">ngo.pl — szkolenia i wydarzenia</h2><p class="pabout">Крупнейший портал о некоммерческих организациях в Польше. Робот каждый день берёт отсюда обучения, вебинары и встречи для НКО в Варшаве и онлайн. Длинные курсы и наборы дольше трёх недель пропускаются.</p><a class="btn dark" href="https://wydarzenia.ngo.pl/warszawa">wydarzenia.ngo.pl/warszawa</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="niebieska" hidden>
 <h2 class="pname slab">Stowarzyszenie „Niebieska Linia”</h2><p class="pabout">Помогает людям, которые сталкиваются с насилием в семье. В Урсынове ведёт программу «PoMoc Ursynów» с бесплатными консультациями психолога и юриста.</p><a class="btn dark" href="https://um.warszawa.pl/kalendarz">Календарь города</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="city" hidden>
 <h2 class="pname slab">Miasto Stołeczne Warszawa</h2><p class="pabout">Город каждый декабрь проводит Warszawski Tydzień Praw Człowieka: дискуссии, мастер-классы, кино и выставки вокруг 10 декабря, Дня прав человека.</p><a class="btn dark" href="https://wsparcie.um.warszawa.pl/wtpc">wsparcie.um.warszawa.pl/wtpc</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="other" hidden>
 <h2 class="pname slab">Другие организаторы</h2><p class="pabout">Университеты, фонды и инициативы, которые тоже проводят события по теме.</p><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section>
 
 <div id="mine-wrap" style="display:none"><h2 class="month slab">Мои события</h2><div id="mine"></div></div>
 <section id="upcoming"></section>
+<section id="courses" style="display:none"></section>
+<section id="jobs" style="display:none"></section>
 <div class="empty" id="empty" style="display:none">У этого организатора пока нет ближайших событий. Откройте вкладку «Все» или добавьте своё.</div>
 
 <details class="jsb">
@@ -197,7 +206,7 @@ footer{font-size:12.5px;color:var(--mut);margin-top:24px}
 <ul class="src"><li><a href="https://bip.brpo.gov.pl/pl/tagi/patronaty">RPO — новости и патронаты</a></li><li><a href="https://wydarzenia.ngo.pl/">ngo.pl — обучения и события</a></li><li><a href="https://um.warszawa.pl/kalendarz">Календарь города Варшавы</a></li><li><a href="https://waw4free.pl/">waw4free — бесплатные события</a></li><li><a href="https://www.instagram.com/interwencja_prawna/">Instagram: interwencja_prawna</a></li></ul>
 </details>
 
-<footer>Подборка обновляется автоматически каждый день: робот собирает анонсы с сайтов RPO, Polskiego Forum Migracyjnego, Centrum Praw Kobiet, Fundacji Batorego и других, а вручную добавленные события лежат в manual.json. Перед походом проверяйте даты по ссылке «Анонс».</footer>
+<footer>Подборка обновляется автоматически каждый день: робот собирает анонсы с сайтов RPO, Polskiego Forum Migracyjnego, Centrum Praw Kobiet, Fundacji Batorego, ngo.pl и других, а вручную добавленные события лежат в manual.json. Перед походом проверяйте даты по ссылке «Анонс».</footer>
 </div>
 
 <script>
@@ -227,17 +236,29 @@ function renderMine(){
 
 function apply(){
   var ps=document.querySelectorAll('.panel');for(var i=0;i<ps.length;i++)ps[i].hidden=ps[i].getAttribute('data-panel')!==org;
+  var special=org==='@course'?'courses':org==='@job'?'jobs':'';
+  document.getElementById('upcoming').style.display=special?'none':'';
+  document.getElementById('courses').style.display=special==='courses'?'':'none';
+  document.getElementById('jobs').style.display=special==='jobs'?'':'none';
   var cards=document.querySelectorAll('.card'),shown=0,mineShown=0;
   for(i=0;i<cards.length;i++){var c=cards[i],id=c.getAttribute('data-id'),fav=favs.indexOf(id)>-1;
     c.classList.toggle('fav',fav);var s=c.querySelector('.star');if(s)s.textContent=fav?'★ В избранном':'☆ В избранное';
-    if(parse(c.getAttribute('data-end'))<today)c.classList.add('past');
-    var ok=(!org||(org==='★'?fav:c.getAttribute('data-org')===org))&&(!q||c.textContent.toLowerCase().indexOf(q)>-1);
+    var sec=c.closest('#courses')?'courses':c.closest('#jobs')?'jobs':c.closest('#mine')?'mine':c.closest('#past')?'past':'upcoming';
+    if(sec!=='courses'&&sec!=='jobs'&&parse(c.getAttribute('data-end'))<today)c.classList.add('past');
+    var okTab;
+    if(special)okTab=sec===special;
+    else if(org==='★')okTab=fav;
+    else okTab=(sec!=='courses'&&sec!=='jobs')&&(!org||c.getAttribute('data-org')===org);
+    var ok=okTab&&(!q||c.textContent.toLowerCase().indexOf(q)>-1);
     c.style.display=ok?'':'none';
-    if(ok&&c.closest('#upcoming'))shown++;if(ok&&c.closest('#mine'))mineShown++;}
-  document.getElementById('mine-wrap').style.display=mineShown?'':'none';
+    if(ok&&(sec==='upcoming'||sec===special))shown++;if(ok&&sec==='mine')mineShown++;}
+  if(org==='★'){document.getElementById('courses').style.display='';document.getElementById('jobs').style.display=''}
+  document.getElementById('mine-wrap').style.display=(mineShown&&!special)?'':'none';
   var hs=document.querySelectorAll('#upcoming .month,#past .month');
   for(i=0;i<hs.length;i++){var n=hs[i].nextElementSibling,any=false;while(n&&!n.classList.contains('month')){if(n.style.display!=='none')any=true;n=n.nextElementSibling}hs[i].classList.toggle('hidden',!any)}
-  document.getElementById('empty').style.display=(shown+mineShown)?'none':'';
+  var favExtra=org==='★'?document.querySelectorAll('#courses .card.fav,#jobs .card.fav').length:0;
+  document.getElementById('empty').style.display=(shown+mineShown+favExtra)?'none':'';
+  document.getElementById('empty').textContent=special==='jobs'?'Вакансий по этому запросу нет.':special==='courses'?'Курсов по этому запросу нет.':'У этого организатора пока нет ближайших событий. Откройте вкладку «Все» или добавьте своё.';
 }
 
 function ics(e){
@@ -274,7 +295,7 @@ function gcal(e){var p=function(n){return(n<10?'0':'')+n},ymd=function(d){return
 function addG(){var cs=document.querySelectorAll('.card');for(var i=0;i<cs.length;i++){var c=cs[i];if(c.querySelector('.gcal'))continue;var e=find(c.getAttribute('data-id'));var b=c.querySelector('.cal');if(e&&b)b.insertAdjacentHTML('afterend','<a class="gcal" href="'+gcal(e)+'">Google Календарь</a>')}}
 var _rm=renderMine;renderMine=function(){_rm();addG()};
 
-var COLS={rpo:"c1",amnesty:"c2",hia:"c3",sip:"c4",hfpc:"c1",pfm:"c3",ocalenie:"c2",cpk:"c2",kph:"c4",bialdom:"c1",batory:"c3",panoptykon:"c4",pah:"c2",fdds:"c2",scwo:"c4",niebieska:"c2",city:"c1",other:"c3"};
+var COLS={rpo:"c1",amnesty:"c2",hia:"c3",sip:"c4",hfpc:"c1",pfm:"c3",ocalenie:"c2",cpk:"c2",kph:"c4",bialdom:"c1",batory:"c3",panoptykon:"c4",pah:"c2",fdds:"c2",scwo:"c4",ngopl:"c3",niebieska:"c2",city:"c1",other:"c3"};
 var MONN=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
 var WDM=["вс","пн","вт","ср","чт","пт","сб"];
 function fmtE(e){var a=parse(e.start),s=a.getDate()+' '+MON[a.getMonth()];if(e.end&&e.end!==e.start){var b=parse(e.end);s+=' — '+b.getDate()+' '+MON[b.getMonth()]}return s+(e.time?', '+esc(e.time):'')}
@@ -285,10 +306,33 @@ function cardE(e){var a=parse(e.start),past=parse(e.end||e.start)<today;
  (e.note?'<p class="note">'+esc(e.note)+'</p>':'')+(e.ok===false?'<p class="warn">Даты ещё не подтверждены</p>':'')+
  '<div class="tags">'+(e.tags||[]).map(function(t){return '<span class="tag">'+esc(t)+'</span>'}).join('')+'</div>'+
  '<div class="actions">'+(e.url?'<a class="btn" href="'+esc(e.url)+'">Анонс</a>':'')+'<button class="btn js star" type="button">☆ В избранное</button><button class="btn js cal" type="button">В календарь</button></div></div></article>'}
+var COUNTS={};
+var MONS=["янв","фев","мар","апр","мая","июн","июл","авг","сен","окт","ноя","дек"];
+function dmy(s){var d=parse(s);return d.getDate()+' '+MON[d.getMonth()]}
+function actions(e,label,cal){return '<div class="actions">'+(e.url?'<a class="btn" href="'+esc(e.url)+'">'+label+'</a>':'')+'<button class="btn js star" type="button">☆ В избранное</button>'+(cal?'<button class="btn js cal" type="button">В календарь</button>':'')+'</div>'}
+function cardC(e){var endD=e.end||e.start,d=parse(endD),started=parse(e.start)<=today;
+ return '<article class="card" data-id="'+esc(e.id)+'" data-org="'+esc(e.org)+'" data-start="'+e.start+'" data-end="'+endD+'">'+
+ '<div class="hex c4"><b>'+d.getDate()+'</b><span>до '+MONS[d.getMonth()]+'</span></div><div class="body"><div class="when">'+(started?'Идёт, до '+dmy(endD):fmtE(e))+'</div>'+
+ '<h3>'+esc(e.title)+'</h3><p class="meta">'+esc(e.place)+(e.host?'<br><span>'+esc(e.host)+'</span>':'')+'</p>'+(e.note?'<p class="note">'+esc(e.note)+'</p>':'')+
+ '<div class="tags">'+(e.tags||[]).map(function(t){return '<span class="tag">'+esc(t)+'</span>'}).join('')+'</div>'+actions(e,'Подробнее',false)+'</div></article>'}
+function cardJ(e){var dl=e.end,d=dl?parse(dl):null,left=d?Math.round((d-today)/864e5):null;
+ var note=e.note||'',sal='',m=note.match(/^([^.]{3,90}?)\.\s/);if(m&&/zł|brutto|netto|umowa|B2B|etat/i.test(m[1])){sal=m[1];note=note.slice(m[0].length)}
+ return '<article class="card" data-id="'+esc(e.id)+'" data-org="'+esc(e.org)+'" data-start="'+e.start+'" data-end="'+(dl||e.start)+'">'+
+ '<div class="hex cj">'+(d?'<b>'+d.getDate()+'</b><span>до '+MONS[d.getMonth()]+'</span>':'<b>new</b><span>&nbsp;</span>')+'</div><div class="body"><div class="when">'+
+ (d?(left<=3?'⚠︎ ':'')+'Приём до '+dmy(dl)+(left===0?' — сегодня последний день':left===1?' — остался 1 день':left<=7?' — осталось '+left+' дн.':''):'Опубликовано '+dmy(e.start))+'</div>'+
+ '<h3>'+esc(e.title)+'</h3><p class="meta">'+esc(e.place)+(e.host?'<br><span>'+esc(e.host)+'</span>':'')+'</p>'+(sal?'<span class="salary">'+esc(sal)+'</span>':'')+(note?'<p class="note">'+esc(note)+'</p>':'')+
+ actions(e,'Вакансия',false)+'</div></article>'}
 function grouped(l){var out=[],cur=-1;l.forEach(function(e){var m=parse(e.start).getMonth();if(m!==cur){out.push('<h2 class="month slab">'+MONN[m]+'</h2>');cur=m}out.push(cardE(e))});return out.join('')}
 function renderAll(upd,news){
  DATA=DATA.filter(function(e){return e&&e.id&&e.start&&/^\d{4}-\d{2}-\d{2}$/.test(e.start)});
- var s=DATA.slice().sort(function(a,b){return a.start<b.start?-1:a.start>b.start?1:0});
+ var all=DATA.slice().sort(function(a,b){return a.start<b.start?-1:a.start>b.start?1:0});
+ var s=all.filter(function(e){return !e.kind||e.kind==='event'});
+ var byEnd=function(a,b){var x=a.end||'9999',y=b.end||'9999';return x<y?-1:x>y?1:0};
+ var courses=all.filter(function(e){return e.kind==='course'&&parse(e.end||e.start)>=today}).sort(byEnd);
+ var jobs=all.filter(function(e){return e.kind==='job'&&(!e.end||parse(e.end)>=today)}).sort(byEnd);
+ document.getElementById('courses').innerHTML=courses.map(cardC).join('');
+ document.getElementById('jobs').innerHTML=jobs.map(cardJ).join('');
+ COUNTS={'@course':courses.length,'@job':jobs.length};
  var up=s.filter(function(e){return parse(e.end||e.start)>=today}),past=s.filter(function(e){return parse(e.end||e.start)<today}).reverse().slice(0,40);
  document.getElementById('upcoming').innerHTML=grouped(up);document.getElementById('past').innerHTML=grouped(past);
  var nx=up.filter(function(e){return parse(e.start)>=today})[0],lead=document.getElementById('lead');
@@ -296,7 +340,7 @@ function renderAll(upd,news){
   lead.innerHTML='Впереди '+up.length+' событий. Ближайшее — <b>'+(n===0?'сегодня':n===1?'завтра, '+m:m)+'</b>, '+esc(nx.title)+'.'}else lead.textContent='Ближайших событий пока нет.';
  if(upd){var d=new Date(upd);if(!isNaN(d))document.getElementById('upd').textContent='Обновлено: '+d.getDate()+' '+MON[d.getMonth()]+', '+('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2)}
  if(news&&news.length){var ul=document.getElementById('rpo-news');if(ul)ul.innerHTML=news.slice(0,6).map(function(x){return '<li><span>'+esc(x.date)+'</span>'+(x.url?'<a href="'+esc(x.url)+'" style="color:inherit">'+esc(x.title)+'</a>':esc(x.title))+'</li>'}).join('')}
- var ps=document.querySelectorAll('.panel');for(var i=0;i<ps.length;i++){var id=ps[i].getAttribute('data-panel'),cnt=up.filter(function(e){return e.org===id}).length,nn=ps[i].querySelector('[data-none]');if(nn)nn.style.display=cnt?'none':''}
+ var ps=document.querySelectorAll('.panel');for(var i=0;i<ps.length;i++){var id=ps[i].getAttribute('data-panel'),cnt=up.filter(function(e){return e.org===id}).length,nn=ps[i].querySelector('[data-none]');if(id.charAt(0)==='@')cnt=COUNTS[id]||0;if(nn)nn.style.display=cnt?'none':''}
  renderMine();apply();addG();
 }
 renderAll(null,null);

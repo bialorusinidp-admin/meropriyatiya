@@ -287,8 +287,132 @@ def ad_rpo_news(src):
     return out
 
 
+
+NGO_DATE_RE = re.compile(
+    r"(\d{1,2}) (" + "|".join(MONTHS_PL) + r") (\d{4})(?:,\s*(\d{1,2}:\d{2}))?"
+    r"(?:\s*[-–]\s*(\d{1,2}) (" + "|".join(MONTHS_PL) + r") (\d{4})(?:,\s*(\d{1,2}:\d{2}))?)?", re.I)
+
+
+def ad_ngo_pl(src):
+    """Szkolenia i wydarzenia z ngo.pl (lista dla Warszawy)."""
+    soup = BeautifulSoup(get(src["url"]).text, "html.parser")
+    items = {}
+    for a in soup.find_all("a", href=True):
+        href = requests.compat.urljoin(src["url"], a["href"]).split("#")[0].split("?")[0]
+        if not re.search(r"wydarzenia\.ngo\.pl/\d+-[^/]+\.html$", href):
+            continue
+        it = items.setdefault(href, {"title": "", "d1": None, "d2": None})
+        t = clean(a.get_text(" "))
+        if len(t) > len(it["title"]):
+            it["title"] = t
+        if not it["d1"]:
+            node = a
+            for _ in range(4):
+                node = node.parent
+                if node is None:
+                    break
+                m = re.search(r"(\d{1,2})\.(\d{1,2})\.(\d{4})(?:\s*-\s*(\d{1,2})\.(\d{1,2})\.(\d{4}))?", node.get_text(" "))
+                if m:
+                    it["d1"] = dt.date(int(m[3]), int(m[2]), int(m[1]))
+                    if m[4]:
+                        it["d2"] = dt.date(int(m[6]), int(m[5]), int(m[4]))
+                    break
+    out = []
+    for href, it in list(items.items())[: src.get("max", 45)]:
+        title, d1, d2, t1, online, note = it["title"], it["d1"], it["d2"], "", False, ""
+        try:
+            page = BeautifulSoup(get(href).text, "html.parser")
+            og = page.find("meta", property="og:title")
+            if og and og.get("content"):
+                title = re.sub(r"\s*-\s*Wydarzenie\s*$", "", og["content"]).strip()
+            text = page.get_text(" ")
+            m = NGO_DATE_RE.search(text)
+            if m:
+                d1 = dt.date(int(m[3]), MONTHS_PL[m[2].lower()], int(m[1]))
+                t1 = m[4] or ""
+                d2 = dt.date(int(m[7]), MONTHS_PL[m[6].lower()], int(m[5])) if m[5] else None
+            online = bool(re.search(r"\b(online|on-line|zoom|webinar|webinarium|teams)\b", (title + " " + text[:6000]).lower()))
+            desc = page.find("meta", attrs={"name": "description"}) or page.find("meta", property="og:description")
+            note = desc["content"] if desc and desc.get("content") else ""
+        except Exception as e:
+            log("   ngo.pl: страница недоступна:", href, e)
+        if not (title and d1):
+            continue
+        is_course = bool(d2 and (d2 - d1).days > src.get("max_days", 21)) or bool(re.search(r"\b(kurs|rekrutacj|nabór|akademi)", title.lower()))
+        scwo = "scwo" in title.lower()
+        tags = ["НКО"] + (["онлайн"] if online else []) + (["бесплатно"] if re.search(r"bezpłatn|darmow", (title + " " + note).lower()) else [])
+        sub = {**src, "org": "scwo" if scwo else src.get("org", "ngopl"), "host": "SCWO" if scwo else src.get("host", "ngo.pl"),
+               "tags": tags, "place_default": "Онлайн" if online else "Варшава"}
+        ev = make_event(sub, title, d1, t1, d2, "", href, note)
+        if ev:
+            if is_course:
+                ev["kind"] = "course"
+            out.append(ev)
+    return out
+
+
+def ad_ngo_jobs(src):
+    """Oferty pracy z ogloszenia.ngo.pl (Organizacja oferuje pracę, Warszawa)."""
+    links, loaded = [], 0
+    for n in range(1, src.get("pages", 3) + 1):
+        url = src["url"] + ("" if n == 1 else ("&" if "?" in src["url"] else "?") + f"page={n}")
+        try:
+            soup = BeautifulSoup(get(url).text, "html.parser")
+        except Exception as e:
+            log("   ngo.pl praca: страница списка недоступна:", url, e)
+            continue
+        loaded += 1
+        for a in soup.find_all("a", href=True):
+            href = requests.compat.urljoin(url, a["href"]).split("#")[0].split("?")[0]
+            if re.search(r"ogloszenia\.ngo\.pl/\d+-[^/]+\.html$", href) and href not in links:
+                links.append(href)
+    if not loaded:
+        raise RuntimeError("список вакансий не открылся")
+    out = []
+    for href in links[: src.get("max", 45)]:
+        try:
+            page = BeautifulSoup(get(href).text, "html.parser")
+        except Exception as e:
+            log("   вакансия недоступна:", href, e)
+            continue
+        og = page.find("meta", property="og:title")
+        title = re.sub(r"\s*-\s*Ogłoszenie\s*$", "", og["content"]).strip() if og and og.get("content") else clean(page.find("h2").get_text(" ") if page.find("h2") else "")
+        text = re.sub(r"\s+", " ", page.get_text(" "))
+        mv = re.search(r"Ważność ogłoszenia:\s*od\s+(\d{1,2}) (\w+) (\d{4})\s+do\s+(\d{1,2}) (\w+) (\d{4})", text)
+        posted = deadline = None
+        if mv and mv[2].lower() in MONTHS_PL and mv[5].lower() in MONTHS_PL:
+            posted = dt.date(int(mv[3]), MONTHS_PL[mv[2].lower()], int(mv[1]))
+            deadline = dt.date(int(mv[6]), MONTHS_PL[mv[5].lower()], int(mv[4]))
+        else:
+            m = DATE_PL_RE.search(text)
+            if m:
+                posted = dt.date(int(m[4]), MONTHS_PL[m[3].lower()], int(m[1]))
+        if not (title and posted):
+            continue
+        if deadline and deadline < TODAY:
+            continue
+        if not deadline and posted < TODAY - dt.timedelta(days=45):
+            continue
+        place = "Вся Польша / удалённо" if re.search(r"Cała Polska|zdaln", text[:3000]) else "Варшава"
+        bits = []
+        for label in ("Wynagrodzenie", "Rodzaj umowy", "Wymiar"):
+            mm = re.search(label + r":\s*(.{3,80}?)(?=\s+[A-ZŁŚŻĆ][a-ząćęłńóśźż ]{2,30}:|\s{2,}|\s\.|$)", text)
+            if mm:
+                bits.append(mm[1].strip(" .·-"))
+        desc = page.find("meta", attrs={"name": "description"}) or page.find("meta", property="og:description")
+        note = (" · ".join(bits) + (". " if bits else "")) + (desc["content"] if desc and desc.get("content") else "")
+        org = re.search(r"((?:Fundacja|Stowarzyszenie|Polska Akcja|Polski Czerwony|Instytut|Centrum|Akademia|Mazowiecki|Dom|Ośrodek|Związek|Towarzystwo)[^.,:;!?()\n]{3,70})", text[text.find(title) + len(title):][:1500] if title in text else "")
+        host = re.split(r"\s+(?:poszukuje|zatrudni|prowadzi|ogłasza|szuka|jest|zaprasza|działa|od\s)", clean(org[1]))[0] if org else ""
+        sub = {**src, "host": host, "tags": ["вакансия"]}
+        ev = make_event(sub, title, posted, "", deadline, place, href, note)
+        if ev:
+            ev["kind"] = "job"
+            out.append(ev)
+    return out
+
+
 ADAPTERS = {"tribe": ad_tribe, "ics": ad_ics, "jsonld_list": ad_jsonld_list,
-            "rpo_patronaty": ad_rpo_patronaty, "rpo_news": ad_rpo_news}
+            "rpo_patronaty": ad_rpo_patronaty, "rpo_news": ad_rpo_news, "ngo_pl": ad_ngo_pl, "ngo_jobs": ad_ngo_jobs}
 
 
 # ---------- сборка ----------
@@ -298,29 +422,48 @@ def norm_key(e):
     return (t, e["start"])
 
 
+def keep(e):
+    start = dt.date.fromisoformat(e["start"])
+    if e.get("kind") in ("course", "job"):
+        end = dt.date.fromisoformat(e["end"]) if e.get("end") else start
+        return end >= TODAY and start <= KEEP_TO
+    return KEEP_FROM <= start <= KEEP_TO
+
+
+def words(t):
+    return {w for w in re.findall(r"[a-ząćęłńóśźżа-яё0-9]+", t.lower()) if len(w) > 3}
+
+
 def is_dup(a, b):
     ka, kb = norm_key(a), norm_key(b)
     if ka == kb:
         return True
-    if a["start"] != b["start"] or a.get("org") != b.get("org"):
+    if a["start"] != b["start"]:
         return False
     ta, tb = ka[0], kb[0]
-    return bool(ta and tb) and (ta[:10] in tb or tb[:10] in ta)
+    if ta and tb and (ta[:15] in tb or tb[:15] in ta):
+        return True
+    wa, wb = words(a["title"]), words(b["title"])
+    if wa and wb and len(wa & wb) / min(len(wa), len(wb)) >= 0.6:
+        return True
+    return a.get("org") == b.get("org") and bool(ta and tb) and (ta[:10] in tb or tb[:10] in ta)
 
 
 def run_source(src):
+    res = None
     try:
-        return ADAPTERS[src["type"]](src)
+        res = ADAPTERS[src["type"]](src)
     except Exception as e:
         log(f"   {src['id']} ({src['type']}): {e}")
-        fb = src.get("fallback")
-        if fb:
-            merged = {**src, **fb}
-            try:
-                return ADAPTERS[fb["type"]](merged)
-            except Exception as e2:
-                log(f"   {src['id']} запасной способ ({fb['type']}): {e2}")
-        return None
+    fb = src.get("fallback")
+    if fb and not res:  # основной способ упал или ничего не нашёл — пробуем запасной
+        try:
+            res2 = ADAPTERS[fb["type"]]({**src, **fb})
+            if res2 or res is None:
+                res = res2
+        except Exception as e2:
+            log(f"   {src['id']} запасной способ ({fb['type']}): {e2}")
+    return res
 
 
 def main():
@@ -331,7 +474,7 @@ def main():
     except Exception:
         prev = {"events": [], "rpo_news": []}
 
-    collected, news, status = [], prev.get("rpo_news", []), {}
+    collected, news, status, replaced = [], prev.get("rpo_news", []), {}, set()
     for src in sources:
         if src.get("disabled"):
             continue
@@ -347,11 +490,14 @@ def main():
             collected += old
             status[src["id"]] = f"ошибка, оставлено прошлых: {len(old)}"
         else:
-            res = [e for e in res if KEEP_FROM <= dt.date.fromisoformat(e["start"]) <= KEEP_TO]
+            res = [e for e in res if keep(e)]
             collected += res
+            if res:
+                replaced |= set(src.get("replaces_ids", []))
             status[src["id"]] = f"ok: {len(res)}"
         log("   ", status[src["id"]])
 
+    manual = [e for e in manual if e.get("id") not in replaced]  # старые ручные записи, которые теперь собираются сами
     for e in manual:
         e.setdefault("source", "manual")
     events = []
