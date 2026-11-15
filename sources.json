@@ -1,0 +1,17 @@
+{
+ "_how": "Откуда робот собирает мероприятия. type: tribe (WordPress + The Events Calendar), ics (ссылка на календарь .ics), jsonld_list (страница-список, link_re — какие ссылки считать событиями). org — id вкладки в приложении. disabled: true — временно выключить источник.",
+ "sources": [
+  {"id": "pfm", "org": "pfm", "type": "tribe", "base": "https://forummigracyjne.org",
+   "fallback": {"type": "jsonld_list", "pages": ["https://forummigracyjne.org/en/calendar/", "https://forummigracyjne.org/en/calendar/{Y}/{M}"], "link_re": "forummigracyjne\\.org/(en/)?wydarzenie/[^/?#]+/?$"},
+   "host": "Polskie Forum Migracyjne", "place_default": "Centrum Wielokulturowe, ul. Jagiellońska 54", "tags": ["миграция"]},
+  {"id": "cpk", "org": "cpk", "type": "tribe", "base": "https://cpk.org.pl",
+   "fallback": {"type": "ics", "url": "https://cpk.org.pl/wydarzenia/?ical=1"},
+   "host": "Centrum Praw Kobiet", "place_default": "Варшава", "tags": ["поддержка"]},
+  {"id": "rpo-patronaty", "org": "rpo", "type": "rpo_patronaty", "url": "https://bip.brpo.gov.pl/pl/tagi/patronaty",
+   "host": "Патронат RPO", "tags": ["права человека"]},
+  {"id": "rpo-news", "type": "rpo_news", "url": "https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli"},
+  {"id": "batory", "org": "batory", "type": "jsonld_list", "pages": ["https://www.batory.org.pl/wydarzenia/"],
+   "link_re": "batory\\.org\\.pl/wydarzenia/[^/?#]+/?$", "heuristic": true, "max": 15,
+   "host": "Fundacja Batorego", "tags": ["права человека"]}
+ ]
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Админка">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Админка · Права человека</title>
+<style>
+:root{--bg:#F7F2EC;--paper:#FFFDFB;--navy:#1F2A44;--teal:#2C6E8F;--mustard:#E9A13B;--coral:#E8735A;--red:#E4572E;--blush:#F6D6D1;--stone:#E7E1DA;--mut:#5F6676;--ok:#2E7D5B}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--navy);font:16px/1.5 "Avenir Next","Avenir","Segoe UI",Roboto,sans-serif;padding:calc(env(safe-area-inset-top) + 18px) 0 60px}
+.slab,h1,h2,summary{font-family:"Rockwell","Roboto Slab","Zilla Slab",Georgia,serif;font-weight:700}
+.wrap{max-width:640px;margin:0 auto;padding:0 18px}
+header{position:relative;padding:8px 0 14px}
+header::after{content:"";position:absolute;right:0;top:4px;width:120px;height:28px;background:repeating-linear-gradient(115deg,var(--teal) 0 4px,transparent 4px 12px)}
+h1{font-size:34px;line-height:1.05;margin:0}
+.sub{color:var(--mut);margin:6px 0 0;font-size:15px}
+.sub a{color:var(--teal);font-weight:600}
+.box{background:var(--paper);border-radius:6px;padding:16px 18px;margin-top:16px;position:relative}
+.box h2{font-size:21px;margin:0 0 6px}
+details.box>summary{font-size:19px;cursor:pointer;list-style:none;margin:-2px 0}
+details.box>summary::-webkit-details-marker{display:none}
+details.box>summary::after{content:"+";float:right;color:var(--coral)}
+details.box[open]>summary::after{content:"−"}
+label{display:block;font-size:13px;font-weight:600;color:var(--teal);margin:12px 0 4px}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1.5px solid var(--stone);border-radius:8px;background:#fff;color:var(--navy);-webkit-appearance:none;appearance:none}
+select{background:#fff url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%278%27%3E%3Cpath d=%27M1 1l5 5 5-5%27 fill=%27none%27 stroke=%27%231F2A44%27 stroke-width=%272%27/%3E%3C/svg%3E") no-repeat right 14px center;padding-right:36px}
+input[type=checkbox]{width:20px;height:20px;padding:0;-webkit-appearance:checkbox;appearance:auto;vertical-align:middle;margin:0 8px 0 0}
+.check{display:flex;align-items:center;font-size:15px;color:var(--navy);font-weight:500;margin-top:12px}
+input:focus,select:focus,textarea:focus,button:focus-visible{outline:2.5px solid var(--mustard);outline-offset:1px}
+.row{display:flex;gap:10px}.row>div{flex:1;min-width:0}
+.hint{font-size:13.5px;color:var(--mut);margin:6px 0 0}
+.hint a{color:var(--teal)}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+button{font:inherit;font-size:15px;font-weight:600;border:1.5px solid var(--navy);background:transparent;color:var(--navy);border-radius:8px;padding:8px 14px}
+button.primary{background:var(--coral);border-color:var(--coral);color:#fff}
+button.dark{background:var(--navy);color:#fff}
+button.danger{border-color:var(--red);color:var(--red)}
+button:disabled{opacity:.5}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:13.5px;padding:4px 10px;border-radius:6px;border:1.5px solid var(--stone);background:#fff;font-weight:600;color:var(--navy)}
+.chip.on{background:var(--teal);border-color:var(--teal);color:#fff}
+.msg{display:none;margin-top:14px;padding:10px 12px;border-radius:6px;font-size:15px}
+.msg.ok{display:block;background:#E3F2EA;color:var(--ok)}
+.msg.err{display:block;background:#FDE7E1;color:var(--red)}
+.msg.info{display:block;background:var(--stone);color:var(--navy)}
+.list{list-style:none;margin:8px 0 0;padding:0}
+.list li{display:grid;grid-template-columns:52px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-top:1px dashed var(--stone)}
+.list li.past{opacity:.55}
+.d{width:52px;height:46px;clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);background:var(--teal);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.d b{font-family:"Rockwell","Roboto Slab",Georgia,serif;font-size:18px}.d span{font-size:10px}
+.t{font-weight:600;font-size:15px;line-height:1.3}
+.t small{display:block;font-weight:400;color:var(--mut);font-size:13px}
+.li-btns{display:flex;gap:4px}
+.li-btns button{padding:5px 9px;font-size:13px}
+.status{list-style:none;padding:0;margin:6px 0 0;font-size:14.5px}
+.status li{padding:6px 0;border-top:1px dashed var(--stone);display:flex;justify-content:space-between;gap:10px}
+.status .good{color:var(--ok);font-weight:600}.status .bad{color:var(--red);font-weight:600}
+.lock{font-size:14px;color:var(--mut)}
+.editing{border-left:4px solid var(--mustard)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Админка<br>мероприятий</h1>
+<p class="sub">Добавляйте и правьте события без кода. <a href="./">Открыть приложение</a></p>
+</header>
+
+<details class="box" id="setup">
+<summary>Подключение к GitHub</summary>
+<p class="hint">Нужно один раз на каждом телефоне. Ключ хранится только на этом устройстве и отправляется только в GitHub.</p>
+<div class="row"><div><label for="owner">Аккаунт</label><input id="owner" autocomplete="off" autocapitalize="off" spellcheck="false"></div>
+<div><label for="repo">Репозиторий</label><input id="repo" autocomplete="off" autocapitalize="off" spellcheck="false"></div></div>
+<label for="token">Ключ доступа (token)</label>
+<input id="token" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="github_pat_…">
+<p class="hint">Как получить: github.com → фото профиля → Settings → Developer settings → Personal access tokens → <b>Fine-grained tokens</b> → Generate new token. Repository access: <b>Only select repositories</b> → этот репозиторий. Permissions → Repository → <b>Contents: Read and write</b>. Срок — например, 1 год.</p>
+<div class="btns"><button class="dark" id="connect" type="button">Подключить</button><button id="forget" type="button">Забыть ключ</button></div>
+<div class="msg" id="setup-msg"></div>
+</details>
+
+<section class="box editing" id="form-box">
+<h2 id="form-title">Новое событие</h2>
+<form id="f" autocomplete="off">
+<label for="title">Название</label><input id="title" required>
+<label for="org">Организация (вкладка)</label><select id="org"></select>
+<div class="row"><div><label for="start">Дата</label><input id="start" type="date" required></div>
+<div><label for="time">Время</label><input id="time" type="time"></div></div>
+<label for="end">Дата окончания (если несколько дней)</label><input id="end" type="date">
+<label for="place">Место</label><input id="place" placeholder="Адрес или «Онлайн»">
+<label for="host">Организатор (как показывать)</label><input id="host">
+<label>Темы</label><div class="chips" id="tags"></div>
+<input id="tag-new" placeholder="Своя тема — Enter, чтобы добавить" style="margin-top:8px">
+<label for="url">Ссылка на анонс</label><input id="url" type="text" placeholder="https://" inputmode="url" autocapitalize="off" spellcheck="false">
+<label for="note">Коротко о событии</label><textarea id="note" rows="3"></textarea>
+<label class="check"><input type="checkbox" id="unsure">Даты ещё не подтверждены</label>
+<div class="btns"><button class="primary" type="submit" id="save">Сохранить событие</button><button type="button" id="cancel" style="display:none">Отменить правку</button></div>
+<div class="msg" id="form-msg"></div>
+</form>
+</section>
+
+<section class="box">
+<h2>Добавленные вручную</h2>
+<p class="lock" id="list-lock">Подключитесь к GitHub, чтобы увидеть список.</p>
+<ul class="list" id="list"></ul>
+</section>
+
+<section class="box">
+<h2>Робот-сборщик</h2>
+<p class="hint" id="bot-upd">Загружаю…</p>
+<ul class="status" id="bot"></ul>
+<p class="hint">Робот запускается каждый день утром и после каждого сохранения здесь. Событие появляется в приложении через 1–2 минуты.</p>
+</section>
+</div>
+
+<script>
+(function(){
+var ORGS=[{"id": "rpo", "name": "RPO", "host": "Rzecznik Praw Obywatelskich"}, {"id": "amnesty", "name": "Amnesty", "host": "Amnesty International Polska"}, {"id": "hia", "name": "Humanity in Action", "host": "Humanity in Action Polska"}, {"id": "sip", "name": "Interwencja Prawna", "host": "Stowarzyszenie Interwencji Prawnej"}, {"id": "hfpc", "name": "Helsińska Fundacja", "host": "Helsińska Fundacja Praw Człowieka"}, {"id": "pfm", "name": "Forum Migracyjne", "host": "Fundacja Polskie Forum Migracyjne"}, {"id": "ocalenie", "name": "Ocalenie", "host": "Fundacja Ocalenie"}, {"id": "cpk", "name": "Centrum Praw Kobiet", "host": "Fundacja Centrum Praw Kobiet"}, {"id": "kph", "name": "KPH", "host": "Kampania Przeciw Homofobii"}, {"id": "bialdom", "name": "Białoruski Dom", "host": "Fundacja „Białoruski Dom”"}, {"id": "batory", "name": "Fundacja Batorego", "host": "Fundacja im. Stefana Batorego"}, {"id": "panoptykon", "name": "Panoptykon", "host": "Fundacja Panoptykon"}, {"id": "pah", "name": "PAH", "host": "Polska Akcja Humanitarna"}, {"id": "fdds", "name": "Dajemy Dzieciom Siłę", "host": "Fundacja Dajemy Dzieciom Siłę"}, {"id": "scwo", "name": "SCWO", "host": "Stołeczne Centrum Współpracy Obywatelskiej"}, {"id": "niebieska", "name": "Niebieska Linia", "host": "Stowarzyszenie „Niebieska Linia”"}, {"id": "city", "name": "Город Варшава", "host": "Miasto Stołeczne Warszawa"}, {"id": "other", "name": "Другие", "host": "Другие организаторы"}];
+var TAGS=["права человека","Беларусь","миграция","НКО","поддержка","инклюзия","культура","наука","дети","онлайн","бесплатно"];
+var MON=["янв","фев","мар","апр","мая","июн","июл","авг","сен","окт","ноя","дек"],WD=["вс","пн","вт","ср","чт","пт","сб"];
+var $=function(id){return document.getElementById(id)};
+var store={get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}},del:function(k){try{localStorage.removeItem(k)}catch(e){}}};
+function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function show(el,cls,text){el.className='msg '+cls;el.textContent=text}
+function b64e(s){return btoa(unescape(encodeURIComponent(s)))}
+function b64d(s){return decodeURIComponent(escape(atob(s.replace(/\n/g,''))))}
+
+// --- настройки ---
+var guessOwner='',guessRepo='';
+if(/\.github\.io$/.test(location.hostname)){guessOwner=location.hostname.split('.')[0];guessRepo=location.pathname.split('/').filter(Boolean)[0]||''}
+$('owner').value=store.get('adm_owner')||guessOwner;$('repo').value=store.get('adm_repo')||guessRepo;$('token').value=store.get('adm_token')||'';
+var file=null,sha=null,editingId=null,selTags=[];
+
+function api(path,opts){opts=opts||{};
+  return fetch('https://api.github.com/repos/'+encodeURIComponent($('owner').value.trim())+'/'+encodeURIComponent($('repo').value.trim())+path,{
+    method:opts.method||'GET',cache:'no-store',
+    headers:{'Accept':'application/vnd.github+json','Authorization':'Bearer '+$('token').value.trim(),'X-GitHub-Api-Version':'2022-11-28'},
+    body:opts.body?JSON.stringify(opts.body):undefined
+  }).then(function(r){return r.json().catch(function(){return{}}).then(function(j){if(!r.ok){var e=new Error(j.message||('HTTP '+r.status));e.status=r.status;throw e}return j})})}
+
+function errText(e){
+  if(e.status===401)return 'GitHub не принял ключ. Проверьте, что он скопирован целиком и не истёк.';
+  if(e.status===403)return 'У ключа нет права записи. В настройках ключа: Contents → Read and write.';
+  if(e.status===404)return 'Не нашёл репозиторий или файл manual.json. Проверьте аккаунт и название репозитория, и что ключ выдан на этот репозиторий.';
+  if(e.status===409)return 'Файл только что изменился. Нажмите «Сохранить» ещё раз.';
+  if(e instanceof TypeError)return 'Нет связи с GitHub. Проверьте интернет.';
+  return 'Ошибка: '+e.message}
+
+function load(){
+  $('list-lock').textContent='Загружаю…';
+  return api('/contents/manual.json').then(function(j){sha=j.sha;file=JSON.parse(b64d(j.content));if(!file.events)file.events=[];renderList();$('list-lock').textContent=file.events.length?'':'Пока пусто.';return true})
+   .catch(function(e){$('list-lock').textContent=errText(e);$('setup').open=true;throw e})}
+
+$('connect').addEventListener('click',function(){
+  if(!$('owner').value.trim()||!$('repo').value.trim()||!$('token').value.trim()){show($('setup-msg'),'err','Заполните аккаунт, репозиторий и ключ.');return}
+  store.set('adm_owner',$('owner').value.trim());store.set('adm_repo',$('repo').value.trim());store.set('adm_token',$('token').value.trim());
+  show($('setup-msg'),'info','Проверяю…');
+  load().then(function(){show($('setup-msg'),'ok','Подключено. Ключ сохранён на этом устройстве.');setTimeout(function(){$('setup').open=false},900)}).catch(function(e){show($('setup-msg'),'err',errText(e))})});
+$('forget').addEventListener('click',function(){store.del('adm_token');$('token').value='';file=null;$('list').innerHTML='';$('list-lock').textContent='Ключ удалён с этого устройства.';show($('setup-msg'),'info','Ключ удалён с этого устройства.')});
+
+// --- форма ---
+$('org').innerHTML=ORGS.map(function(o){return '<option value="'+o.id+'">'+esc(o.name)+'</option>'}).join('');
+$('org').value='other';
+var hostAuto=true;
+function orgHost(){var o=ORGS.filter(function(x){return x.id===$('org').value})[0];return o&&o.id!=='other'?o.host:''}
+$('org').addEventListener('change',function(){if(hostAuto||!$('host').value)$('host').value=orgHost()});
+$('host').addEventListener('input',function(){hostAuto=false});
+function renderTags(){var all=TAGS.slice();selTags.forEach(function(t){if(all.indexOf(t)<0)all.push(t)});
+  $('tags').innerHTML=all.map(function(t){return '<button type="button" class="chip'+(selTags.indexOf(t)>-1?' on':'')+'" data-t="'+esc(t)+'">'+esc(t)+'</button>'}).join('')}
+$('tags').addEventListener('click',function(ev){var t=ev.target.getAttribute('data-t');if(t===null)return;var i=selTags.indexOf(t);if(i>-1)selTags.splice(i,1);else selTags.push(t);renderTags()});
+$('tag-new').addEventListener('keydown',function(ev){if(ev.key==='Enter'){ev.preventDefault();var v=this.value.trim();if(v&&selTags.indexOf(v)<0)selTags.push(v);this.value='';renderTags()}});
+renderTags();
+
+function resetForm(){$('f').reset();$('org').value='other';$('host').value='';hostAuto=true;selTags=[];renderTags();editingId=null;
+  $('form-title').textContent='Новое событие';$('save').textContent='Сохранить событие';$('cancel').style.display='none'}
+$('cancel').addEventListener('click',function(){resetForm();$('form-msg').className='msg'});
+
+function slug(s){return s.toLowerCase().replace(/[^a-z0-9ąćęłńóśźżа-яё]+/g,'-').replace(/^-|-$/g,'').slice(0,30)}
+
+function commit(message,mutate,retry){
+  return api('/contents/manual.json').then(function(j){sha=j.sha;file=JSON.parse(b64d(j.content));if(!file.events)file.events=[];
+    mutate(file.events);
+    return api('/contents/manual.json',{method:'PUT',body:{message:message,content:b64e(JSON.stringify(file,null,1)+'\n'),sha:sha}})})
+   .then(function(r){sha=r.content.sha;renderList();return r})
+   .catch(function(e){if(e.status===409&&!retry)return commit(message,mutate,true);throw e})}
+
+$('f').addEventListener('submit',function(ev){ev.preventDefault();
+  if(!$('token').value.trim()){show($('form-msg'),'err','Сначала подключитесь к GitHub (блок вверху).');$('setup').open=true;return}
+  var start=$('start').value,end=$('end').value;
+  if(end&&end<start){show($('form-msg'),'err','Дата окончания раньше даты начала.');return}
+  var url=$('url').value.trim();if(url&&!/^https?:\/\//.test(url))url='https://'+url;
+  var e={id:editingId||('m-'+start+'-'+slug($('title').value)),org:$('org').value,title:$('title').value.trim(),start:start,end:end&&end!==start?end:'',time:$('time').value,
+    place:$('place').value.trim()||'Место уточните по ссылке',host:$('host').value.trim(),tags:selTags.slice(),url:url,note:$('note').value.trim(),ok:!$('unsure').checked,source:'manual'};
+  var wasEdit=!!editingId;
+  $('save').disabled=true;show($('form-msg'),'info','Сохраняю в GitHub…');
+  commit((wasEdit?'Изменить':'Добавить')+' событие: '+e.title,function(list){
+      var i=-1;list.forEach(function(x,k){if(x.id===e.id)i=k});
+      if(!wasEdit&&i>-1){e.id+='-'+Date.now().toString(36);i=-1}
+      if(i>-1)list[i]=e;else list.push(e);
+      list.sort(function(a,b){return a.start<b.start?-1:a.start>b.start?1:0})})
+   .then(function(){show($('form-msg'),'ok',(wasEdit?'Изменения сохранены':'Событие сохранено')+'. В приложении появится через 1–2 минуты.');resetForm();setTimeout(loadBot,90000)})
+   .catch(function(err){show($('form-msg'),'err',errText(err))})
+   .then(function(){$('save').disabled=false})});
+
+// --- список ---
+function parse(s){var p=s.split('-');return new Date(+p[0],p[1]-1,+p[2])}
+var today=new Date();today.setHours(0,0,0,0);
+function renderList(){if(!file)return;
+  var ev=file.events.slice().sort(function(a,b){var pa=parse(a.end||a.start)<today,pb=parse(b.end||b.start)<today;if(pa!==pb)return pa?1:-1;return pa?(a.start<b.start?1:-1):(a.start<b.start?-1:1)});
+  $('list').innerHTML=ev.map(function(e){var d=parse(e.start),o=ORGS.filter(function(x){return x.id===e.org})[0];
+    return '<li class="'+(parse(e.end||e.start)<today?'past':'')+'" data-id="'+esc(e.id)+'"><div class="d"><b>'+d.getDate()+'</b><span>'+MON[d.getMonth()]+'</span></div>'+
+    '<div class="t">'+esc(e.title)+'<small>'+(o?esc(o.name):'')+(e.time?' · '+esc(e.time):'')+(e.ok===false?' · даты не подтверждены':'')+'</small></div>'+
+    '<div class="li-btns"><button type="button" data-a="edit">Править</button><button type="button" class="danger" data-a="del">Удалить</button></div></li>'}).join('');
+  $('list-lock').textContent=ev.length?'':'Пока пусто.'}
+$('list').addEventListener('click',function(ev){var a=ev.target.getAttribute('data-a');if(!a)return;var li=ev.target.closest('li'),id=li.getAttribute('data-id');
+  var e=file.events.filter(function(x){return x.id===id})[0];if(!e)return;
+  if(a==='edit'){editingId=id;$('title').value=e.title||'';$('org').value=e.org||'other';$('start').value=e.start||'';$('end').value=e.end||'';$('time').value=e.time||'';
+    $('place').value=e.place==='Место уточните по ссылке'?'':(e.place||'');$('host').value=e.host||'';hostAuto=false;selTags=(e.tags||[]).slice();renderTags();
+    $('url').value=e.url||'';$('note').value=e.note||'';$('unsure').checked=e.ok===false;
+    $('form-title').textContent='Правка события';$('save').textContent='Сохранить изменения';$('cancel').style.display='';$('form-msg').className='msg';
+    $('form-box').scrollIntoView({behavior:'smooth'})}
+  if(a==='del'){if(!ev.target.getAttribute('data-sure')){ev.target.setAttribute('data-sure','1');ev.target.textContent='Точно?';return}
+    ev.target.disabled=true;
+    commit('Удалить событие: '+e.title,function(list){for(var i=list.length-1;i>=0;i--)if(list[i].id===id)list.splice(i,1)})
+     .then(function(){show($('form-msg'),'ok','Событие удалено. Из приложения пропадёт через 1–2 минуты.')})
+     .catch(function(err){show($('form-msg'),'err',errText(err));renderList()})}});
+
+// --- статус робота ---
+var NAMES={pfm:'Polskie Forum Migracyjne',cpk:'Centrum Praw Kobiet','rpo-patronaty':'RPO — патронаты','rpo-news':'RPO — новости',batory:'Fundacja Batorego'};
+function loadBot(){fetch('events.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){
+  var d=new Date(j.updated);$('bot-upd').textContent=isNaN(d)?'':'Последний сбор: '+d.getDate()+' '+MON[d.getMonth()]+', '+('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2)+'. Всего событий: '+(j.events||[]).length+'.';
+  var st=j.status||{};$('bot').innerHTML=Object.keys(st).length?Object.keys(st).map(function(k){var good=/^ok/.test(st[k]);
+    return '<li><span>'+esc(NAMES[k]||k)+'</span><span class="'+(good?'good':'bad')+'">'+esc(good?st[k].replace('ok:','нашёл'):st[k])+'</span></li>'}).join(''):'<li><span>Робот ещё не запускался</span><span></span></li>'})
+  .catch(function(){$('bot-upd').textContent='Статус появится, когда страница будет на GitHub Pages.'})}
+loadBot();
+
+if($('token').value&&$('owner').value&&$('repo').value)load().catch(function(){});else $('setup').open=true;
+})();
+</script>
+</body>
+</html>

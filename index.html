@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Права человека">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Права человека">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+
+<meta name="theme-color" content="#F7F2EC">
+<title>Права человека · Варшава</title>
+<style>
+:root{--bg:#F7F2EC;--paper:#FFFDFB;--navy:#1F2A44;--teal:#2C6E8F;--mustard:#E9A13B;--coral:#E8735A;--red:#E4572E;--blush:#F6D6D1;--stone:#E7E1DA;--mut:#5F6676}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--navy);font:16px/1.5 "Avenir Next","Avenir","Segoe UI",Roboto,sans-serif;padding-bottom:56px;overflow-x:hidden}
+.slab{font-family:"Rockwell","Roboto Slab","Zilla Slab","Clarendon",Georgia,serif;font-weight:700}
+.wrap{max-width:640px;margin:0 auto;padding:0 18px;position:relative}
+
+/* slide-like hero */
+.hero{position:relative;background:var(--paper);margin:calc(env(safe-area-inset-top) + 14px) -6px 0;padding:26px 22px 0;overflow:hidden;box-shadow:0 1px 0 var(--stone)}
+.hero::before{content:"";position:absolute;z-index:1;right:-20px;top:16px;width:58%;height:54px;background:repeating-linear-gradient(115deg,var(--teal) 0 5px,transparent 5px 15px)}
+.hero .blob1{position:absolute;left:-30px;bottom:-10px;width:55%;height:70%;background:var(--stone);clip-path:polygon(0 30%,60% 0,100% 100%,0 100%);opacity:.7}
+.hero .blob2{position:absolute;right:20%;top:0;width:40%;height:38%;background:var(--blush);clip-path:polygon(10% 0,100% 0,70% 100%,0 60%);opacity:.6}
+.dots{position:absolute;width:64px;height:150px;background-image:radial-gradient(var(--mustard) 1.6px,transparent 1.8px);background-size:16px 16px}
+.hero .dots{left:10px;top:20px}
+.hero-txt{position:relative;z-index:1;padding-left:26px}
+h1{font-size:54px;line-height:.98;margin:30px 0 10px;letter-spacing:-.01em}
+.sub{margin:0;font-size:17px;max-width:30ch;color:var(--navy)}
+.hands{position:relative;z-index:1;display:block;width:92%;margin:14px 0 0 auto}
+
+.lead{position:relative;margin:22px 0 0;font-size:16px;max-width:44ch}
+.lead b{color:var(--red)}
+
+/* tabs */
+.bar{position:sticky;top:0;padding-top:calc(10px + env(safe-area-inset-top))!important;z-index:5;background:var(--bg);margin:20px -18px 0;padding:10px 18px 12px;box-shadow:0 1px 0 var(--stone)}
+.tabs{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;font:inherit;font-weight:600;font-size:14.5px;border:1.5px solid var(--navy);background:transparent;color:var(--navy);border-radius:8px;padding:6px 12px}
+.tab.on{background:var(--teal);border-color:var(--teal);color:#fff}
+input[type=search]{width:100%;margin-top:10px;font:inherit;font-size:16px;padding:10px 12px;border:1.5px solid var(--stone);border-radius:10px;background:var(--paper);color:var(--navy);-webkit-appearance:none}
+:focus-visible,input:focus{outline:2.5px solid var(--mustard);outline-offset:2px}
+
+/* org panel = quote slide */
+.panel{position:relative;background:var(--paper);margin:18px -6px 6px;padding:24px 22px 22px 26px;overflow:hidden}
+.panel[hidden]{display:none}
+.panel::before{content:"";position:absolute;left:0;top:0;width:120px;height:36px;background:repeating-linear-gradient(115deg,var(--teal) 0 4px,transparent 4px 12px)}
+.panel::after{content:"";position:absolute;right:-10px;bottom:-10px;width:110px;height:70px;background:var(--coral);clip-path:polygon(100% 0,100% 100%,0 100%);opacity:.85}
+.pname{position:relative;margin:22px 0 0;font-size:28px;line-height:1.08}
+.pabout{position:relative;margin:10px 0 14px;font-size:15.5px;max-width:52ch}
+.none{position:relative;font-size:14.5px;color:var(--mut);font-style:italic;margin:4px 0 14px}
+.hotline{position:relative;border-left:4px solid var(--mustard);padding:4px 0 4px 14px;margin:8px 0 6px}
+.hl-label{font-weight:600;font-size:14px;color:var(--teal)}
+.hl-num{display:block;white-space:nowrap;color:var(--red);text-decoration:none;font-size:min(12vw,46px);line-height:1.05;margin:2px 0 6px}
+.hotline p{margin:0;font-size:14px}
+.hotline a{color:var(--navy)}
+.panel h4{position:relative;margin:18px 0 6px;font-size:18px;font-family:"Rockwell","Roboto Slab",Georgia,serif}
+.news{position:relative;list-style:none;margin:0 0 14px;padding:0}
+.news li{padding:8px 0;border-top:1px dashed var(--stone);font-size:15px;line-height:1.35}
+.news li span{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--teal);padding:0 6px;border-radius:3px;margin-right:6px}
+
+/* timeline */
+.month{font-size:30px;text-align:center;margin:34px 0 14px;position:relative}
+.month::after{content:"";display:block;width:46px;height:4px;background:var(--mustard);margin:8px auto 0;border-radius:2px}
+.month.hidden{display:none}
+section#upcoming,section#past,#mine{position:relative}
+.card{position:relative;display:grid;grid-template-columns:64px 1fr;gap:0 14px;padding:0 0 22px}
+.card::before{content:"";position:absolute;left:31px;top:64px;bottom:0;border-left:2px dotted var(--mustard)}
+.hex{width:64px;height:58px;clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;line-height:1}
+.hex b{font-family:"Rockwell","Roboto Slab",Georgia,serif;font-size:24px}
+.hex span{font-size:11px;font-weight:600;margin-top:2px;opacity:.9}
+.c1{background:var(--navy)}.c2{background:var(--coral)}.c3{background:var(--teal)}.c4{background:var(--mustard)}
+.card.fav .hex{background:var(--red)}
+.body{background:var(--paper);border-radius:4px;padding:14px 16px 16px;border-bottom:3px solid var(--blush)}
+.when{font-size:13.5px;font-weight:600;color:var(--teal)}
+.card h3{margin:4px 0 6px;font-family:"Rockwell","Roboto Slab",Georgia,serif;font-size:19px;line-height:1.22}
+.meta{margin:0;font-size:14px}
+.meta span{color:var(--mut)}
+.note{margin:8px 0 0;font-size:14.5px;max-width:56ch}
+.warn{display:inline-block;margin:10px 0 0;font-size:12.5px;font-weight:700;color:var(--red);background:#FDE7E1;padding:2px 8px;border-radius:3px}
+.tags{margin-top:10px;display:flex;flex-wrap:wrap;gap:4px}
+.tag{font-size:12px;font-weight:600;color:var(--navy);background:var(--stone);padding:1px 8px;border-radius:3px}
+.actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.btn{font:inherit;font-size:14px;font-weight:600;border:1.5px solid var(--navy);background:transparent;color:var(--navy);border-radius:8px;padding:5px 11px;text-decoration:none;display:inline-flex;align-items:center}
+.btn.dark{position:relative;background:var(--navy);color:#fff}
+.card.fav .star{background:var(--red);border-color:var(--red);color:#fff}
+.card.past{opacity:.55}
+.js{display:none!important}
+html.has-js .js{display:inline-flex!important}
+html.has-js .jsb{display:block!important}
+.jsb{display:none!important}
+.empty{text-align:center;color:var(--mut);padding:20px 0}
+
+details{margin-top:16px;background:var(--paper);padding:0 18px;border-radius:4px}
+summary{font-family:"Rockwell","Roboto Slab",Georgia,serif;font-weight:700;font-size:21px;cursor:pointer;padding:14px 0;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--coral)}
+details[open] summary::after{content:"−"}
+.form{padding:4px 0 12px}
+.form label{display:block;font-size:13px;font-weight:600;color:var(--teal);margin:12px 0 4px}
+.form label:first-child{margin-top:0}
+.form input,.form textarea,.form select{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1.5px solid var(--stone);border-radius:8px;background:#fff;color:var(--navy);-webkit-appearance:none}
+.row{display:flex;gap:10px}.row>div{flex:1}
+.tip{font-size:14px;color:var(--mut);margin:0 0 16px}
+ul.src{list-style:none;padding:0;margin:0 0 16px}
+ul.src li{padding:9px 0;border-top:1px dashed var(--stone)}
+ul.src a{color:var(--teal);font-weight:600}
+.install{position:relative;background:var(--paper);border-left:4px solid var(--coral);padding:14px 16px;margin:18px 0 0;font-size:14.5px}
+.install b{display:block;font-family:"Rockwell","Roboto Slab",Georgia,serif;font-size:17px;margin-bottom:6px}
+.install ol{margin:6px 0 0;padding-left:20px}
+.install .x{position:absolute;right:8px;top:6px;border:0;background:none;font-size:22px;color:var(--mut);padding:4px 8px}
+.gcal{font-size:13px;color:var(--teal);font-weight:600;align-self:center;margin-left:2px}
+.upd{font-size:13px;color:var(--mut);margin:6px 0 0}
+footer{font-size:12.5px;color:var(--mut);margin-top:24px}
+@media (prefers-reduced-motion:no-preference){.hands g{animation:up .7s cubic-bezier(.2,.8,.2,1) both}.hands g:nth-child(2){animation-delay:.05s}.hands g:nth-child(3){animation-delay:.1s}.hands g:nth-child(4){animation-delay:.15s}.hands g:nth-child(5){animation-delay:.2s}.hands g:nth-child(6){animation-delay:.25s}.hands g:nth-child(7){animation-delay:.3s}@keyframes up{from{transform:translateY(40px)}}}
+</style>
+<script>document.documentElement.className='has-js'</script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+<div class="blob1"></div><div class="blob2"></div><div class="dots"></div>
+<div class="hero-txt"><h1 class="slab">Права<br>человека</h1>
+<p class="sub">Мероприятия 16 крупных НКО и фондов в Варшаве</p></div>
+<svg class="hands" viewBox="0 0 300 200" role="img" aria-label="Поднятые руки"><g transform="rotate(-8 31 230)"><rect x="18" y="140" width="26" height="130" rx="3" fill="#E9A13B"/><rect x="18" y="136" width="26" height="7" rx="2" fill="#1F2A44" opacity=".25"/><rect x="22" y="100" width="18" height="44" rx="6" fill="#8D5A3B"/><rect x="16" y="76" width="30" height="30" rx="9" fill="#8D5A3B"/><rect x="19" y="80" width="1.6" height="10" rx=".8" fill="#000" opacity=".18"/><rect x="27" y="80" width="1.6" height="10" rx=".8" fill="#000" opacity=".18"/><rect x="35" y="80" width="1.6" height="10" rx=".8" fill="#000" opacity=".18"/></g><g transform="rotate(4 71 230)"><rect x="58" y="110" width="26" height="160" rx="3" fill="#2C6E8F"/><rect x="58" y="106" width="26" height="7" rx="2" fill="#1F2A44" opacity=".25"/><rect x="62" y="70" width="18" height="44" rx="6" fill="#F2C6A0"/><rect x="58" y="56" width="26" height="24" rx="8" fill="#F2C6A0"/><rect x="58" y="38" width="6.5" height="24" rx="3.2" fill="#F2C6A0"/><rect x="65" y="32" width="6.5" height="30" rx="3.2" fill="#F2C6A0"/><rect x="72" y="34" width="6.5" height="28" rx="3.2" fill="#F2C6A0"/><rect x="78" y="40" width="6.5" height="22" rx="3.2" fill="#F2C6A0"/><rect x="50" y="64" width="14" height="6.5" rx="3.2" fill="#F2C6A0" transform="rotate(-35 58 67)"/></g><g transform="rotate(-3 111 230)"><rect x="98" y="152" width="26" height="118" rx="3" fill="#ECE7E1"/><rect x="98" y="148" width="26" height="7" rx="2" fill="#1F2A44" opacity=".25"/><rect x="102" y="112" width="18" height="44" rx="6" fill="#C98B5E"/><rect x="96" y="88" width="30" height="30" rx="9" fill="#C98B5E"/><rect x="99" y="92" width="1.6" height="10" rx=".8" fill="#000" opacity=".18"/><rect x="107" y="92" width="1.6" height="10" rx=".8" fill="#000" opacity=".18"/><rect x="115" y="92" width="1.6" height="10" rx=".8" fill="#000" opacity=".18"/></g><g transform="rotate(2 151 230)"><rect x="138" y="94" width="26" height="176" rx="3" fill="#E4572E"/><rect x="138" y="90" width="26" height="7" rx="2" fill="#1F2A44" opacity=".25"/><rect x="142" y="54" width="18" height="44" rx="6" fill="#5B3A29"/><rect x="138" y="40" width="26" height="24" rx="8" fill="#5B3A29"/><rect x="138" y="22" width="6.5" height="24" rx="3.2" fill="#5B3A29"/><rect x="145" y="16" width="6.5" height="30" rx="3.2" fill="#5B3A29"/><rect x="152" y="18" width="6.5" height="28" rx="3.2" fill="#5B3A29"/><rect x="158" y="24" width="6.5" height="22" rx="3.2" fill="#5B3A29"/><rect x="130" y="48" width="14" height="6.5" rx="3.2" fill="#5B3A29" transform="rotate(-35 138 51)"/></g><g transform="rotate(6 191 230)"><rect x="178" y="128" width="26" height="142" rx="3" fill="#2C6E8F"/><rect x="178" y="124" width="26" height="7" rx="2" fill="#1F2A44" opacity=".25"/><rect x="182" y="88" width="18" height="44" rx="6" fill="#E8A87C"/><rect x="178" y="74" width="26" height="24" rx="8" fill="#E8A87C"/><rect x="178" y="56" width="6.5" height="24" rx="3.2" fill="#E8A87C"/><rect x="185" y="50" width="6.5" height="30" rx="3.2" fill="#E8A87C"/><rect x="192" y="52" width="6.5" height="28" rx="3.2" fill="#E8A87C"/><rect x="198" y="58" width="6.5" height="22" rx="3.2" fill="#E8A87C"/><rect x="170" y="82" width="14" height="6.5" rx="3.2" fill="#E8A87C" transform="rotate(-35 178 85)"/></g><g transform="rotate(-5 231 230)"><rect x="218" y="106" width="26" height="164" rx="3" fill="#E8735A"/><rect x="218" y="102" width="26" height="7" rx="2" fill="#1F2A44" opacity=".25"/><rect x="222" y="66" width="18" height="44" rx="6" fill="#F5D3B3"/><rect x="216" y="42" width="30" height="30" rx="9" fill="#F5D3B3"/><rect x="219" y="46" width="1.6" height="10" rx=".8" fill="#000" opacity=".18"/><rect x="227" y="46" width="1.6" height="10" rx=".8" fill="#000" opacity=".18"/><rect x="235" y="46" width="1.6" height="10" rx=".8" fill="#000" opacity=".18"/></g><g transform="rotate(3 271 230)"><rect x="258" y="134" width="26" height="136" rx="3" fill="#1F2A44"/><rect x="258" y="130" width="26" height="7" rx="2" fill="#1F2A44" opacity=".25"/><rect x="262" y="94" width="18" height="44" rx="6" fill="#3E2A20"/><rect x="256" y="70" width="30" height="30" rx="9" fill="#3E2A20"/><rect x="259" y="74" width="1.6" height="10" rx=".8" fill="#000" opacity=".18"/><rect x="267" y="74" width="1.6" height="10" rx=".8" fill="#000" opacity=".18"/><rect x="275" y="74" width="1.6" height="10" rx=".8" fill="#000" opacity=".18"/></g></svg>
+</header>
+<p class="lead" id="lead">Загружаю мероприятия…</p>
+<p class="upd" id="upd"></p>
+
+<div class="install jsb" id="install" style="display:none"><button class="x" type="button" id="install-x" aria-label="Скрыть">×</button>
+<b>Поставить на экран «Домой»</b>
+<div id="ins-ios">На iPhone: откройте страницу в Safari → кнопка «Поделиться» (квадрат со стрелкой) → «На экран "Домой"» → «Добавить».</div>
+<div id="ins-and">На Android: меню ⋮ в Chrome → «Добавить на главный экран» или «Установить приложение».</div>
+<div id="ins-pc">На компьютере: в Chrome или Edge — значок установки в адресной строке; в Safari на Mac — «Файл» → «Добавить в Dock».</div>
+</div>
+<div class="bar jsb">
+<div class="tabs" id="tabs"><button class="tab on" data-org="">Все</button><button class="tab" data-org="★">★</button><button class="tab" data-org="rpo">RPO</button><button class="tab" data-org="amnesty">Amnesty</button><button class="tab" data-org="hia">Humanity in Action</button><button class="tab" data-org="sip">Interwencja Prawna</button><button class="tab" data-org="hfpc">Helsińska Fundacja</button><button class="tab" data-org="pfm">Forum Migracyjne</button><button class="tab" data-org="ocalenie">Ocalenie</button><button class="tab" data-org="cpk">Centrum Praw Kobiet</button><button class="tab" data-org="kph">KPH</button><button class="tab" data-org="bialdom">Białoruski Dom</button><button class="tab" data-org="batory">Fundacja Batorego</button><button class="tab" data-org="panoptykon">Panoptykon</button><button class="tab" data-org="pah">PAH</button><button class="tab" data-org="fdds">Dajemy Dzieciom Siłę</button><button class="tab" data-org="scwo">SCWO</button><button class="tab" data-org="niebieska">Niebieska Linia</button><button class="tab" data-org="city">Город Варшава</button><button class="tab" data-org="other">Другие</button></div>
+<input type="search" id="q" placeholder="Поиск по названию, месту, организатору">
+</div>
+
+<section class="panel" data-panel="rpo" hidden>
+<h2 class="pname slab">Rzecznik Praw Obywatelskich</h2><p class="pabout">Государственный орган, который защищает права и свободы всех, кто находится в Польше, в том числе иностранцев. Сейчас должность занимает Sylwia Gregorczyk-Abram. Под её патронатом прошёл и Festiwal Praw Człowieka.</p><div class="hotline"><div class="hl-label">Бесплатная линия RPO</div>
+<a class="hl-num slab" href="tel:800676676">800 676 676</a>
+<p>С мобильного по тарифу оператора: <a href="tel:+48225517791">22 551 77 91</a><br>Пн 10:00–18:00, вт–пт 8:00–16:00<br>Al. Solidarności 77, 00-090 Warszawa</p></div>
+<h4>Последние новости RPO</h4><ul class="news" id="rpo-news"><li><span>5 ноября</span>Повторное письмо в МВД о том, как RPO наблюдает за депортациями иностранцев</li><li><span>5 ноября</span>Проблемы людей без гражданства, бежавших из Украины: очередное письмо главе Urzędu do Spraw Cudzoziemców</li><li><span>5 ноября</span>Комиссия экспертов по делам пожилых людей наметила планы на 2027 год</li><li><span>4 ноября</span>Сомнения по программе PFRON о прокате оборудования для людей с инвалидностью</li><li><span>3 ноября</span>Встреча RPO с организациями инициативы «Nasz Rzecznik»</li></ul>
+<a class="btn dark" href="https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli">Все новости RPO</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="amnesty" hidden>
+<h2 class="pname slab">Amnesty International Polska</h2><p class="pabout">Международное движение в защиту прав человека. Каждую зиму проводит Марафон писем в поддержку людей, чьи права нарушены, в том числе политзаключённых.</p><a class="btn dark" href="https://maraton.amnesty.org.pl/">maraton.amnesty.org.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="hia" hidden>
+<h2 class="pname slab">Humanity in Action Polska</h2><p class="pabout">Образовательная организация: учит правам человека и превращает знания в активизм. Девиз — «Uprzedź uprzedzenia». В 2026 году отметила 20 лет.</p><a class="btn dark" href="https://www.instagram.com/humanityinaction.pl/">Instagram</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="sip" hidden>
+<h2 class="pname slab">Stowarzyszenie Interwencji Prawnej</h2><p class="pabout">Уже больше 20 лет бесплатно помогает мигрантам и беженцам юридически и ведёт стратегические дела в судах. Пишет о решениях по защите, документам и пособиям для иностранцев.</p><a class="btn dark" href="https://interwencjaprawna.pl/">interwencjaprawna.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="hfpc" hidden>
+<h2 class="pname slab">Helsińska Fundacja Praw Człowieka</h2><p class="pabout">Одна из старейших и крупнейших правозащитных организаций в Европе, основана в 1989 году. Ведёт судебные дела по прецедентным вопросам, следит за верховенством права, даёт бесплатную юрпомощь гражданам Украины.</p><a class="btn dark" href="https://hfhr.pl/">hfhr.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="pfm" hidden>
+<h2 class="pname slab">Fundacja Polskie Forum Migracyjne</h2><p class="pabout">Поддерживает людей с опытом миграции: кейсворк, психолог, юрист. Ведёт Centrum Wielokulturowe на ul. Jagiellońska 54, где проходят встречи, курсы и мастер-классы.</p><a class="btn dark" href="https://forummigracyjne.org/">forummigracyjne.org</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="ocalenie" hidden>
+<h2 class="pname slab">Fundacja Ocalenie</h2><p class="pabout">С 2000 года помогает мигрантам и беженцам строить безопасную жизнь в Польше. Ведёт Centrum Pomocy Cudzoziemcom и Refugees Welcome Polska. Каждую зиму вместе с Muzeum Sztuki Nowoczesnej проводит благотворительную выставку и аукцион.</p><a class="btn dark" href="https://ocalenie.org.pl/">ocalenie.org.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="cpk" hidden>
+<h2 class="pname slab">Fundacja Centrum Praw Kobiet</h2><p class="pabout">Работает за равный статус женщин и мужчин и против насилия. В Akademii Mocy Kobiet — бесплатные и недорогие мастер-классы, круги поддержки, курсы осознанности.</p><a class="btn dark" href="https://cpk.org.pl/wydarzenia/miesiac/">cpk.org.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="kph" hidden>
+<h2 class="pname slab">Kampania Przeciw Homofobii</h2><p class="pabout">Организация, которая защищает права ЛГБТ+ людей в Польше. Каждый год проводит плебисцит Korony Równości.</p><a class="btn dark" href="https://kph.org.pl/">kph.org.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="bialdom" hidden>
+<h2 class="pname slab">Fundacja „Białoruski Dom”</h2><p class="pabout">Беларуский фонд в Варшаве, работает в сфере прав человека, гражданского общества и демократии в Беларуси. Проводит выставки и встречи диаспоры.</p><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="batory" hidden>
+<h2 class="pname slab">Fundacja im. Stefana Batorego</h2><p class="pabout">Один из крупнейших независимых фондов Польши, основана в 1988 году. Даёт гранты общественным организациям, следит за работой государственных институтов, проводит дебаты и конференции. Офис — ul. Sapieżyńska 10a.</p><a class="btn dark" href="https://www.batory.org.pl/wydarzenia/">batory.org.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="panoptykon" hidden>
+<h2 class="pname slab">Fundacja Panoptykon</h2><p class="pabout">С 2009 года следит за тем, как государство и компании используют данные и технологии. Борется за законы, которые защищают свободу и приватность.</p><a class="btn dark" href="https://panoptykon.org/">panoptykon.org</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="pah" hidden>
+<h2 class="pname slab">Polska Akcja Humanitarna</h2><p class="pabout">Гуманитарная организация, основанная в 1992 году. Помогла людям в 52 странах: вода, еда, жильё, образование, психологическая помощь. Работает и в Польше, и в Украине.</p><a class="btn dark" href="https://www.pah.org.pl/">pah.org.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="fdds" hidden>
+<h2 class="pname slab">Fundacja Dajemy Dzieciom Siłę</h2><p class="pabout">Больше 30 лет защищает детей от насилия: психологическая и юридическая помощь детям и родителям, обучение взрослых, работа над законами. Ведёт детский телефон доверия 116 111.</p><a class="btn dark" href="https://fdds.pl/">fdds.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="scwo" hidden>
+<h2 class="pname slab">Stołeczne Centrum Współpracy Obywatelskiej</h2><p class="pabout">Городской центр поддержки организаций Варшавы. Проводит бесплатные семинары: как писать заявки на гранты, планировать бюджет, строить команду.</p><a class="btn dark" href="https://warszawa.ngo.pl/">warszawa.ngo.pl</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="niebieska" hidden>
+<h2 class="pname slab">Stowarzyszenie „Niebieska Linia”</h2><p class="pabout">Помогает людям, которые сталкиваются с насилием в семье. В Урсынове ведёт программу «PoMoc Ursynów» с бесплатными консультациями психолога и юриста.</p><a class="btn dark" href="https://um.warszawa.pl/kalendarz">Календарь города</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="city" hidden>
+<h2 class="pname slab">Miasto Stołeczne Warszawa</h2><p class="pabout">Город каждый декабрь проводит Warszawski Tydzień Praw Człowieka: дискуссии, мастер-классы, кино и выставки вокруг 10 декабря, Дня прав человека.</p><a class="btn dark" href="https://wsparcie.um.warszawa.pl/wtpc">wsparcie.um.warszawa.pl/wtpc</a><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section><section class="panel" data-panel="other" hidden>
+<h2 class="pname slab">Другие организаторы</h2><p class="pabout">Университеты, фонды и инициативы, которые тоже проводят события по теме.</p><p class="none" data-none>Ближайших событий пока не нашёл — загляните на их сайт или добавьте своё.</p></section>
+
+<div id="mine-wrap" style="display:none"><h2 class="month slab">Мои события</h2><div id="mine"></div></div>
+<section id="upcoming"></section>
+<div class="empty" id="empty" style="display:none">У этого организатора пока нет ближайших событий. Откройте вкладку «Все» или добавьте своё.</div>
+
+<details class="jsb">
+<summary>Добавить своё</summary>
+<form class="form" id="add">
+<label>Название</label><input name="title" required>
+<div class="row"><div><label>Дата</label><input name="start" type="date" required></div><div><label>Время</label><input name="time" type="time"></div></div>
+<label>Организатор</label><select name="org" id="orgsel"></select>
+<label>Место</label><input name="place">
+<label>Ссылка</label><input name="url" type="url" placeholder="https://">
+<label>Заметка</label><textarea name="note" rows="2"></textarea>
+<div class="actions"><button class="btn dark" type="submit">Сохранить событие</button></div>
+</form>
+<p class="tip">Свои события и избранное хранятся только на этом телефоне.</p>
+</details>
+
+<details>
+<summary>Прошедшие</summary>
+<section id="past"></section>
+</details>
+
+<details>
+<summary>Где искать анонсы</summary>
+<ul class="src"><li><a href="https://bip.brpo.gov.pl/pl/tagi/patronaty">RPO — новости и патронаты</a></li><li><a href="https://wydarzenia.ngo.pl/">ngo.pl — обучения и события</a></li><li><a href="https://um.warszawa.pl/kalendarz">Календарь города Варшавы</a></li><li><a href="https://waw4free.pl/">waw4free — бесплатные события</a></li><li><a href="https://www.instagram.com/interwencja_prawna/">Instagram: interwencja_prawna</a></li></ul>
+</details>
+
+<footer>Подборка обновляется автоматически каждый день: робот собирает анонсы с сайтов RPO, Polskiego Forum Migracyjnego, Centrum Praw Kobiet, Fundacji Batorego и других, а вручную добавленные события лежат в manual.json. Перед походом проверяйте даты по ссылке «Анонс».</footer>
+</div>
+
+<script>
+(function(){
+var DATA=[{"id": "rpo-pokrzywdzeni", "org": "rpo", "title": "Forum Rozwiązań Pomocowych dla Osób Pokrzywdzonych Przestępstwem", "start": "2026-11-26", "end": "", "time": "", "place": "Место уточните по ссылке", "host": "Патронат RPO", "tags": ["права человека", "поддержка"], "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-forum-rozwiazan-pomocowych-dla-osob-pokrzywdzonych-przestepstwem", "note": "Форум о помощи пострадавшим от преступлений.", "ok": true}, {"id": "rpo-dyskryminacja", "org": "rpo", "title": "X konferencja «Najnowsze tendencje i wyzwania ochrony przed dyskryminacją»", "start": "2026-11-26", "end": "2026-11-27", "time": "", "place": "Место уточните по ссылке", "host": "Патронат RPO", "tags": ["права человека", "наука"], "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-tendencje-wyzwania-ochrona-przed-dyskryminacja", "note": "Международная научная конференция о защите от дискриминации.", "ok": true}, {"id": "rpo-student", "org": "rpo", "title": "Konferencja «Pełno(s)prawny Student», XX edycja", "start": "2026-12-01", "end": "", "time": "", "place": "Место уточните по ссылке", "host": "Патронат RPO", "tags": ["инклюзия"], "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-pelnosprawny-student", "note": "О правах студентов с инвалидностью.", "ok": true}, {"id": "rpo-inclusion", "org": "rpo", "title": "IV Kongres Inclu(vi)sion", "start": "2026-12-03", "end": "", "time": "", "place": "Место уточните по ссылке", "host": "Патронат RPO", "tags": ["инклюзия", "бесплатно"], "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-kongres-incluvision", "note": "Конгресс о потенциале людей с инвалидностью, с виртуальной ярмаркой вакансий.", "ok": true}, {"id": "rpo-soundup", "org": "rpo", "title": "«O tym się nie mówi. SoundUP! Technologia w służbie nie(do)słyszących»", "start": "2026-12-04", "end": "2026-12-05", "time": "", "place": "Место уточните по ссылке", "host": "Патронат RPO", "tags": ["инклюзия"], "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-o-tym-sie-nie-mowi-soundup-technologia-niedoslyszacy", "note": "Конференция о технологиях для людей с нарушениями слуха.", "ok": true}, {"id": "rpo-forum-edu", "org": "rpo", "title": "V Forum Edukacji Obywatelskiej i Prawnej", "start": "2026-12-10", "end": "", "time": "", "place": "Место уточните по ссылке", "host": "Патронат RPO", "tags": ["права человека"], "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-forum-edukacji-obywatelskiej-prawnej", "note": "Форум гражданского и правового просвещения.", "ok": true}, {"id": "amnesty-mpl", "org": "amnesty", "title": "Maraton Pisania Listów", "start": "2026-12-10", "end": "", "time": "", "place": "Варшава и онлайн", "host": "Amnesty International Polska", "tags": ["права человека", "Беларусь"], "url": "https://maraton.amnesty.org.pl/", "note": "Акция писем в защиту людей, чьи права нарушены. Обычно идёт около двух недель и заканчивается 10 декабря.", "ok": false}, {"id": "hia-fest", "org": "hia", "title": "Festiwal Praw Człowieka — 20 lat Humanity in Action Polska", "start": "2026-10-02", "end": "2026-10-03", "time": "17:00", "place": "Rotunda PKO BP, Targowa, „Synergia”", "host": "Humanity in Action Polska", "tags": ["права человека", "бесплатно"], "url": "https://app.evenea.pl/event/festiwalhiapolska/", "note": "Панели, мастер-классы, прогулки и World Café. Почти 300 участников.", "ok": true}, {"id": "scwo-team", "org": "scwo", "title": "«Świadomy zespół i skuteczna komunikacja w NGO»", "start": "2026-11-16", "end": "2026-11-17", "time": "", "place": "Онлайн", "host": "SCWO", "tags": ["НКО", "онлайн", "бесплатно"], "url": "https://warszawa.ngo.pl/", "note": "Семинар о командной работе и коммуникации.", "ok": true}, {"id": "scwo-budget", "org": "scwo", "title": "«Sztuka pisania budżetu»", "start": "2026-11-19", "end": "", "time": "", "place": "Варшава", "host": "SCWO", "tags": ["НКО", "бесплатно"], "url": "https://wydarzenia.ngo.pl/", "note": "Как спланировать финансовую часть заявки на грант.", "ok": true}, {"id": "scwo-project", "org": "scwo", "title": "«Projekt społeczny — baza do dobrego wniosku o dotację»", "start": "2026-11-27", "end": "", "time": "", "place": "Онлайн", "host": "SCWO", "tags": ["НКО", "онлайн", "бесплатно"], "url": "https://warszawa.ngo.pl/", "note": "", "ok": true}, {"id": "scwo-nowefio", "org": "scwo", "title": "«Pisanie wniosków — NOWEFIO»", "start": "2026-11-30", "end": "", "time": "", "place": "Варшава", "host": "SCWO", "tags": ["НКО", "бесплатно"], "url": "https://warszawa.ngo.pl/", "note": "Как писать заявки в конкурс NOWEFIO.", "ok": true}, {"id": "scwo-dotacja", "org": "scwo", "title": "Как пошагово подготовить заявку на грант Urzędu m.st. Warszawy", "start": "2026-12-01", "end": "", "time": "", "place": "Онлайн", "host": "SCWO", "tags": ["НКО", "онлайн", "бесплатно"], "url": "https://warszawa.ngo.pl/", "note": "", "ok": true}, {"id": "niebieska", "org": "niebieska", "title": "«Przynieś–Wynieś–Porozmawiaj»", "start": "2026-11-27", "end": "", "time": "15:00", "place": "ul. Malinowskiego 5, Ursynów", "host": "Niebieska Linia", "tags": ["поддержка", "бесплатно"], "url": "https://um.warszawa.pl/kalendarz", "note": "Встреча в рамках программы «PoMoc Ursynów».", "ok": true}, {"id": "wtpc", "org": "city", "title": "Warszawski Tydzień Praw Człowieka", "start": "2026-12-03", "end": "2026-12-10", "time": "", "place": "Разные площадки Варшавы", "host": "Miasto Warszawa", "tags": ["права человека", "бесплатно"], "url": "https://wsparcie.um.warszawa.pl/wtpc", "note": "Программы на 2026 год пока нет, даты указаны по прошлым годам.", "ok": false}, {"id": "pfm-music", "org": "pfm", "title": "Open Music Sessions", "start": "2026-11-18", "end": "", "time": "17:00", "place": "Centrum Wielokulturowe, ul. Jagiellońska 54", "host": "Polskie Forum Migracyjne", "tags": ["миграция", "культура"], "url": "https://forummigracyjne.org/en/wydarzenie/open-music-sessions/", "note": "Открытые музыкальные встречи.", "ok": true}, {"id": "pfm-zus", "org": "pfm", "title": "All About ZUS Benefits", "start": "2026-11-20", "end": "", "time": "13:00", "place": "Centrum Wielokulturowe", "host": "Polskie Forum Migracyjne", "tags": ["миграция", "поддержка"], "url": "https://forummigracyjne.org/en/wydarzenie/all-about-zus-benefits/", "note": "Всё о пособиях ZUS для иностранцев.", "ok": true}, {"id": "pfm-writing", "org": "pfm", "title": "Creative writing workshop", "start": "2026-11-20", "end": "", "time": "18:00", "place": "Centrum Wielokulturowe", "host": "Polskie Forum Migracyjne", "tags": ["миграция", "культура"], "url": "https://forummigracyjne.org/en/wydarzenie/creative-writing-workshop/", "note": "Мастер-класс по творческому письму на английском.", "ok": true}, {"id": "pfm-glos-1124", "org": "pfm", "title": "Zabierz głos — курс гражданского участия", "start": "2026-11-24", "end": "", "time": "18:00", "place": "Jagiellońska 54 и онлайн", "host": "Polskie Forum Migracyjne", "tags": ["миграция", "права человека", "бесплатно"], "url": "https://forummigracyjne.org/wydarzenie/zabierz-glos/", "note": "Как влиять на город и закон: права, консультации, своя инициатива. Следующие встречи 1 и 15 декабря. На польском, английском, испанском, украинском.", "ok": true}, {"id": "pfm-friends", "org": "pfm", "title": "Speed-Friending в Centrum Wielokulturowe", "start": "2026-11-25", "end": "", "time": "17:00", "place": "Centrum Wielokulturowe, ul. Jagiellońska 54", "host": "Polskie Forum Migracyjne", "tags": ["миграция"], "url": "https://forummigracyjne.org/en/wydarzenie/speed-friending-at-the-multicultural-centre/", "note": "Быстрые знакомства, чтобы найти друзей в Варшаве.", "ok": true}, {"id": "pfm-glos-1201", "org": "pfm", "title": "Zabierz głos — встреча курса", "start": "2026-12-01", "end": "", "time": "18:00", "place": "Jagiellońska 54 и онлайн", "host": "Polskie Forum Migracyjne", "tags": ["миграция", "бесплатно"], "url": "https://forummigracyjne.org/wydarzenie/zabierz-glos/", "note": "", "ok": true}, {"id": "pfm-glos-1215", "org": "pfm", "title": "Zabierz głos — встреча курса", "start": "2026-12-15", "end": "", "time": "18:00", "place": "Jagiellońska 54 и онлайн", "host": "Polskie Forum Migracyjne", "tags": ["миграция", "бесплатно"], "url": "https://forummigracyjne.org/wydarzenie/zabierz-glos/", "note": "", "ok": true}, {"id": "cpk-breath", "org": "cpk", "title": "Breath Design — 4 недели к хорошей дыхательной привычке", "start": "2026-11-16", "end": "", "time": "17:30", "place": "Варшава", "host": "Centrum Praw Kobiet", "tags": ["поддержка"], "url": "https://cpk.org.pl/wydarzenia/miesiac/", "note": "Цикл занятий 16, 23 и 30 ноября.", "ok": true}, {"id": "cpk-mbct", "org": "cpk", "title": "«Uważność w Życiu» (MBCT-L) — 8-недельный курс", "start": "2026-11-19", "end": "", "time": "18:00", "place": "Онлайн", "host": "Centrum Praw Kobiet", "tags": ["поддержка", "онлайн"], "url": "https://cpk.org.pl/wydarzenia/miesiac/", "note": "Курс осознанности, встречи по четвергам.", "ok": true}, {"id": "cpk-krag", "org": "cpk", "title": "Krąg Kobiet", "start": "2026-11-22", "end": "", "time": "16:00", "place": "ul. Hoża 57/15", "host": "Centrum Praw Kobiet", "tags": ["поддержка", "бесплатно"], "url": "https://cpk.org.pl/wydarzenia/miesiac/", "note": "Бесплатный круг поддержки для женщин.", "ok": true}, {"id": "sip-kongres", "org": "sip", "title": "I Kongres Prawa Migracyjnego i Uchodźczego", "start": "2026-09-28", "end": "2026-09-29", "time": "", "place": "WPiA UW, Lipowa 4", "host": "SIP, WPiA UW, UNHCR", "tags": ["миграция", "права человека", "бесплатно"], "url": "https://interwencjaprawna.pl/podsumowujemy-i-kongres-prawa-migracyjnego-i-uchodzczego", "note": "Больше 70 экспертов и 280 участников, в том числе о границе с Беларусью.", "ok": true}, {"id": "kph-korony", "org": "kph", "title": "Gala Korony Równości 2026", "start": "2026-09-25", "end": "", "time": "", "place": "Варшава", "host": "Kampania Przeciw Homofobii", "tags": ["права человека"], "url": "https://koronyrownosci.pl/", "note": "Награды за работу для ЛГБТ+ сообщества.", "ok": true}, {"id": "fdds-light", "org": "fdds", "title": "Подсветка зданий красным — финал кампании «Dzieciństwo bez Przemocy»", "start": "2026-11-19", "end": "", "time": "17:00", "place": "По всей Польше", "host": "Fundacja Dajemy Dzieciom Siłę", "tags": ["права человека", "дети"], "url": "https://fdds.pl/aktualnosci/", "note": "Символический протест против насилия над детьми, которым заканчивается кампания.", "ok": true}, {"id": "fdds-konf", "org": "fdds", "title": "23. Ogólnopolska Konferencja «Dzieciństwo bez przemocy»", "start": "2026-10-19", "end": "2026-10-20", "time": "", "place": "Варшава", "host": "Fundacja Dajemy Dzieciom Siłę", "tags": ["дети", "права человека"], "url": "https://konferencja.fdds.pl/", "note": "Представили отчёт об отношении поляков к насилию над детьми.", "ok": true}, {"id": "batory-igrzyska", "org": "batory", "title": "Дебаты Фонда Батория на Igrzyska Wolności", "start": "2026-10-23", "end": "2026-10-25", "time": "", "place": "EC1 Łódź", "host": "Fundacja Batorego", "tags": ["права человека"], "url": "https://www.batory.org.pl/wydarzenia/igrzyska-wolnosci-2026/", "note": "Три дебата: Европа, гражданская устойчивость и зависимость от Big Tech.", "ok": true}, {"id": "forum-pl-by", "org": "other", "title": "Polsko-Białoruskie Forum Społeczeństwa Obywatelskiego", "start": "2026-10-29", "end": "", "time": "", "place": "Варшава", "host": "Białoruska Platforma Narodowa, Ruch Solidarności Białoruskiej", "tags": ["Беларусь", "НКО"], "url": "https://publicystyka.ngo.pl/od-solidarnosci-do-partnerstwa-polskie-i-bialoruskie-organizacje-spoleczne-chca-dzialac-razem", "note": "80 польских и беларуских организаций обсуждали легализацию пребывания и совместную работу.", "ok": true}, {"id": "bel-art", "org": "other", "title": "Выставка «Białoruscy artyści na wygnaniu»", "start": "2026-11-14", "end": "2026-12-06", "time": "", "place": "Kościół Wszystkich Świętych, pl. Grzybowski", "host": "Archidiecezja Warszawska", "tags": ["Беларусь", "культура"], "url": "https://www.ekai.pl/z-blogoslawienstwem-leona-xiv-i-pod-patronatem-archidiecezji-warszawskiej-jutro-wernisaz-wystawy-bialoruscy-artysci-na-wygnaniu/", "note": "Работы беларуских художников в эмиграции.", "ok": true}, {"id": "hiphop", "org": "other", "title": "«Na legalu? Co o prawie i polityce mówi nam polski hip-hop»", "start": "2026-11-20", "end": "", "time": "", "place": "Wydział Historii UW, Sala Kolumnowa", "host": "Uniwersytet Warszawski", "tags": ["наука"], "url": "https://informator-konferencyjny.pl/konferencje-warszawa", "note": "Научная конференция о праве и политике в хип-хопе.", "ok": true}, {"id": "ludzie", "org": "other", "title": "«Ludzie w ruchu. Migracje, diaspory i pogranicza Europy Środkowo-Wschodniej»", "start": "2026-12-02", "end": "", "time": "", "place": "Варшава", "host": "—", "tags": ["миграция", "Беларусь", "наука"], "url": "https://informator-konferencyjny.pl/konferencje-warszawa", "note": "Конференция о миграциях и диаспорах региона.", "ok": false}, {"id": "bel-napary", "org": "other", "title": "«Białoruskie napary. Zioła, tradycje i dawne receptury»", "start": "2026-11-01", "end": "", "time": "14:00", "place": "Tea Point, ul. Ząbkowska 2", "host": "Fundacja Kultura w Nas", "tags": ["Беларусь", "культура", "бесплатно"], "url": "https://waw4free.pl/wydarzenie-161104-bialoruskie-napary-ziola-tradycje-i-dawne-receptury", "note": "", "ok": true}];
+var store={get:function(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+var favs=store.get('ev_favs',[]),mine=store.get('ev_mine2',[]),org='',q='';
+var WD=["вс","пн","вт","ср","чт","пт","сб"];var MON=["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
+function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function parse(s){var p=s.split('-');return new Date(+p[0],p[1]-1,+p[2])}
+var today=new Date();today.setHours(0,0,0,0);
+function find(id){var all=DATA.concat(mine);for(var i=0;i<all.length;i++)if(all[i].id===id)return all[i]}
+
+var sel=document.getElementById('orgsel'),tabs=document.querySelectorAll('.tab');
+for(var i=0;i<tabs.length;i++){var o=tabs[i].getAttribute('data-org');if(o&&o!=='★')sel.insertAdjacentHTML('beforeend','<option value="'+o+'">'+tabs[i].textContent+'</option>')}
+sel.value='other';
+
+function renderMine(){
+  mine.sort(function(a,b){return a.start<b.start?-1:1});
+  document.getElementById('mine').innerHTML=mine.map(function(e){var a=parse(e.start);
+    return '<article class="card" data-id="'+e.id+'" data-org="'+esc(e.org)+'" data-start="'+e.start+'" data-end="'+e.start+'"><div class="hex c4"><b>'+a.getDate()+'</b><span>'+WD[a.getDay()]+'</span></div><div class="body">'+
+    '<div class="when">'+a.getDate()+' '+MON[a.getMonth()]+(e.time?', '+esc(e.time):'')+'</div><h3>'+esc(e.title)+'</h3>'+
+    (e.place?'<p class="meta">'+esc(e.place)+'</p>':'')+(e.note?'<p class="note">'+esc(e.note)+'</p>':'')+
+    '<div class="actions">'+(e.url?'<a class="btn" href="'+esc(e.url)+'">Ссылка</a>':'')+
+    '<button class="btn js star" type="button">☆ В избранное</button><button class="btn js cal" type="button">В календарь</button><button class="btn js del" type="button">Удалить</button></div></div></article>'}).join('');
+}
+
+function apply(){
+  var ps=document.querySelectorAll('.panel');for(var i=0;i<ps.length;i++)ps[i].hidden=ps[i].getAttribute('data-panel')!==org;
+  var cards=document.querySelectorAll('.card'),shown=0,mineShown=0;
+  for(i=0;i<cards.length;i++){var c=cards[i],id=c.getAttribute('data-id'),fav=favs.indexOf(id)>-1;
+    c.classList.toggle('fav',fav);var s=c.querySelector('.star');if(s)s.textContent=fav?'★ В избранном':'☆ В избранное';
+    if(parse(c.getAttribute('data-end'))<today)c.classList.add('past');
+    var ok=(!org||(org==='★'?fav:c.getAttribute('data-org')===org))&&(!q||c.textContent.toLowerCase().indexOf(q)>-1);
+    c.style.display=ok?'':'none';
+    if(ok&&c.closest('#upcoming'))shown++;if(ok&&c.closest('#mine'))mineShown++;}
+  document.getElementById('mine-wrap').style.display=mineShown?'':'none';
+  var hs=document.querySelectorAll('#upcoming .month,#past .month');
+  for(i=0;i<hs.length;i++){var n=hs[i].nextElementSibling,any=false;while(n&&!n.classList.contains('month')){if(n.style.display!=='none')any=true;n=n.nextElementSibling}hs[i].classList.toggle('hidden',!any)}
+  document.getElementById('empty').style.display=(shown+mineShown)?'none':'';
+}
+
+function ics(e){
+  var p=function(n){return(n<10?'0':'')+n},ymd=function(d){return d.getFullYear()+p(d.getMonth()+1)+p(d.getDate())};
+  var a=parse(e.start),b=parse(e.end||e.start);b.setDate(b.getDate()+1);var dt;
+  if(e.time&&!e.end){var t=e.time.split(':'),en=new Date(a);en.setHours(+t[0]+2,+t[1]);
+    dt='DTSTART;TZID=Europe/Warsaw:'+ymd(a)+'T'+p(+t[0])+p(+t[1])+'00\r\nDTEND;TZID=Europe/Warsaw:'+ymd(en)+'T'+p(en.getHours())+p(en.getMinutes())+'00';}
+  else dt='DTSTART;VALUE=DATE:'+ymd(a)+'\r\nDTEND;VALUE=DATE:'+ymd(b);
+  var x=function(s){return String(s||'').replace(/[\\;,]/g,function(c){return'\\'+c}).replace(/\n/g,'\\n')};
+  var body='BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//meropriyatiya//RU\r\nBEGIN:VEVENT\r\nUID:'+e.id+'@meropriyatiya\r\nDTSTAMP:'+ymd(new Date())+'T000000Z\r\n'+dt+
+    '\r\nSUMMARY:'+x(e.title)+'\r\nLOCATION:'+x(e.place)+'\r\nDESCRIPTION:'+x((e.note||'')+(e.url?'\n'+e.url:''))+(e.url?'\r\nURL:'+e.url:'')+
+    '\r\nBEGIN:VALARM\r\nTRIGGER:-P1D\r\nACTION:DISPLAY\r\nDESCRIPTION:Напоминание\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n';
+  var l=document.createElement('a');l.href='data:text/calendar;charset=utf-8,'+encodeURIComponent(body);l.download=e.id+'.ics';document.body.appendChild(l);l.click();l.remove();
+}
+
+document.addEventListener('click',function(ev){
+  var t=ev.target;
+  if(t.classList.contains('tab')){for(var i=0;i<tabs.length;i++)tabs[i].classList.remove('on');t.classList.add('on');org=t.getAttribute('data-org');apply();
+    var bar=document.querySelector('.bar');if(bar.getBoundingClientRect().top<=0)window.scrollTo(0,window.scrollY+bar.getBoundingClientRect().top+1);return}
+  var c=t.closest&&t.closest('.card');if(!c)return;var id=c.getAttribute('data-id');
+  if(t.classList.contains('star')){var k=favs.indexOf(id);if(k>-1)favs.splice(k,1);else favs.push(id);store.set('ev_favs',favs);apply()}
+  else if(t.classList.contains('cal')){var e=find(id);if(e)ics(e)}
+  else if(t.classList.contains('del')){if(t.getAttribute('data-sure')){mine=mine.filter(function(m){return m.id!==id});store.set('ev_mine2',mine);renderMine();apply()}else{t.setAttribute('data-sure','1');t.textContent='Точно удалить?'}}
+});
+document.getElementById('q').addEventListener('input',function(){q=this.value.trim().toLowerCase();apply()});
+document.getElementById('add').addEventListener('submit',function(ev){ev.preventDefault();var f=this,e={id:'my-'+Date.now(),end:''};
+  ['title','start','time','org','place','url','note'].forEach(function(n){e[n]=f[n].value.trim()});
+  mine.push(e);store.set('ev_mine2',mine);f.reset();sel.value='other';renderMine();apply();document.getElementById('mine-wrap').scrollIntoView({behavior:'smooth'})});
+
+function gcal(e){var p=function(n){return(n<10?'0':'')+n},ymd=function(d){return d.getFullYear()+p(d.getMonth()+1)+p(d.getDate())};
+  var a=parse(e.start),b=parse(e.end||e.start);b.setDate(b.getDate()+1);var dates;
+  if(e.time&&!e.end){var t=e.time.split(':'),en=new Date(a);en.setHours(+t[0]+2,+t[1]);dates=ymd(a)+'T'+p(+t[0])+p(+t[1])+'00/'+ymd(en)+'T'+p(en.getHours())+p(en.getMinutes())+'00'}else dates=ymd(a)+'/'+ymd(b);
+  return 'https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(e.title)+'&dates='+dates+'&ctz=Europe/Warsaw&location='+encodeURIComponent(e.place||'')+'&details='+encodeURIComponent((e.note||'')+(e.url?'\n'+e.url:''));}
+function addG(){var cs=document.querySelectorAll('.card');for(var i=0;i<cs.length;i++){var c=cs[i];if(c.querySelector('.gcal'))continue;var e=find(c.getAttribute('data-id'));var b=c.querySelector('.cal');if(e&&b)b.insertAdjacentHTML('afterend','<a class="gcal" href="'+gcal(e)+'">Google Календарь</a>')}}
+var _rm=renderMine;renderMine=function(){_rm();addG()};
+
+var COLS={rpo:"c1",amnesty:"c2",hia:"c3",sip:"c4",hfpc:"c1",pfm:"c3",ocalenie:"c2",cpk:"c2",kph:"c4",bialdom:"c1",batory:"c3",panoptykon:"c4",pah:"c2",fdds:"c2",scwo:"c4",niebieska:"c2",city:"c1",other:"c3"};
+var MONN=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+var WDM=["вс","пн","вт","ср","чт","пт","сб"];
+function fmtE(e){var a=parse(e.start),s=a.getDate()+' '+MON[a.getMonth()];if(e.end&&e.end!==e.start){var b=parse(e.end);s+=' — '+b.getDate()+' '+MON[b.getMonth()]}return s+(e.time?', '+esc(e.time):'')}
+function cardE(e){var a=parse(e.start),past=parse(e.end||e.start)<today;
+ return '<article class="card'+(past?' past':'')+'" data-id="'+esc(e.id)+'" data-org="'+esc(e.org)+'" data-start="'+e.start+'" data-end="'+(e.end||e.start)+'">'+
+ '<div class="hex '+(COLS[e.org]||'c3')+'"><b>'+a.getDate()+'</b><span>'+WDM[a.getDay()]+'</span></div><div class="body"><div class="when">'+fmtE(e)+'</div>'+
+ '<h3>'+esc(e.title)+'</h3><p class="meta">'+esc(e.place)+(e.host?'<br><span>'+esc(e.host)+'</span>':'')+'</p>'+
+ (e.note?'<p class="note">'+esc(e.note)+'</p>':'')+(e.ok===false?'<p class="warn">Даты ещё не подтверждены</p>':'')+
+ '<div class="tags">'+(e.tags||[]).map(function(t){return '<span class="tag">'+esc(t)+'</span>'}).join('')+'</div>'+
+ '<div class="actions">'+(e.url?'<a class="btn" href="'+esc(e.url)+'">Анонс</a>':'')+'<button class="btn js star" type="button">☆ В избранное</button><button class="btn js cal" type="button">В календарь</button></div></div></article>'}
+function grouped(l){var out=[],cur=-1;l.forEach(function(e){var m=parse(e.start).getMonth();if(m!==cur){out.push('<h2 class="month slab">'+MONN[m]+'</h2>');cur=m}out.push(cardE(e))});return out.join('')}
+function renderAll(upd,news){
+ DATA=DATA.filter(function(e){return e&&e.id&&e.start&&/^\d{4}-\d{2}-\d{2}$/.test(e.start)});
+ var s=DATA.slice().sort(function(a,b){return a.start<b.start?-1:a.start>b.start?1:0});
+ var up=s.filter(function(e){return parse(e.end||e.start)>=today}),past=s.filter(function(e){return parse(e.end||e.start)<today}).reverse().slice(0,40);
+ document.getElementById('upcoming').innerHTML=grouped(up);document.getElementById('past').innerHTML=grouped(past);
+ var nx=up.filter(function(e){return parse(e.start)>=today})[0],lead=document.getElementById('lead');
+ if(nx){var n=Math.round((parse(nx.start)-today)/864e5),hd=parse(nx.start),m=hd.getDate()+' '+MON[hd.getMonth()];
+  lead.innerHTML='Впереди '+up.length+' событий. Ближайшее — <b>'+(n===0?'сегодня':n===1?'завтра, '+m:m)+'</b>, '+esc(nx.title)+'.'}else lead.textContent='Ближайших событий пока нет.';
+ if(upd){var d=new Date(upd);if(!isNaN(d))document.getElementById('upd').textContent='Обновлено: '+d.getDate()+' '+MON[d.getMonth()]+', '+('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2)}
+ if(news&&news.length){var ul=document.getElementById('rpo-news');if(ul)ul.innerHTML=news.slice(0,6).map(function(x){return '<li><span>'+esc(x.date)+'</span>'+(x.url?'<a href="'+esc(x.url)+'" style="color:inherit">'+esc(x.title)+'</a>':esc(x.title))+'</li>'}).join('')}
+ var ps=document.querySelectorAll('.panel');for(var i=0;i<ps.length;i++){var id=ps[i].getAttribute('data-panel'),cnt=up.filter(function(e){return e.org===id}).length,nn=ps[i].querySelector('[data-none]');if(nn)nn.style.display=cnt?'none':''}
+ renderMine();apply();addG();
+}
+renderAll(null,null);
+fetch('events.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(j){if(j&&j.events&&j.events.length){DATA=j.events;renderAll(j.updated,j.rpo_news)}}).catch(function(){});
+var framed=false;try{framed=window.self!==window.top}catch(e){framed=true}
+if(framed){var st=document.createElement('style');st.textContent='html.has-js .cal{display:none!important}';document.head.appendChild(st)}
+// install hint: hide when already installed
+var standalone=window.navigator.standalone||(window.matchMedia&&matchMedia('(display-mode: standalone)').matches);
+var ua=navigator.userAgent,isIOS=/iPhone|iPad|iPod/.test(ua),isAnd=/Android/.test(ua);
+if(!standalone&&!store.get('ev_hint_off',false)){var ins=document.getElementById('install');ins.style.setProperty('display','block','important');
+  document.getElementById('ins-ios').style.display=isIOS||(!isAnd&&!/Windows|Mac|Linux/.test(ua))?'':'none';
+  document.getElementById('ins-and').style.display=isAnd?'':'none';
+  document.getElementById('ins-pc').style.display=(!isIOS&&!isAnd)?'':'none';}
+document.getElementById('install-x').addEventListener('click',function(){document.getElementById('install').style.setProperty('display','none','important');store.set('ev_hint_off',true)});
+})();
+</script>
+<script>
+if('serviceWorker' in navigator&&location.protocol==='https:'){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').catch(function(){})})}
+</script>
+</body>
+</html>

@@ -1,0 +1,661 @@
+{
+ "updated": "2026-11-15T16:45:00+01:00",
+ "events": [
+  {
+   "id": "rpo-pokrzywdzeni",
+   "org": "rpo",
+   "title": "Forum Rozwiązań Pomocowych dla Osób Pokrzywdzonych Przestępstwem",
+   "start": "2026-11-26",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "права человека",
+    "поддержка"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-forum-rozwiazan-pomocowych-dla-osob-pokrzywdzonych-przestepstwem",
+   "note": "Форум о помощи пострадавшим от преступлений.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "rpo-dyskryminacja",
+   "org": "rpo",
+   "title": "X konferencja «Najnowsze tendencje i wyzwania ochrony przed dyskryminacją»",
+   "start": "2026-11-26",
+   "end": "2026-11-27",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "права человека",
+    "наука"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-tendencje-wyzwania-ochrona-przed-dyskryminacja",
+   "note": "Международная научная конференция о защите от дискриминации.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "rpo-student",
+   "org": "rpo",
+   "title": "Konferencja «Pełno(s)prawny Student», XX edycja",
+   "start": "2026-12-01",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "инклюзия"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-pelnosprawny-student",
+   "note": "О правах студентов с инвалидностью.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "rpo-inclusion",
+   "org": "rpo",
+   "title": "IV Kongres Inclu(vi)sion",
+   "start": "2026-12-03",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "инклюзия",
+    "бесплатно"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-kongres-incluvision",
+   "note": "Конгресс о потенциале людей с инвалидностью, с виртуальной ярмаркой вакансий.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "rpo-soundup",
+   "org": "rpo",
+   "title": "«O tym się nie mówi. SoundUP! Technologia w służbie nie(do)słyszących»",
+   "start": "2026-12-04",
+   "end": "2026-12-05",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "инклюзия"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-konferencja-o-tym-sie-nie-mowi-soundup-technologia-niedoslyszacy",
+   "note": "Конференция о технологиях для людей с нарушениями слуха.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "rpo-forum-edu",
+   "org": "rpo",
+   "title": "V Forum Edukacji Obywatelskiej i Prawnej",
+   "start": "2026-12-10",
+   "end": "",
+   "time": "",
+   "place": "Место уточните по ссылке",
+   "host": "Патронат RPO",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://bip.brpo.gov.pl/pl/content/patronaty-rpo-2026-forum-edukacji-obywatelskiej-prawnej",
+   "note": "Форум гражданского и правового просвещения.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "amnesty-mpl",
+   "org": "amnesty",
+   "title": "Maraton Pisania Listów",
+   "start": "2026-12-10",
+   "end": "",
+   "time": "",
+   "place": "Варшава и онлайн",
+   "host": "Amnesty International Polska",
+   "tags": [
+    "права человека",
+    "Беларусь"
+   ],
+   "url": "https://maraton.amnesty.org.pl/",
+   "note": "Акция писем в защиту людей, чьи права нарушены. Обычно идёт около двух недель и заканчивается 10 декабря.",
+   "ok": false,
+   "source": "manual"
+  },
+  {
+   "id": "hia-fest",
+   "org": "hia",
+   "title": "Festiwal Praw Człowieka — 20 lat Humanity in Action Polska",
+   "start": "2026-10-02",
+   "end": "2026-10-03",
+   "time": "17:00",
+   "place": "Rotunda PKO BP, Targowa, „Synergia”",
+   "host": "Humanity in Action Polska",
+   "tags": [
+    "права человека",
+    "бесплатно"
+   ],
+   "url": "https://app.evenea.pl/event/festiwalhiapolska/",
+   "note": "Панели, мастер-классы, прогулки и World Café. Почти 300 участников.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "scwo-team",
+   "org": "scwo",
+   "title": "«Świadomy zespół i skuteczna komunikacja w NGO»",
+   "start": "2026-11-16",
+   "end": "2026-11-17",
+   "time": "",
+   "place": "Онлайн",
+   "host": "SCWO",
+   "tags": [
+    "НКО",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://warszawa.ngo.pl/",
+   "note": "Семинар о командной работе и коммуникации.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "scwo-budget",
+   "org": "scwo",
+   "title": "«Sztuka pisania budżetu»",
+   "start": "2026-11-19",
+   "end": "",
+   "time": "",
+   "place": "Варшава",
+   "host": "SCWO",
+   "tags": [
+    "НКО",
+    "бесплатно"
+   ],
+   "url": "https://wydarzenia.ngo.pl/",
+   "note": "Как спланировать финансовую часть заявки на грант.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "scwo-project",
+   "org": "scwo",
+   "title": "«Projekt społeczny — baza do dobrego wniosku o dotację»",
+   "start": "2026-11-27",
+   "end": "",
+   "time": "",
+   "place": "Онлайн",
+   "host": "SCWO",
+   "tags": [
+    "НКО",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://warszawa.ngo.pl/",
+   "note": "",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "scwo-nowefio",
+   "org": "scwo",
+   "title": "«Pisanie wniosków — NOWEFIO»",
+   "start": "2026-11-30",
+   "end": "",
+   "time": "",
+   "place": "Варшава",
+   "host": "SCWO",
+   "tags": [
+    "НКО",
+    "бесплатно"
+   ],
+   "url": "https://warszawa.ngo.pl/",
+   "note": "Как писать заявки в конкурс NOWEFIO.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "scwo-dotacja",
+   "org": "scwo",
+   "title": "Как пошагово подготовить заявку на грант Urzędu m.st. Warszawy",
+   "start": "2026-12-01",
+   "end": "",
+   "time": "",
+   "place": "Онлайн",
+   "host": "SCWO",
+   "tags": [
+    "НКО",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://warszawa.ngo.pl/",
+   "note": "",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "niebieska",
+   "org": "niebieska",
+   "title": "«Przynieś–Wynieś–Porozmawiaj»",
+   "start": "2026-11-27",
+   "end": "",
+   "time": "15:00",
+   "place": "ul. Malinowskiego 5, Ursynów",
+   "host": "Niebieska Linia",
+   "tags": [
+    "поддержка",
+    "бесплатно"
+   ],
+   "url": "https://um.warszawa.pl/kalendarz",
+   "note": "Встреча в рамках программы «PoMoc Ursynów».",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "wtpc",
+   "org": "city",
+   "title": "Warszawski Tydzień Praw Człowieka",
+   "start": "2026-12-03",
+   "end": "2026-12-10",
+   "time": "",
+   "place": "Разные площадки Варшавы",
+   "host": "Miasto Warszawa",
+   "tags": [
+    "права человека",
+    "бесплатно"
+   ],
+   "url": "https://wsparcie.um.warszawa.pl/wtpc",
+   "note": "Программы на 2026 год пока нет, даты указаны по прошлым годам.",
+   "ok": false,
+   "source": "manual"
+  },
+  {
+   "id": "pfm-music",
+   "org": "pfm",
+   "title": "Open Music Sessions",
+   "start": "2026-11-18",
+   "end": "",
+   "time": "17:00",
+   "place": "Centrum Wielokulturowe, ul. Jagiellońska 54",
+   "host": "Polskie Forum Migracyjne",
+   "tags": [
+    "миграция",
+    "культура"
+   ],
+   "url": "https://forummigracyjne.org/en/wydarzenie/open-music-sessions/",
+   "note": "Открытые музыкальные встречи.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "pfm-zus",
+   "org": "pfm",
+   "title": "All About ZUS Benefits",
+   "start": "2026-11-20",
+   "end": "",
+   "time": "13:00",
+   "place": "Centrum Wielokulturowe",
+   "host": "Polskie Forum Migracyjne",
+   "tags": [
+    "миграция",
+    "поддержка"
+   ],
+   "url": "https://forummigracyjne.org/en/wydarzenie/all-about-zus-benefits/",
+   "note": "Всё о пособиях ZUS для иностранцев.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "pfm-writing",
+   "org": "pfm",
+   "title": "Creative writing workshop",
+   "start": "2026-11-20",
+   "end": "",
+   "time": "18:00",
+   "place": "Centrum Wielokulturowe",
+   "host": "Polskie Forum Migracyjne",
+   "tags": [
+    "миграция",
+    "культура"
+   ],
+   "url": "https://forummigracyjne.org/en/wydarzenie/creative-writing-workshop/",
+   "note": "Мастер-класс по творческому письму на английском.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "pfm-glos-1124",
+   "org": "pfm",
+   "title": "Zabierz głos — курс гражданского участия",
+   "start": "2026-11-24",
+   "end": "",
+   "time": "18:00",
+   "place": "Jagiellońska 54 и онлайн",
+   "host": "Polskie Forum Migracyjne",
+   "tags": [
+    "миграция",
+    "права человека",
+    "бесплатно"
+   ],
+   "url": "https://forummigracyjne.org/wydarzenie/zabierz-glos/",
+   "note": "Как влиять на город и закон: права, консультации, своя инициатива. Следующие встречи 1 и 15 декабря. На польском, английском, испанском, украинском.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "pfm-friends",
+   "org": "pfm",
+   "title": "Speed-Friending в Centrum Wielokulturowe",
+   "start": "2026-11-25",
+   "end": "",
+   "time": "17:00",
+   "place": "Centrum Wielokulturowe, ul. Jagiellońska 54",
+   "host": "Polskie Forum Migracyjne",
+   "tags": [
+    "миграция"
+   ],
+   "url": "https://forummigracyjne.org/en/wydarzenie/speed-friending-at-the-multicultural-centre/",
+   "note": "Быстрые знакомства, чтобы найти друзей в Варшаве.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "pfm-glos-1201",
+   "org": "pfm",
+   "title": "Zabierz głos — встреча курса",
+   "start": "2026-12-01",
+   "end": "",
+   "time": "18:00",
+   "place": "Jagiellońska 54 и онлайн",
+   "host": "Polskie Forum Migracyjne",
+   "tags": [
+    "миграция",
+    "бесплатно"
+   ],
+   "url": "https://forummigracyjne.org/wydarzenie/zabierz-glos/",
+   "note": "",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "pfm-glos-1215",
+   "org": "pfm",
+   "title": "Zabierz głos — встреча курса",
+   "start": "2026-12-15",
+   "end": "",
+   "time": "18:00",
+   "place": "Jagiellońska 54 и онлайн",
+   "host": "Polskie Forum Migracyjne",
+   "tags": [
+    "миграция",
+    "бесплатно"
+   ],
+   "url": "https://forummigracyjne.org/wydarzenie/zabierz-glos/",
+   "note": "",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "cpk-breath",
+   "org": "cpk",
+   "title": "Breath Design — 4 недели к хорошей дыхательной привычке",
+   "start": "2026-11-16",
+   "end": "",
+   "time": "17:30",
+   "place": "Варшава",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка"
+   ],
+   "url": "https://cpk.org.pl/wydarzenia/miesiac/",
+   "note": "Цикл занятий 16, 23 и 30 ноября.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "cpk-mbct",
+   "org": "cpk",
+   "title": "«Uważność w Życiu» (MBCT-L) — 8-недельный курс",
+   "start": "2026-11-19",
+   "end": "",
+   "time": "18:00",
+   "place": "Онлайн",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка",
+    "онлайн"
+   ],
+   "url": "https://cpk.org.pl/wydarzenia/miesiac/",
+   "note": "Курс осознанности, встречи по четвергам.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "cpk-krag",
+   "org": "cpk",
+   "title": "Krąg Kobiet",
+   "start": "2026-11-22",
+   "end": "",
+   "time": "16:00",
+   "place": "ul. Hoża 57/15",
+   "host": "Centrum Praw Kobiet",
+   "tags": [
+    "поддержка",
+    "бесплатно"
+   ],
+   "url": "https://cpk.org.pl/wydarzenia/miesiac/",
+   "note": "Бесплатный круг поддержки для женщин.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "sip-kongres",
+   "org": "sip",
+   "title": "I Kongres Prawa Migracyjnego i Uchodźczego",
+   "start": "2026-09-28",
+   "end": "2026-09-29",
+   "time": "",
+   "place": "WPiA UW, Lipowa 4",
+   "host": "SIP, WPiA UW, UNHCR",
+   "tags": [
+    "миграция",
+    "права человека",
+    "бесплатно"
+   ],
+   "url": "https://interwencjaprawna.pl/podsumowujemy-i-kongres-prawa-migracyjnego-i-uchodzczego",
+   "note": "Больше 70 экспертов и 280 участников, в том числе о границе с Беларусью.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "kph-korony",
+   "org": "kph",
+   "title": "Gala Korony Równości 2026",
+   "start": "2026-09-25",
+   "end": "",
+   "time": "",
+   "place": "Варшава",
+   "host": "Kampania Przeciw Homofobii",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://koronyrownosci.pl/",
+   "note": "Награды за работу для ЛГБТ+ сообщества.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "fdds-light",
+   "org": "fdds",
+   "title": "Подсветка зданий красным — финал кампании «Dzieciństwo bez Przemocy»",
+   "start": "2026-11-19",
+   "end": "",
+   "time": "17:00",
+   "place": "По всей Польше",
+   "host": "Fundacja Dajemy Dzieciom Siłę",
+   "tags": [
+    "права человека",
+    "дети"
+   ],
+   "url": "https://fdds.pl/aktualnosci/",
+   "note": "Символический протест против насилия над детьми, которым заканчивается кампания.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "fdds-konf",
+   "org": "fdds",
+   "title": "23. Ogólnopolska Konferencja «Dzieciństwo bez przemocy»",
+   "start": "2026-10-19",
+   "end": "2026-10-20",
+   "time": "",
+   "place": "Варшава",
+   "host": "Fundacja Dajemy Dzieciom Siłę",
+   "tags": [
+    "дети",
+    "права человека"
+   ],
+   "url": "https://konferencja.fdds.pl/",
+   "note": "Представили отчёт об отношении поляков к насилию над детьми.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "batory-igrzyska",
+   "org": "batory",
+   "title": "Дебаты Фонда Батория на Igrzyska Wolności",
+   "start": "2026-10-23",
+   "end": "2026-10-25",
+   "time": "",
+   "place": "EC1 Łódź",
+   "host": "Fundacja Batorego",
+   "tags": [
+    "права человека"
+   ],
+   "url": "https://www.batory.org.pl/wydarzenia/igrzyska-wolnosci-2026/",
+   "note": "Три дебата: Европа, гражданская устойчивость и зависимость от Big Tech.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "forum-pl-by",
+   "org": "other",
+   "title": "Polsko-Białoruskie Forum Społeczeństwa Obywatelskiego",
+   "start": "2026-10-29",
+   "end": "",
+   "time": "",
+   "place": "Варшава",
+   "host": "Białoruska Platforma Narodowa, Ruch Solidarności Białoruskiej",
+   "tags": [
+    "Беларусь",
+    "НКО"
+   ],
+   "url": "https://publicystyka.ngo.pl/od-solidarnosci-do-partnerstwa-polskie-i-bialoruskie-organizacje-spoleczne-chca-dzialac-razem",
+   "note": "80 польских и беларуских организаций обсуждали легализацию пребывания и совместную работу.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "bel-art",
+   "org": "other",
+   "title": "Выставка «Białoruscy artyści na wygnaniu»",
+   "start": "2026-11-14",
+   "end": "2026-12-06",
+   "time": "",
+   "place": "Kościół Wszystkich Świętych, pl. Grzybowski",
+   "host": "Archidiecezja Warszawska",
+   "tags": [
+    "Беларусь",
+    "культура"
+   ],
+   "url": "https://www.ekai.pl/z-blogoslawienstwem-leona-xiv-i-pod-patronatem-archidiecezji-warszawskiej-jutro-wernisaz-wystawy-bialoruscy-artysci-na-wygnaniu/",
+   "note": "Работы беларуских художников в эмиграции.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "hiphop",
+   "org": "other",
+   "title": "«Na legalu? Co o prawie i polityce mówi nam polski hip-hop»",
+   "start": "2026-11-20",
+   "end": "",
+   "time": "",
+   "place": "Wydział Historii UW, Sala Kolumnowa",
+   "host": "Uniwersytet Warszawski",
+   "tags": [
+    "наука"
+   ],
+   "url": "https://informator-konferencyjny.pl/konferencje-warszawa",
+   "note": "Научная конференция о праве и политике в хип-хопе.",
+   "ok": true,
+   "source": "manual"
+  },
+  {
+   "id": "ludzie",
+   "org": "other",
+   "title": "«Ludzie w ruchu. Migracje, diaspory i pogranicza Europy Środkowo-Wschodniej»",
+   "start": "2026-12-02",
+   "end": "",
+   "time": "",
+   "place": "Варшава",
+   "host": "—",
+   "tags": [
+    "миграция",
+    "Беларусь",
+    "наука"
+   ],
+   "url": "https://informator-konferencyjny.pl/konferencje-warszawa",
+   "note": "Конференция о миграциях и диаспорах региона.",
+   "ok": false,
+   "source": "manual"
+  },
+  {
+   "id": "bel-napary",
+   "org": "other",
+   "title": "«Białoruskie napary. Zioła, tradycje i dawne receptury»",
+   "start": "2026-11-01",
+   "end": "",
+   "time": "14:00",
+   "place": "Tea Point, ul. Ząbkowska 2",
+   "host": "Fundacja Kultura w Nas",
+   "tags": [
+    "Беларусь",
+    "культура",
+    "бесплатно"
+   ],
+   "url": "https://waw4free.pl/wydarzenie-161104-bialoruskie-napary-ziola-tradycje-i-dawne-receptury",
+   "note": "",
+   "ok": true,
+   "source": "manual"
+  }
+ ],
+ "rpo_news": [
+  {
+   "date": "5 ноября",
+   "title": "Повторное письмо в МВД о том, как RPO наблюдает за депортациями иностранцев",
+   "url": "https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli"
+  },
+  {
+   "date": "5 ноября",
+   "title": "Проблемы людей без гражданства, бежавших из Украины: очередное письмо главе Urzędu do Spraw Cudzoziemców",
+   "url": "https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli"
+  },
+  {
+   "date": "5 ноября",
+   "title": "Комиссия экспертов по делам пожилых людей наметила планы на 2027 год",
+   "url": "https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli"
+  },
+  {
+   "date": "4 ноября",
+   "title": "Сомнения по программе PFRON о прокате оборудования для людей с инвалидностью",
+   "url": "https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli"
+  },
+  {
+   "date": "3 ноября",
+   "title": "Встреча RPO с организациями инициативы «Nasz Rzecznik»",
+   "url": "https://bip.brpo.gov.pl/pl/sprawy-wazne-dla-obywateli"
+  }
+ ]
+}
