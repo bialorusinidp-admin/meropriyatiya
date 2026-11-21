@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-20T06:08+01:00",
+ "updated": "2026-11-21T06:00+01:00",
  "status": {
   "pfm": "ok: 0",
   "cpk": "ok: 17",
   "rpo-patronaty": "ok: 11",
   "rpo-news": "ok: 6",
   "batory": "ok: 13",
-  "ngo-pl": "ok: 35",
+  "ngo-pl": "ok: 34",
   "ngo-praca": "ok: 45",
   "irc": "ok: 13",
-  "ngo-fundusze": "ok: 19"
+  "ngo-fundusze": "ошибка, оставлено прошлых: 12"
  },
  "events": [
   {
@@ -189,24 +189,6 @@
    "note": "zaprasza cudzoziemców na bezpłatne kursy zawodowe. Chcesz zdobyć praktyczne umiejętności, rozwinąć się zawodowo lub zwiększyć swoje szanse na znalezienie pracy w Polsce? Wybierz kurs dla siebie. ABC przedsiębiorczości –…",
    "ok": true,
    "source": "irc"
-  },
-  {
-   "id": "ngo-praca-2026-10-21-specjalista-ka-ds-pozyskiwania",
-   "org": "other",
-   "title": "Specjalista/ka ds. pozyskiwania funduszy",
-   "start": "2026-10-21",
-   "end": "2026-11-20",
-   "time": "",
-   "place": "Вся Польша / удалённо",
-   "host": "Fundacja Żyjemy Za Krótko – organizacja wspierająca rodziny i instytucje",
-   "tags": [
-    "вакансия"
-   ],
-   "url": "https://ogloszenia.ngo.pl/527618-specjalista-ka-ds-pozyskiwania-funduszy-ue.html",
-   "note": "elastyczny, zależny od prowadzonych projektów. Fundacja Żyjemy Za Krótko – organizacja wspierająca rodziny i instytucje, które doświadczają sytuacji granicznych poszukuje doświadczonej osoby do współpracy przy…",
-   "ok": true,
-   "source": "ngo-praca",
-   "kind": "job"
   },
   {
    "id": "batory-2026-10-22-prawa-osób-z-niepełnosprawnośc",
@@ -460,96 +442,6 @@
    "kind": "job"
   },
   {
-   "id": "ngo-praca-2026-11-13-manager-ka-ds-public-affairs-i",
-   "org": "other",
-   "title": "Manager/-ka ds. public affairs i komunikacji społecznej",
-   "start": "2026-11-13",
-   "end": "2026-12-04",
-   "time": "",
-   "place": "Варшава",
-   "host": "Fundacja Dobrych Inicjatyw",
-   "tags": [
-    "вакансия"
-   ],
-   "url": "https://ogloszenia.ngo.pl/552224-manager-ka-ds-public-affairs-i-komunikacji-spolecznej.html",
-   "note": "Fundacja Dobrych Inicjatyw szuka osoby, która poprowadzi nasz głos w sprawie pieczy zastępczej, a w szczególności pieczy rodzinnej. Od lat wspieramy dzieci i młodzież z pieczy zastępczej: współpracujemy z 35 domami…",
-   "ok": true,
-   "source": "ngo-praca",
-   "kind": "job"
-  },
-  {
-   "id": "ngo-praca-2026-11-13-fundacja-w-centrum-warszawy-za",
-   "org": "other",
-   "title": "Fundacja w centrum Warszawy zatrudni do pracy biurowej na 05/06 etatu",
-   "start": "2026-11-13",
-   "end": "2026-11-20",
-   "time": "",
-   "place": "Варшава",
-   "host": "Fundacja w centrum Warszawy",
-   "tags": [
-    "вакансия"
-   ],
-   "url": "https://ogloszenia.ngo.pl/552271-fundacja-w-centrum-warszawy-zatrudni-do-pracy-biurowej-na-05-06-etatu.html",
-   "note": "Fundacja \"Praca dla Niewidomych\" zajmująca się aktywizacją zawodową osób z niepełnosprawnościami zatrudni osobę do stacjonarnej obsługi biura w centrum Warszawy (okolice metra Świętokrzyska).",
-   "ok": true,
-   "source": "ngo-praca",
-   "kind": "job"
-  },
-  {
-   "id": "ngo-praca-2026-11-13-wzmocnij-herosów-szukamy-specj",
-   "org": "other",
-   "title": "WZMOCNIJ HEROSÓW - szukamy Specjalisty ds. Fundraisingu",
-   "start": "2026-11-13",
-   "end": "2026-12-04",
-   "time": "",
-   "place": "Варшава",
-   "host": "Fundacja Herosi",
-   "tags": [
-    "вакансия"
-   ],
-   "url": "https://ogloszenia.ngo.pl/552275-wzmocnij-herosow-szukamy-specjalisty-ds-fundraisingu.html",
-   "note": "SPECJALISTA/KA DS.",
-   "ok": true,
-   "source": "ngo-praca",
-   "kind": "job"
-  },
-  {
-   "id": "ngo-praca-2026-11-13-podinspektor-inspektor-st-insp",
-   "org": "other",
-   "title": "Podinspektor/inspektor/st.inspektor ds. finnsowo-księgowych",
-   "start": "2026-11-13",
-   "end": "2026-12-04",
-   "time": "",
-   "place": "Вся Польша / удалённо",
-   "host": "Dom Pomocy Społecznej \"Na Bachusa\"",
-   "tags": [
-    "вакансия"
-   ],
-   "url": "https://ogloszenia.ngo.pl/552243-podinspektor-inspektor-st-inspektor-ds-finnsowo-ksiegowych.html",
-   "note": "Dom Pomocy Społecznej \"Na Bachusa\" zatrudni pracownika na stanowisko podinspektor/inspektor/starszy inspektor ds. finansowo - księgowych.",
-   "ok": true,
-   "source": "ngo-praca",
-   "kind": "job"
-  },
-  {
-   "id": "ngo-praca-2026-11-13-koordynator-ka-wolontariuszy-w",
-   "org": "other",
-   "title": "Koordynator/ka wolontariuszy w Programie Strażnicy Rzek WWF",
-   "start": "2026-11-13",
-   "end": "2026-12-14",
-   "time": "",
-   "place": "Вся Польша / удалённо",
-   "host": "Fundacja WWF Polska | 50 zł/h | Umowa zlecenia Chcesz mieć realny wpływ na och",
-   "tags": [
-    "вакансия"
-   ],
-   "url": "https://ogloszenia.ngo.pl/552222-koordynator-ka-wolontariuszy-w-programie-straznicy-rzek-wwf-552222.html",
-   "note": "50 zł za godzinę brutto współpracy. Fundacja WWF Polska | 50 zł/h | Umowa zlecenia Chcesz mieć realny wpływ na ochronę polskich rzek? Lubisz pracę z ludźmi, potrafisz budować zaangażowane społeczności i dobrze czujesz…",
-   "ok": true,
-   "source": "ngo-praca",
-   "kind": "job"
-  },
-  {
    "id": "bel-art",
    "org": "other",
    "title": "Выставка «Białoruscy artyści na wygnaniu»",
@@ -682,24 +574,6 @@
    "note": "Крупная государственная программа. С 2026 года минимум 100 000 zł, бюджет организации свыше 30 000 zł за один из трёх последних лет и регистрация до 31.12.2024. Наборы обычно в I квартале.",
    "ok": true,
    "source": "manual"
-  },
-  {
-   "id": "ngo-praca-2026-11-15-pracuj-w-kampanii-przeciw-homo",
-   "org": "other",
-   "title": "Pracuj w Kampanii Przeciw Homofobii: dołącz jako osoba specjalistyczna ds. kampanii i mobilizacji",
-   "start": "2026-11-15",
-   "end": "2026-11-29",
-   "time": "",
-   "place": "Варшава",
-   "host": "",
-   "tags": [
-    "вакансия"
-   ],
-   "url": "https://ogloszenia.ngo.pl/552321-pracuj-w-kampanii-przeciw-homofobii-dolacz-jako-osoba-specjalistyczna-ds-kampanii-i-mobilizacji.html",
-   "note": "Jeśli identyfikujesz się z misją i wartościami Kampanii Przeciw Homofobii, masz doświadczenie w obszarze kampaniowania i mobilizacji ludzi do działania, chcesz działać razem z nami na rzecz społeczności LGBT+ w Polsce,…",
-   "ok": true,
-   "source": "ngo-praca",
-   "kind": "job"
   },
   {
    "id": "ngo-pl-2026-11-16-przedłużamy-dla-was-rekrutację",
@@ -896,24 +770,6 @@
    ],
    "url": "https://ogloszenia.ngo.pl/379505-ratownik-medyczny-trener-szkoleniowiec-k-m.html",
    "note": "Jesteśmy firmą szkoleniową stale rozbudowującą ofertę dla naszych Klientów.",
-   "ok": true,
-   "source": "ngo-praca",
-   "kind": "job"
-  },
-  {
-   "id": "ngo-praca-2026-11-16-sprzedaż-szkoleń-b2b-praca-zda",
-   "org": "other",
-   "title": "Sprzedaż szkoleń B2B – praca zdalna / elastyczna współpraca",
-   "start": "2026-11-16",
-   "end": "2026-12-16",
-   "time": "",
-   "place": "Вся Польша / удалённо",
-   "host": "",
-   "tags": [
-    "вакансия"
-   ],
-   "url": "https://ogloszenia.ngo.pl/442654-doradca-k-m-ds-sprzedazy-szkolen.html",
-   "note": "Jesteśmy innowacyjną firmą szkoleniową o ogólnopolskim zasięgu. Realizujemy szkolenia i projekty rozwojowe dla firm i instytucji z całej Polski, w tym projekty wykorzystujące nowoczesne technologie i wirtualną…",
    "ok": true,
    "source": "ngo-praca",
    "kind": "job"
@@ -1328,8 +1184,8 @@
    "start": "2026-11-19",
    "end": "2026-12-03",
    "time": "",
-   "place": "Вся Польша / удалённо",
-   "host": "Fundacja Powszechnego Czytania Cała Polska 19 listopada 2026 18",
+   "place": "Варшава",
+   "host": "Fundacja Powszechnego Czytania Warszawa 19 listopada 2026 18",
    "tags": [
     "вакансия"
    ],
@@ -1502,57 +1358,20 @@
    "source": "manual"
   },
   {
-   "id": "ngo-pl-2026-11-20-bezpłatny-warsztat-online-fund",
+   "id": "ngo-pl-2026-11-20-bezpłatne-studia-podyplomowe-p",
    "org": "ngopl",
-   "title": "Bezpłatny warsztat online: fundraising partycypacyjny dla organizacji kobiecych",
+   "title": "Bezpłatne studia podyplomowe \"Prowadzenie terapii środowiskowej dzieci i młodzieży\"",
    "start": "2026-11-20",
-   "end": "",
-   "time": "",
-   "place": "Онлайн",
-   "host": "ngo.pl",
-   "tags": [
-    "НКО",
-    "онлайн",
-    "бесплатно"
-   ],
-   "url": "https://wydarzenia.ngo.pl/552182-bezplatny-warsztat-online-fundraising-partycypacyjny-dla-organizacji-kobiecych.html",
-   "note": "20 listopada zapraszamy na bezpłatny warsztat online z Magdą Pocheć z FemFund. Warsztat odbędzie się w języku angielskim.",
-   "ok": true,
-   "source": "ngo-pl"
-  },
-  {
-   "id": "ngo-pl-2026-11-20-odowołane-scwo-seminarium-praw",
-   "org": "scwo",
-   "title": "ODOWOŁANE SCWO: Seminarium „Prawne aspekty zatrudniania pracowników”",
-   "start": "2026-11-20",
-   "end": "",
-   "time": "",
-   "place": "Онлайн",
-   "host": "SCWO",
-   "tags": [
-    "НКО",
-    "онлайн",
-    "бесплатно"
-   ],
-   "url": "https://wydarzenia.ngo.pl/551196-scwo-seminarium-prawne-aspekty-zatrudniania-pracownikow-551196.html",
-   "note": "Stołeczne Centrum Wspierania Organizacji Pozarządowych zaprasza na bezpłatne seminarium „Prawne aspekty zatrudniania pracowników”. Spotkanie dla osób zainteresowanych problematyką zatrudniania w zakresie zmian, które…",
-   "ok": true,
-   "source": "ngo-pl"
-  },
-  {
-   "id": "ngo-pl-2026-11-20-tybetańska-sztuka-miłości-nami",
-   "org": "ngopl",
-   "title": "Tybetańska Sztuka Miłości, Namiętności i Bliskości",
-   "start": "2026-11-20",
-   "end": "2026-11-22",
-   "time": "19:00",
+   "end": "2026-11-24",
+   "time": "20:00",
    "place": "Варшава",
    "host": "ngo.pl",
    "tags": [
-    "НКО"
+    "НКО",
+    "бесплатно"
    ],
-   "url": "https://wydarzenia.ngo.pl/548367-tybetanska-sztuka-milosci-namietnosci-i-bliskosci.html",
-   "note": "Zapraszamy na ekscytujący zaawansowany warsztat tantryczny poświęcony Tybetańskiej Sztuce Miłości i Świętej Duchowej Seksualności. Podróż ta jest kontynuacją poziomu pierwszego tego kursu i pozwala na głębsze…",
+   "url": "https://wydarzenia.ngo.pl/552963-bezplatne-studia-podyplomowe-prowadzenie-terapii-srodowiskowej-dzieci-i-mlodziezy.html",
+   "note": "Zapraszamy Państwa do zapisów na studia podyplomowe \"Prowadzenie terapii środowiskowej dzieci i młodzieży\"! Zostało kilka wolnych miejsc, rejestracja uzupełniająca rozpoczyna się w piątek, 20.11.2026 o godz. 20:00 i…",
    "ok": true,
    "source": "ngo-pl"
   },
@@ -1572,6 +1391,96 @@
    "note": "Fundacja Wspomagania Wsi zaprasza do udziału w szkoleniu pn.: „Księgowo-prawne podstawy zarządzania wiejską organizacją pozarządową” skierowanym do członków zarządów organizacji pozarządowych (zarejestrowanych lub w…",
    "ok": true,
    "source": "ngo-pl"
+  },
+  {
+   "id": "ngo-praca-2026-11-20-koordynator-koordynatorka-ds-k",
+   "org": "other",
+   "title": "Koordynator / Koordynatorka ds. kadr i płac",
+   "start": "2026-11-20",
+   "end": "2026-12-04",
+   "time": "",
+   "place": "Варшава",
+   "host": "",
+   "tags": [
+    "вакансия"
+   ],
+   "url": "https://ogloszenia.ngo.pl/552952-koordynator-koordynatorka-ds-kadr-i-plac.html",
+   "note": "Zakres obowiązków: * Kompleksowe prowadzenie dokumentacji pracowniczej, w tym przygotowywanie umów, aneksów, świadectw pracy oraz innych dokumentów związanych z zatrudnieniem; * Zakładanie oraz prowadzenie akt osobowych…",
+   "ok": true,
+   "source": "ngo-praca",
+   "kind": "job"
+  },
+  {
+   "id": "ngo-praca-2026-11-20-doradca-edukacyjny-k-m",
+   "org": "other",
+   "title": "Doradca edukacyjny (k/m)",
+   "start": "2026-11-20",
+   "end": "2026-12-21",
+   "time": "",
+   "place": "Варшава",
+   "host": "Akademia Leona Koźmińskiego",
+   "tags": [
+    "вакансия"
+   ],
+   "url": "https://ogloszenia.ngo.pl/552958-doradca-edukacyjny-k-m.html",
+   "note": "Akademia Leona Koźmińskiego jest samodzielną, niezależną finansowo uczelnią wyższą o pełnych prawach akademickich, założoną w 1993 roku i zlokalizowaną w sercu Europy. Oferta uczelni obejmuje różnorodne programy studiów…",
+   "ok": true,
+   "source": "ngo-praca",
+   "kind": "job"
+  },
+  {
+   "id": "ngo-praca-2026-11-20-specjalista-ds-wsparcia-proces",
+   "org": "other",
+   "title": "Specjalista ds. wsparcia procesu edukacyjnego (k/m)",
+   "start": "2026-11-20",
+   "end": "2026-12-21",
+   "time": "",
+   "place": "Варшава",
+   "host": "Akademia Leona Koźmińskiego",
+   "tags": [
+    "вакансия"
+   ],
+   "url": "https://ogloszenia.ngo.pl/552957-specjalista-ds-wsparcia-procesu-edukacyjnego-k-m.html",
+   "note": "Akademia Leona Koźmińskiego jest samodzielną, niezależną finansowo uczelnią wyższą o pełnych prawach akademickich, założoną w 1993 roku i zlokalizowaną w sercu Europy. Oferta uczelni obejmuje różnorodne programy studiów…",
+   "ok": true,
+   "source": "ngo-praca",
+   "kind": "job"
+  },
+  {
+   "id": "ngo-praca-2026-11-20-trener-trenerka-do-prowadzenia",
+   "org": "other",
+   "title": "Trener/trenerka do prowadzenia webinarów dla kadry nauczycielskiej",
+   "start": "2026-11-20",
+   "end": "2026-12-11",
+   "time": "",
+   "place": "Вся Польша / удалённо",
+   "host": "Fundacja Project HOPE Polska",
+   "tags": [
+    "вакансия"
+   ],
+   "url": "https://ogloszenia.ngo.pl/552870-trener-trenerka-do-prowadzenia-webinarow-dla-kadry-nauczycielskiej.html",
+   "note": "Fundacja Project HOPE Polska poszukuje trenerów i trenerek do prowadzenia webinarów dla nauczycieli i nauczycielek Jak budować zintegrowaną klasę, w której każde dziecko ma przestrzeń do nauki i rozwoju? Jak wspierać…",
+   "ok": true,
+   "source": "ngo-praca",
+   "kind": "job"
+  },
+  {
+   "id": "ngo-praca-2026-11-20-podinspektor-ds-kancelarii",
+   "org": "other",
+   "title": "Podinspektor ds. Kancelarii",
+   "start": "2026-11-20",
+   "end": "2026-12-04",
+   "time": "",
+   "place": "Вся Польша / удалённо",
+   "host": "Ośrodek Pomocy Społecznej Dzielnicy Włochy m",
+   "tags": [
+    "вакансия"
+   ],
+   "url": "https://ogloszenia.ngo.pl/552851-podinspektor-ds-kancelarii-552851.html",
+   "note": "Ośrodek Pomocy Społecznej Dzielnicy Włochy m.st. Warszawy ogłasza nabór na stanowisko Podinspektora ds. Kancelarii. Oferta do zapoznania dostępna na stronie Ośrodka pod adresem: Podinspektor ds.",
+   "ok": true,
+   "source": "ngo-praca",
+   "kind": "job"
   },
   {
    "id": "ngo-fundusze-2026-11-20-pomagamy-z-każdym-krokiem",
@@ -1664,24 +1573,6 @@
    "kind": "grant"
   },
   {
-   "id": "ngo-fundusze-2026-11-20-prowadzenie-zajęć-ruchowych-ra",
-   "org": "other",
-   "title": "Prowadzenie zajęć ruchowych „Razem ku sprawności” dla osób z niepełnosprawnościami z terenu Miasta Ruda Śląska...",
-   "start": "2026-11-20",
-   "end": "",
-   "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
-   "tags": [
-    "грант"
-   ],
-   "url": "https://fundusze.ngo.pl/551129-prowadzenie-zajec-ruchowych-razem-ku-sprawnosci-dla-osob-z-niepelnosprawnosciami-z-terenu-miasta-ruda-slaska-w-ramach-projektu-cus-nowe-spojrzenie-na-uslugi-spoleczne-dofinansowanego-ze-srodkow-unii-e.html",
-   "note": "бюджет 223 tys. PLN",
-   "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
-  },
-  {
    "id": "ngo-fundusze-2026-11-20-kultura-sztuka-ochrona-dóbr-ku",
    "org": "other",
    "title": "Kultura, sztuka, ochrona dóbr kultury i dziedzictwa narodowego – nabór wniosków w trybie pozakonkursowym 2026",
@@ -1713,24 +1604,6 @@
    ],
    "url": "https://fundusze.ngo.pl/551165-otwarty-konkurs-ofert-na-realizacje-zadania-publicznego-z-zakresu-pomocy-spolecznej-dotyczacy-prowadzenia-domu-pomocy-spolecznej-dla-osob-przewlekle-somatycznie-chorych.html",
    "note": "бюджет 301,14 tys. PLN",
-   "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
-  },
-  {
-   "id": "ngo-fundusze-2026-11-20-11-specjalistyczne-usługi-opie",
-   "org": "other",
-   "title": "11. Specjalistyczne usługi opiekuńcze dla osób z zaburzeniami psychicznymi 2027",
-   "start": "2026-11-20",
-   "end": "2026-12-10",
-   "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
-   "tags": [
-    "грант"
-   ],
-   "url": "https://fundusze.ngo.pl/552725-11-specjalistyczne-uslugi-opiekuncze-dla-osob-z-zaburzeniami-psychicznymi-2027.html",
-   "note": "бюджет 117 tys. PLN",
    "ok": true,
    "source": "ngo-fundusze",
    "kind": "grant"
@@ -1879,6 +1752,24 @@
    "source": "cpk"
   },
   {
+   "id": "ngo-pl-2026-11-23-dotacje-dla-organizacji-pozarz",
+   "org": "ngopl",
+   "title": "Dotacje dla organizacji pozarządowych po nowelizacji ustawy w 2026",
+   "start": "2026-11-23",
+   "end": "",
+   "time": "",
+   "place": "Онлайн",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "онлайн"
+   ],
+   "url": "https://wydarzenia.ngo.pl/551386-dotacje-dla-organizacji-pozarzadowych-po-nowelizacji-ustawy-w-2026.html",
+   "note": "Szkolenie online poświęcone nowelizacji ustawy o działalności pożytku publicznego obowiązującej od 1 września 2026 r. Omówimy nowe zasady udzielania, wykorzystania, rozliczania i kontroli dotacji dla NGO, w tym wkład…",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
    "id": "ngo-pl-2026-11-23-scwo-seminarium-on-line-zakład",
    "org": "scwo",
    "title": "SCWO: Seminarium on-line \"Zakładamy fundację krok po kroku- wszystko co musisz wiedzieć na starcie\"",
@@ -1894,24 +1785,6 @@
    ],
    "url": "https://wydarzenia.ngo.pl/551714-scwo-seminarium-on-line-zakladamy-fundacje-krok-po-kroku-wszystko-co-musisz-wiedziec-na-starcie.html",
    "note": "Stołeczne Centrum Wspierania Organizacji Pozarządowych zaprasza przedstawicieli i przedstawicielki organizacji pozarządowych działających na rzecz mieszkańców/ek Warszawy na bezpłatne seminarium on-line „Zakładamy…",
-   "ok": true,
-   "source": "ngo-pl"
-  },
-  {
-   "id": "ngo-pl-2026-11-23-dotacje-dla-organizacji-pozarz",
-   "org": "ngopl",
-   "title": "Dotacje dla organizacji pozarządowych po nowelizacji ustawy w 2026",
-   "start": "2026-11-23",
-   "end": "",
-   "time": "",
-   "place": "Онлайн",
-   "host": "ngo.pl",
-   "tags": [
-    "НКО",
-    "онлайн"
-   ],
-   "url": "https://wydarzenia.ngo.pl/551386-dotacje-dla-organizacji-pozarzadowych-po-nowelizacji-ustawy-w-2026.html",
-   "note": "Szkolenie online poświęcone nowelizacji ustawy o działalności pożytku publicznego obowiązującej od 1 września 2026 r. Omówimy nowe zasady udzielania, wykorzystania, rozliczania i kontroli dotacji dla NGO, w tym wkład…",
    "ok": true,
    "source": "ngo-pl"
   },
@@ -1989,6 +1862,24 @@
    "source": "ngo-pl"
   },
   {
+   "id": "ngo-pl-2026-11-24-obliczanie-śladu-węglowego-pro",
+   "org": "ngopl",
+   "title": "Obliczanie śladu węglowego produktu",
+   "start": "2026-11-24",
+   "end": "",
+   "time": "",
+   "place": "Онлайн",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "онлайн"
+   ],
+   "url": "https://wydarzenia.ngo.pl/462982-obliczanie-sladu-weglowego-produktu.html",
+   "note": "Firmy i inne organizacje mają duży wpływ na zmiany klimatu. Żeby właściwie zarządzać tym wpływem oraz ograniczać go, niezbędne jest zrozumienie i wyliczenie śladu węglowego.",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
    "id": "pfm-friends",
    "org": "pfm",
    "title": "Speed-Friending в Centrum Wielokulturowe",
@@ -2021,6 +1912,26 @@
    "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w bezpłatnych zajęciach w ramach #AkademiaMocyKobiet „Pilatesu” Termin: 25 listopada, środa godz. 9:00-10:00 oraz 17:30-18:30 Miejsce: Hoża 57/15, Warszawa Koszt: 35zł…",
    "ok": true,
    "source": "cpk"
+  },
+  {
+   "id": "ngo-pl-2026-11-25-global-ngo-wsparcie-rozwoju-mi",
+   "org": "ngopl",
+   "title": "Global NGO: wsparcie rozwoju międzynarodowego dla 16 NGO. BEZPŁATNIE! Nabór do 25 listopada 2026",
+   "start": "2026-11-25",
+   "end": "",
+   "time": "",
+   "place": "Онлайн",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://wydarzenia.ngo.pl/552921-global-ngo-wsparcie-rozwoju-miedzynarodowego-dla-16-ngo-bezplatnie-nabor-do-25-listopada-2026.html",
+   "note": "Global NGO to program rozwoju kompetencji organizacji pozarządowych, które realizują swoją misję poprzez działania edukacyjne i chcą działać w międzynarodowym środowisku.",
+   "ok": true,
+   "source": "ngo-pl",
+   "kind": "course"
   },
   {
    "id": "ngo-pl-2026-11-25-photovoice-w-poznawaniu-progra",
@@ -2148,25 +2059,6 @@
    "source": "rpo-patronaty"
   },
   {
-   "id": "ngo-pl-2026-11-27-scwo-seminarium-on-line-projek",
-   "org": "scwo",
-   "title": "SCWO: Seminarium on-line \"Projekt społeczny – baza do dobrego wniosku o dotację\"",
-   "start": "2026-11-27",
-   "end": "",
-   "time": "12:00",
-   "place": "Онлайн",
-   "host": "SCWO",
-   "tags": [
-    "НКО",
-    "онлайн",
-    "бесплатно"
-   ],
-   "url": "https://wydarzenia.ngo.pl/551879-scwo-seminarium-on-line-projekt-spoleczny-baza-do-dobrego-wniosku-o-dotacje.html",
-   "note": "Stołeczne Centrum Wspierania Organizacji Pozarządowych zaprasza przedstawicieli i przedstawicielki organizacji pozarządowych działających na rzecz mieszkańców/ek Warszawy na bezpłatne seminarium on-line „Projekt…",
-   "ok": true,
-   "source": "ngo-pl"
-  },
-  {
    "id": "ngo-pl-2026-11-28-chcesz-wyjechać-na-wolontariat",
    "org": "ngopl",
    "title": "Chcesz wyjechać na wolontariat do Afryki? Zacznij od szkolenia!",
@@ -2249,6 +2141,25 @@
    ],
    "url": "https://wydarzenia.ngo.pl/550698-dwudniowe-szkolenie-online-z-fundraisingu-550691-550693-550698.html",
    "note": "Pozyskuj środki od praktyków! Szkolenie 1-go stopnia to kluczowy, pierwszy krok dla fundraiserów, społeczników i zarządów NGO. Poznasz fundamenty budowania kampanii, tworzenia ofert dla sponsorów i skutecznej…",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
+   "id": "ngo-pl-2026-11-30-scwo-seminarium-pisanie-wniosk",
+   "org": "scwo",
+   "title": "SCWO: Seminarium „Pisanie wniosków – NOWEFIO”",
+   "start": "2026-11-30",
+   "end": "",
+   "time": "10:00",
+   "place": "Онлайн",
+   "host": "SCWO",
+   "tags": [
+    "НКО",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://wydarzenia.ngo.pl/551833-scwo-seminarium-pisanie-wnioskow-nowefio.html",
+   "note": "Stołeczne Centrum Wspierania Organizacji Pozarządowych zaprasza na bezpłatne seminarium „Pisanie wniosków – NOWEFIO”. Na spotkaniu przejrzymy zapisy regulaminu i porozmawiamy o praktycznych aspektach przygotowania…",
    "ok": true,
    "source": "ngo-pl"
   },
@@ -2412,24 +2323,6 @@
    "note": "",
    "ok": true,
    "source": "rpo-patronaty"
-  },
-  {
-   "id": "ngo-pl-2026-12-03-dotacje-dla-klubów-sportowych-",
-   "org": "ngopl",
-   "title": "Dotacje dla klubów sportowych w 2026 i 2027 roku",
-   "start": "2026-12-03",
-   "end": "",
-   "time": "09:00",
-   "place": "Онлайн",
-   "host": "ngo.pl",
-   "tags": [
-    "НКО",
-    "онлайн"
-   ],
-   "url": "https://wydarzenia.ngo.pl/552634-dotacje-dla-klubow-sportowych-w-2026-i-2027-roku.html",
-   "note": "Praktyczne szkolenie dotyczące finansowania sportu i udzielania dotacji klubom sportowym w 2026 i 2027 roku. Omówimy zasady stosowania ustawy o sporcie, przygotowywania uchwał dotacyjnych, finansowania UKS, przyznawania…",
-   "ok": true,
-   "source": "ngo-pl"
   },
   {
    "id": "rpo-patronaty-2026-12-04-biuletyn-informacji-publicznej",
@@ -2609,6 +2502,24 @@
    "source": "batory"
   },
   {
+   "id": "ngo-pl-2026-12-08-scwo-szkolenie-sztuka-pisania-",
+   "org": "scwo",
+   "title": "SCWO: \"Szkolenie Sztuka pisania budżetu – cz. finansowa oferty z wykorzystaniem Planera\" (II termin)",
+   "start": "2026-12-08",
+   "end": "",
+   "time": "10:00",
+   "place": "Варшава",
+   "host": "SCWO",
+   "tags": [
+    "НКО",
+    "бесплатно"
+   ],
+   "url": "https://wydarzenia.ngo.pl/552935-scwo-szkolenie-sztuka-pisania-budzetu-cz-finansowa-oferty-z-wykorzystaniem-planera-ii-termin.html",
+   "note": "Stołeczne Centrum Wspierania Organizacji Pozarządowych zaprasza na bezpłatne szkolenie Sztuka pisania budżetu – jak zaplanować część finansową oferty na realizację zadania publicznego m.st. Warszawy z wykorzystaniem…",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
    "id": "amnesty-mpl",
    "org": "amnesty",
    "title": "Maraton Pisania Listów",
@@ -2659,6 +2570,25 @@
    "note": "",
    "ok": true,
    "source": "rpo-patronaty"
+  },
+  {
+   "id": "ngo-pl-2026-12-10-szkolenie-fimango-uproszczona-",
+   "org": "ngopl",
+   "title": "Szkolenie Fimango: Uproszczona ewidencja przychodów i kosztów (UEPiK) dla organizacji pozarządowych",
+   "start": "2026-12-10",
+   "end": "",
+   "time": "10:00",
+   "place": "Онлайн",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://wydarzenia.ngo.pl/552945-szkolenie-fimango-uproszczona-ewidencja-przychodow-i-kosztow-uepik-dla-organizacji-pozarzadowych.html",
+   "note": "Fundacja Rozwoju Społeczeństwa Obywatelskiego zaprasza na bezpłatne szkolenie online „Uproszczona ewidencja przychodów i kosztów (UEPiK) dla organizacji pozarządowych” w ramach programu Fimango - Zarządzanie finansami w…",
+   "ok": true,
+   "source": "ngo-pl"
   },
   {
    "id": "cpk-2026-12-13-krąg-kobiet-13-grudnia-warszaw",
@@ -2713,26 +2643,6 @@
    "source": "manual"
   },
   {
-   "id": "ngo-pl-2026-12-15-mapa-ngo-bezpłatne-wsparcie-dl",
-   "org": "ngopl",
-   "title": "MAPA NGO – bezpłatne wsparcie dla 25 organizacji. Rekrutacja do 15 grudnia 2026",
-   "start": "2026-12-15",
-   "end": "",
-   "time": "",
-   "place": "Онлайн",
-   "host": "ngo.pl",
-   "tags": [
-    "НКО",
-    "онлайн",
-    "бесплатно"
-   ],
-   "url": "https://wydarzenia.ngo.pl/550803-mapa-ngo-bezplatne-wsparcie-dla-25-organizacji-rekrutacja-do-15-grudnia-2026.html",
-   "note": "Fundacja Rozwoju Społeczeństwa Kreatywnego zaprasza 25 organizacji pozarządowych z całej Polski do projektu „MAPA NGO. Tożsamość – narracja – komunikacja”.",
-   "ok": true,
-   "source": "ngo-pl",
-   "kind": "course"
-  },
-  {
    "id": "cpk-2026-12-17-przyzwalanie-i-pozostawianie-w",
    "org": "cpk",
    "title": "Przyzwalanie i pozostawianie własnemu biegowi – Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness 17.12 ONLINE",
@@ -2767,20 +2677,19 @@
    "source": "cpk"
   },
   {
-   "id": "ngo-pl-2027-01-09-program-szkoleń-dla-otoczenia-",
+   "id": "ngo-pl-2027-01-09-nowy-rok-w-koherencji-serca-i-",
    "org": "ngopl",
-   "title": "Program szkoleń dla otoczenia osób z ZA, autyzmem, współfinansowany z PFRON- Blok 7 Grupa 3",
+   "title": "NOWY ROK w Koherencji Serca i Połączeniu z Duszą",
    "start": "2027-01-09",
    "end": "",
-   "time": "09:00",
-   "place": "Онлайн",
+   "time": "10:00",
+   "place": "Варшава",
    "host": "ngo.pl",
    "tags": [
-    "НКО",
-    "онлайн"
+    "НКО"
    ],
-   "url": "https://wydarzenia.ngo.pl/551973-program-szkolen-dla-otoczenia-osob-z-za-autyzmem-wspolfinansowany-z-pfron-blok-7-grupa-3-551973.html",
-   "note": "Celem 6 już edycji (2026/2027) naszego projektu jest dostosowanie i podniesienie kwalifikacji osób pracujących z dziećmi i młodzieżą z niepełnosprawnością (całościowe zaburzenia rozwoju- ZA, autyzm), tj.",
+   "url": "https://wydarzenia.ngo.pl/552964-nowy-rok-w-koherencji-serca-i-polaczeniu-z-dusza.html",
+   "note": "Rozpocznij Nowy Rok w głębszym kontakcie ze sobą. Podaruj sobie coś bardzo cennego - połączenie ze sobą, swoim sercem i duszą. Otwórz serce na spokój, miłość i nowe możliwości. Zaufaj sobie jeszcze bardziej i podążaj…",
    "ok": true,
    "source": "ngo-pl"
   },
@@ -2834,6 +2743,40 @@
    "note": "",
    "ok": true,
    "source": "rpo-patronaty"
+  },
+  {
+   "id": "ngo-pl-2027-02-05-tantryczno-szamańskie-rozbraja",
+   "org": "ngopl",
+   "title": "TANTRYCZNO-SZAMAŃSKIE ROZBRAJANIE CIAŁA. Część I",
+   "start": "2027-02-05",
+   "end": "",
+   "time": "19:00",
+   "place": "Варшава",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО"
+   ],
+   "url": "https://wydarzenia.ngo.pl/552967-tantryczno-szamanskie-rozbrajanie-ciala-czesc-i.html",
+   "note": "To Podróż prowadząca nas w bezpośrednie doświadczenie i odkrycie powiązań między blokadami ciała, napięciami fizycznymi, mechanizmami obronnymi, utrwalonymi reakcjami, seksualnością a tożsamością duchową człowieka.",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
+   "id": "ngo-pl-2027-03-05-świadome-wchodzenie-w-relacje-",
+   "org": "ngopl",
+   "title": "ŚWIADOME WCHODZENIE W RELACJE. Jak uwolnić się ze starych schematów i zbudować trwały związek",
+   "start": "2027-03-05",
+   "end": "",
+   "time": "19:00",
+   "place": "Варшава",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО"
+   ],
+   "url": "https://wydarzenia.ngo.pl/552974-swiadome-wchodzenie-w-relacje-jak-uwolnic-sie-ze-starych-schematow-i-zbudowac-trwaly-zwiazek.html",
+   "note": "Zapraszamy na wyjątkowy warsztat Kobiety, które chciałyby wreszcie przejść w swoim życiu od stałego randkowania i nieudanych związków do prawdziwej relacji opartej na głębokiej miłości.",
+   "ok": true,
+   "source": "ngo-pl"
   }
  ],
  "rpo_news": [
@@ -2842,6 +2785,12 @@
    "iso": "2026-11-25",
    "title": "25 listopada - konferencja „Profilaktyka kryzysów psychicznych młodych osób w działaniach Ośrodków Interwencji Kryzysowej”. Zarejestruj swój udział",
    "url": "https://bip.brpo.gov.pl/pl/content/konferencja-25-listopada-2026-zaproszenie"
+  },
+  {
+   "date": "20 ноября",
+   "iso": "2026-11-20",
+   "title": "Uwagi RPO do projektu ustawy o nieodpłatnej pomocy prawnej",
+   "url": "https://bip.brpo.gov.pl/pl/content/uwagi-rpo-do-projektu-ustawy-o-nieodplatnej-pomocy-prawnej"
   },
   {
    "date": "19 ноября",
@@ -2866,12 +2815,6 @@
    "iso": "2026-11-19",
    "title": "Pacjenci mogą stracić ciągłość leczenia in vitro. RPO zwraca się do Minister Zdrowia",
    "url": "https://bip.brpo.gov.pl/pl/content/rpo-mz-ciaglosc-leczenia-in-vitro"
-  },
-  {
-   "date": "19 ноября",
-   "iso": "2026-11-19",
-   "title": "RPO pyta o dostęp do leczenia niepłodności i zabezpieczenia płodności dla singielek",
-   "url": "https://bip.brpo.gov.pl/pl/content/rpo-mz-dostep-do-leczenia-nieplodnosci"
   }
  ]
 }
