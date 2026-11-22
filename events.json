@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T06:00+01:00",
+ "updated": "2026-11-22T06:04+01:00",
  "status": {
   "pfm": "ok: 0",
   "cpk": "ok: 17",
@@ -8,8 +8,8 @@
   "batory": "ok: 13",
   "ngo-pl": "ok: 34",
   "ngo-praca": "ok: 45",
-  "irc": "ok: 13",
-  "ngo-fundusze": "ошибка, оставлено прошлых: 12"
+  "irc": "ok: 12",
+  "ngo-fundusze": "ошибка, оставлено прошлых: 10"
  },
  "events": [
   {
@@ -169,26 +169,6 @@
    "note": "Представили отчёт об отношении поляков к насилию над детьми.",
    "ok": true,
    "source": "manual"
-  },
-  {
-   "id": "irc-2026-10-19-warszawskie-centrum-pomocy-rod",
-   "org": "irc",
-   "title": "Warszawskie Centrum Pomocy Rodzinie",
-   "start": "2026-10-19",
-   "end": "",
-   "time": "",
-   "place": "Онлайн",
-   "host": "International Rescue Committee Polska",
-   "tags": [
-    "миграция",
-    "поддержка",
-    "онлайн",
-    "бесплатно"
-   ],
-   "url": "https://t.me/IRCPoland/710",
-   "note": "zaprasza cudzoziemców na bezpłatne kursy zawodowe. Chcesz zdobyć praktyczne umiejętności, rozwinąć się zawodowo lub zwiększyć swoje szanse na znalezienie pracy w Polsce? Wybierz kurs dla siebie. ABC przedsiębiorczości –…",
-   "ok": true,
-   "source": "irc"
   },
   {
    "id": "batory-2026-10-22-prawa-osób-z-niepełnosprawnośc",
@@ -1663,42 +1643,6 @@
    "kind": "grant"
   },
   {
-   "id": "ngo-pl-2026-11-21-stand-strong-ii-jak-ochronić-s",
-   "org": "ngopl",
-   "title": "Stand Strong II - Jak ochronić się przed przemocą psychiczną w miejscu pracy?",
-   "start": "2026-11-21",
-   "end": "",
-   "time": "",
-   "place": "Онлайн",
-   "host": "ngo.pl",
-   "tags": [
-    "НКО",
-    "онлайн",
-    "бесплатно"
-   ],
-   "url": "https://wydarzenia.ngo.pl/551824-stand-strong-ii-jak-ochronic-sie-przed-przemoca-psychiczna-w-miejscu-pracy.html",
-   "note": "Toksyczne zachowania w pracy często zaczynają się niezauważalnie. Zapraszamy na bezpłatny warsztat online „Stand Strong – Jak ochronić się przed przemocą psychiczną w miejscu pracy?”. Nauczysz się rozpoznawać…",
-   "ok": true,
-   "source": "ngo-pl"
-  },
-  {
-   "id": "ngo-pl-2026-11-21-warsztaty-wokalne-odkryj-swój-",
-   "org": "ngopl",
-   "title": "WARSZTATY WOKALNE - “ODKRYJ SWÓJ GŁOS” Laboratorium Głosu",
-   "start": "2026-11-21",
-   "end": "2026-11-22",
-   "time": "11:00",
-   "place": "Варшава",
-   "host": "ngo.pl",
-   "tags": [
-    "НКО"
-   ],
-   "url": "https://wydarzenia.ngo.pl/542381-warsztaty-wokalne-odkryj-swoj-glos-laboratorium-glosu-542381.html",
-   "note": "Zapraszamy na warsztat wokalny z Olgą Szwajgier – jedną z największych sopranistek świata, ale równie uroczą kobietą, pełną radości życia i poczucia humoru, obdarzoną niezwykłą umiejętnością pracy z ludźmi. Zajęcia z…",
-   "ok": true,
-   "source": "ngo-pl"
-  },
-  {
    "id": "cpk-2026-11-22-krąg-kobiet-22-listopada-warsz",
    "org": "cpk",
    "title": "Krąg Kobiet // 22 listopada//Warszawa",
@@ -1714,25 +1658,6 @@
    "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w spotkaniach Kręgu Kobiet. Termin: 22 listopada 2026 (niedziela ) w godz. 16.00-19:00 Miejsce: Warszawa, ul. Hoża 57/15 Spotkanie darmowe Zapisy:…",
    "ok": true,
    "source": "cpk"
-  },
-  {
-   "id": "ngo-pl-2026-11-22-rekrutacja-do-szkoły-młodych-l",
-   "org": "ngopl",
-   "title": "Rekrutacja do Szkoły Młodych Liderów dla Wspólnoty",
-   "start": "2026-11-22",
-   "end": "2027-12-31",
-   "time": "00:00",
-   "place": "Варшава",
-   "host": "ngo.pl",
-   "tags": [
-    "НКО",
-    "бесплатно"
-   ],
-   "url": "https://wydarzenia.ngo.pl/552183-rekrutacja-do-szkoly-mlodych-liderow-dla-wspolnoty.html",
-   "note": "Bezpłatne warsztaty, wyjazdy i spotkania z ekspertami dla osób w wieku 15–29 lat z Dolnego Śląska. Zgłoszenia do 15 listopada 2026 r.",
-   "ok": true,
-   "source": "ngo-pl",
-   "kind": "course"
   },
   {
    "id": "cpk-2026-11-23-breath-design-4-tygodnie-do-do",
@@ -1934,6 +1859,24 @@
    "kind": "course"
   },
   {
+   "id": "ngo-pl-2026-11-25-moda-cyrkularna-w-działaniu-be",
+   "org": "ngopl",
+   "title": "Moda Cyrkularna w Działaniu – bezpłatne warsztaty dla edukatorów z Mazowsza",
+   "start": "2026-11-25",
+   "end": "",
+   "time": "",
+   "place": "Варшава",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "бесплатно"
+   ],
+   "url": "https://wydarzenia.ngo.pl/551419-moda-cyrkularna-w-dzialaniu-bezplatne-warsztaty-dla-edukatorow-z-mazowsza.html",
+   "note": "Fundacja Mody Cyrkularnej zaprasza nauczycieli, bibliotekarzy, edukatorów i animatorów kultury z Mazowsza na bezpłatne, całodniowe warsztaty w Goethe-Institut w Warszawie.",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
    "id": "ngo-pl-2026-11-25-photovoice-w-poznawaniu-progra",
    "org": "ngopl",
    "title": "Photovoice w poznawaniu programów i lokalnych społeczności – wprowadzenie",
@@ -1948,6 +1891,25 @@
    ],
    "url": "https://wydarzenia.ngo.pl/551802-photovoice-w-poznawaniu-programow-i-lokalnych-spolecznosci-wprowadzenie.html",
    "note": "Polskie Towarzystwo Ewaluacyjne wraz z Photovoice Worldwide zaprasza na webinarium o metodzie fotografii uczestniczącej - photovoice, która łączy fotografię z dialogiem grupowym w celu zgłębienia doświadczeń, perspektyw…",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
+   "id": "ngo-pl-2026-11-25-warsztaty-na-starcie-minds-ahe",
+   "org": "ngopl",
+   "title": "Warsztaty \"Na Starcie\" - Minds Ahead",
+   "start": "2026-11-25",
+   "end": "",
+   "time": "",
+   "place": "Онлайн",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://wydarzenia.ngo.pl/552074-warsztaty-na-starcie-minds-ahead.html",
+   "note": "Warsztat „Na starcie”, realizowany w ramach programu Minds Ahead Poland: bezpłatne spotkanie online dla osób w wieku 20–30 lat, które kończą studia albo zaczynają pracę. 25 listopada, 17:30–20:00. Z doświadczeń…",
    "ok": true,
    "source": "ngo-pl"
   },
@@ -2063,7 +2025,7 @@
    "org": "ngopl",
    "title": "Chcesz wyjechać na wolontariat do Afryki? Zacznij od szkolenia!",
    "start": "2026-11-28",
-   "end": "",
+   "end": "2027-06-13",
    "time": "10:00",
    "place": "Варшава",
    "host": "ngo.pl",
@@ -2073,7 +2035,8 @@
    "url": "https://wydarzenia.ngo.pl/551556-chcesz-wyjechac-na-wolontariat-do-afryki-zacznij-od-szkolenia.html",
    "note": "Chcesz pomagać dzieciom w Afryce i zdobyć doświadczenie, które zmienia perspektywę? Fundacja Dzieci Afryki zaprasza na szkolenie przygotowujące do wolontariatu misyjnego. Przed Tobą 80 godzin wiedzy, praktyki i spotkań…",
    "ok": true,
-   "source": "ngo-pl"
+   "source": "ngo-pl",
+   "kind": "course"
   },
   {
    "id": "cpk-2026-11-30-breath-design-4-tygodnie-do-do",
@@ -2379,24 +2342,6 @@
    "source": "ngo-pl"
   },
   {
-   "id": "ngo-pl-2026-12-04-człowiek-mądry-jest-bezpieczny",
-   "org": "ngopl",
-   "title": "Człowiek mądry jest bezpieczny – Nowatorskie narzędzia dydaktyczne i wychowawcze",
-   "start": "2026-12-04",
-   "end": "",
-   "time": "10:00",
-   "place": "Онлайн",
-   "host": "ngo.pl",
-   "tags": [
-    "НКО",
-    "онлайн"
-   ],
-   "url": "https://wydarzenia.ngo.pl/552732-czlowiek-madry-jest-bezpieczny-nowatorskie-narzedzia-dydaktyczne-i-wychowawcze.html",
-   "note": "Towarzystwo Edukacji Otwartej i Instytut Tutoringu Szkolnego zapraszają na wydarzenie podczas którego chcemy się podzielić naszym ponad 30 letnim doświadczeniem w tworzeniu nowoczesnego, przyjaznego środowiska…",
-   "ok": true,
-   "source": "ngo-pl"
-  },
-  {
    "id": "ngo-pl-2026-12-04-pkd-2025-aktualizacja-krs-i-do",
    "org": "ngopl",
    "title": "PKD 2025 – aktualizacja KRS i dokumentów NGO",
@@ -2412,6 +2357,24 @@
    ],
    "url": "https://wydarzenia.ngo.pl/552069-pkd-2025-aktualizacja-ceidg-krs-i-dokumentow.html",
    "note": "Bezpłatny webinar dla fundacji i stowarzyszeń prowadzących działalność gospodarczą. Okres przejściowy PKD 2025 kończy się 31 grudnia 2026 r.",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
+   "id": "ngo-pl-2026-12-04-człowiek-mądry-jest-bezpieczny",
+   "org": "ngopl",
+   "title": "Człowiek mądry jest bezpieczny – Nowatorskie narzędzia dydaktyczne i wychowawcze",
+   "start": "2026-12-04",
+   "end": "",
+   "time": "10:00",
+   "place": "Онлайн",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "онлайн"
+   ],
+   "url": "https://wydarzenia.ngo.pl/552732-czlowiek-madry-jest-bezpieczny-nowatorskie-narzedzia-dydaktyczne-i-wychowawcze.html",
+   "note": "Towarzystwo Edukacji Otwartej i Instytut Tutoringu Szkolnego zapraszają na wydarzenie podczas którego chcemy się podzielić naszym ponad 30 letnim doświadczeniem w tworzeniu nowoczesnego, przyjaznego środowiska…",
    "ok": true,
    "source": "ngo-pl"
   },
@@ -2709,6 +2672,24 @@
    "note": "Centrum Praw Kobiet serdecznie zaprasza do udziału w 8-tygodniowym kursie uważności w ramach #AkademiaMocyKobiet „Uważność w Życiu (MBCT-L): 8-tygodniowy kurs mindfulness”, który pomoże Ci rozwijać uważność, życzliwość…",
    "ok": true,
    "source": "cpk"
+  },
+  {
+   "id": "ngo-pl-2027-01-14-pisanie-projektów-miękkich-onl",
+   "org": "ngopl",
+   "title": "Pisanie projektów miękkich online",
+   "start": "2027-01-14",
+   "end": "",
+   "time": "17:00",
+   "place": "Онлайн",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "онлайн"
+   ],
+   "url": "https://wydarzenia.ngo.pl/373438-pisanie-projektow-miekkich-online.html",
+   "note": "Jeśli korzystanie z dotacji jest ważną częścią działalności twojej instytucji – te warsztaty są dla ciebie. Poznasz skuteczną metodę tworzenia projektów i wypełniania wniosków o dofinansowanie.",
+   "ok": true,
+   "source": "ngo-pl"
   },
   {
    "id": "cpk-2027-01-16-8222-dzień-uważności-8221-8211",
