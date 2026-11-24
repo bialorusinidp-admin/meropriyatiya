@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-23T06:26+01:00",
+ "updated": "2026-11-24T06:16+01:00",
  "status": {
   "pfm": "ok: 0",
-  "cpk": "ok: 16",
+  "cpk": "ok: 15",
   "rpo-patronaty": "ok: 11",
   "rpo-news": "ok: 6",
   "batory": "ok: 13",
-  "ngo-pl": "ok: 32",
+  "ngo-pl": "ok: 36",
   "ngo-praca": "ok: 45",
   "irc": "ok: 12",
   "ngo-fundusze": "ok: 18"
@@ -203,24 +203,6 @@
    "note": "Три дебата: Европа, гражданская устойчивость и зависимость от Big Tech.",
    "ok": true,
    "source": "manual"
-  },
-  {
-   "id": "irc-2026-10-27-нова-робота-може-початися-з-зн",
-   "org": "irc",
-   "title": "Нова робота може початися зі знайомства! А впевненість — зі знання своїх прав і обов'язків.",
-   "start": "2026-10-27",
-   "end": "",
-   "time": "17:00",
-   "place": "Место уточните по ссылке",
-   "host": "International Rescue Committee Polska",
-   "tags": [
-    "миграция",
-    "поддержка"
-   ],
-   "url": "https://t.me/IRCPoland/713",
-   "note": "Шукаєте роботу в Польщі та хочете краще розуміти, як тут усе влаштовано? Запрошуємо на офлайн-зустріч 2 в 1 у Любліні. Частина 1. Нетворкінг як інструмент пошуку роботи Як знайомитися з потрібними людьми, розширювати…",
-   "ok": true,
-   "source": "irc"
   },
   {
    "id": "batory-2026-10-28-gdzie-szukać-sojuszników-wybor",
@@ -538,6 +520,24 @@
    "source": "manual"
   },
   {
+   "id": "ngo-praca-2026-11-15-pracuj-w-kampanii-przeciw-homo",
+   "org": "other",
+   "title": "Pracuj w Kampanii Przeciw Homofobii: dołącz jako osoba specjalistyczna ds. kampanii i mobilizacji",
+   "start": "2026-11-15",
+   "end": "2026-11-29",
+   "time": "",
+   "place": "Варшава",
+   "host": "",
+   "tags": [
+    "вакансия"
+   ],
+   "url": "https://ogloszenia.ngo.pl/552321-pracuj-w-kampanii-przeciw-homofobii-dolacz-jako-osoba-specjalistyczna-ds-kampanii-i-mobilizacji.html",
+   "note": "Jeśli identyfikujesz się z misją i wartościami Kampanii Przeciw Homofobii, masz doświadczenie w obszarze kampaniowania i mobilizacji ludzi do działania, chcesz działać razem z nami na rzecz społeczności LGBT+ w Polsce,…",
+   "ok": true,
+   "source": "ngo-praca",
+   "kind": "job"
+  },
+  {
    "id": "ngo-pl-2026-11-16-przeciwdziałanie-przemocy-domo",
    "org": "ngopl",
    "title": "Przeciwdziałanie przemocy domowej – warsztaty dla dorosłych",
@@ -554,24 +554,6 @@
    "note": "Ogólnopolski cykl online Fundacji Kapibara – Masz Wybór Jak reagujesz, kiedy w bliskiej relacji pojawia się napięcie? Czy potrafisz zauważyć, kiedy zachowanie przekracza granice drugiej osoby? Te warsztaty pomogą lepiej…",
    "ok": true,
    "source": "ngo-pl"
-  },
-  {
-   "id": "ngo-praca-2026-11-16-młodszy-wychowawca-wychowawca-",
-   "org": "other",
-   "title": "młodszy wychowawca/wychowawca (k/m)",
-   "start": "2026-11-16",
-   "end": "2026-11-23",
-   "time": "",
-   "place": "Вся Польша / удалённо",
-   "host": "Centrum Wspierania Rodzin „Rodzinna Warszawa” w Warszawie",
-   "tags": [
-    "вакансия"
-   ],
-   "url": "https://ogloszenia.ngo.pl/552476-mlodszy-wychowawca-wychowawca-k-m-552476.html",
-   "note": "Centrum Wspierania Rodzin „Rodzinna Warszawa” w Warszawie poszukuje pracownika (k/m) na stanowisko: młodszy wychowawca/wychowawca (k/m) -1 etat do SPOT Wawer, ul.",
-   "ok": true,
-   "source": "ngo-praca",
-   "kind": "job"
   },
   {
    "id": "ngo-praca-2026-11-16-specjalista-ds-psychoedukacji-",
@@ -605,24 +587,6 @@
    ],
    "url": "https://ogloszenia.ngo.pl/552429-trener-ds-interwencji-i-wsparcia-zatrudnienia.html",
    "note": "Trener ds. Interwencji i Wsparcia Zatrudnienia Praca na terenie całej Polski Kim jesteśmy? Fundacja Ever Bliżej Was wspiera osoby z niepełnosprawnościami oraz pracodawców, pomagając w budowaniu przyjaznego, dostępnego i…",
-   "ok": true,
-   "source": "ngo-praca",
-   "kind": "job"
-  },
-  {
-   "id": "ngo-praca-2026-11-16-konkurs-na-stanowisko-menedżer",
-   "org": "other",
-   "title": "Konkurs na stanowisko Menedżera ds. Komunikacji KLRwP",
-   "start": "2026-11-16",
-   "end": "2026-11-23",
-   "time": "",
-   "place": "Вся Польша / удалённо",
-   "host": "",
-   "tags": [
-    "вакансия"
-   ],
-   "url": "https://ogloszenia.ngo.pl/552395-konkurs-na-stanowisko-menedzera-ds-komunikacji-klrwp.html",
-   "note": "Opis stanowiska Kolegium Lekarzy Rodzinnych w Polsce poszukuje samodzielnej, kreatywnej i zaangażowanej osoby na stanowisko Menedżera ds. Komunikacji.",
    "ok": true,
    "source": "ngo-praca",
    "kind": "job"
@@ -713,6 +677,24 @@
    ],
    "url": "https://ogloszenia.ngo.pl/379505-ratownik-medyczny-trener-szkoleniowiec-k-m.html",
    "note": "Jesteśmy firmą szkoleniową stale rozbudowującą ofertę dla naszych Klientów.",
+   "ok": true,
+   "source": "ngo-praca",
+   "kind": "job"
+  },
+  {
+   "id": "ngo-praca-2026-11-16-sprzedaż-szkoleń-b2b-praca-zda",
+   "org": "other",
+   "title": "Sprzedaż szkoleń B2B – praca zdalna / elastyczna współpraca",
+   "start": "2026-11-16",
+   "end": "2026-12-16",
+   "time": "",
+   "place": "Вся Польша / удалённо",
+   "host": "",
+   "tags": [
+    "вакансия"
+   ],
+   "url": "https://ogloszenia.ngo.pl/442654-doradca-k-m-ds-sprzedazy-szkolen.html",
+   "note": "Jesteśmy innowacyjną firmą szkoleniową o ogólnopolskim zasięgu. Realizujemy szkolenia i projekty rozwojowe dla firm i instytucji z całej Polski, w tym projekty wykorzystujące nowoczesne technologie i wirtualną…",
    "ok": true,
    "source": "ngo-praca",
    "kind": "job"
@@ -1409,60 +1391,6 @@
    "kind": "job"
   },
   {
-   "id": "cpk-2026-11-23-breath-design-4-tygodnie-do-do",
-   "org": "cpk",
-   "title": "Breath Design. 4 tygodnie do dobrego nawyku oddechowego | Edycja III",
-   "start": "2026-11-23",
-   "end": "",
-   "time": "17:30",
-   "place": "Варшава",
-   "host": "Centrum Praw Kobiet",
-   "tags": [
-    "поддержка"
-   ],
-   "url": "https://cpk.org.pl/wydarzenie/breath-design-warsztaty-oddechu-23-list-2026-2/",
-   "note": "Centrum Praw Kobiet po raz kolejny zaprasza na cykl praktycznych warsztatów oddechowych dla kobiet – cztery spotkania, podczas których krok po kroku nauczysz się oddychać w sposób wspierający zdrowie, spokój i naturalną…",
-   "ok": true,
-   "source": "cpk"
-  },
-  {
-   "id": "ngo-pl-2026-11-23-dotacje-dla-organizacji-pozarz",
-   "org": "ngopl",
-   "title": "Dotacje dla organizacji pozarządowych po nowelizacji ustawy w 2026",
-   "start": "2026-11-23",
-   "end": "",
-   "time": "",
-   "place": "Онлайн",
-   "host": "ngo.pl",
-   "tags": [
-    "НКО",
-    "онлайн"
-   ],
-   "url": "https://wydarzenia.ngo.pl/551386-dotacje-dla-organizacji-pozarzadowych-po-nowelizacji-ustawy-w-2026.html",
-   "note": "Szkolenie online poświęcone nowelizacji ustawy o działalności pożytku publicznego obowiązującej od 1 września 2026 r. Omówimy nowe zasady udzielania, wykorzystania, rozliczania i kontroli dotacji dla NGO, w tym wkład…",
-   "ok": true,
-   "source": "ngo-pl"
-  },
-  {
-   "id": "ngo-pl-2026-11-23-scwo-seminarium-on-line-zakład",
-   "org": "scwo",
-   "title": "SCWO: Seminarium on-line \"Zakładamy fundację krok po kroku- wszystko co musisz wiedzieć na starcie\"",
-   "start": "2026-11-23",
-   "end": "",
-   "time": "",
-   "place": "Онлайн",
-   "host": "SCWO",
-   "tags": [
-    "НКО",
-    "онлайн",
-    "бесплатно"
-   ],
-   "url": "https://wydarzenia.ngo.pl/551714-scwo-seminarium-on-line-zakladamy-fundacje-krok-po-kroku-wszystko-co-musisz-wiedziec-na-starcie.html",
-   "note": "Stołeczne Centrum Wspierania Organizacji Pozarządowych zaprasza przedstawicieli i przedstawicielki organizacji pozarządowych działających na rzecz mieszkańców/ek Warszawy na bezpłatne seminarium on-line „Zakładamy…",
-   "ok": true,
-   "source": "ngo-pl"
-  },
-  {
    "id": "ngo-pl-2026-11-23-zarządzamy-skuteczniej-webinar",
    "org": "ngopl",
    "title": "Zarządzamy skuteczniej! [webinary dla NGO]",
@@ -1481,220 +1409,22 @@
    "source": "ngo-pl"
   },
   {
-   "id": "ngo-fundusze-2026-11-23-ii-edycja-programu-grantowego-",
+   "id": "ngo-praca-2026-11-23-specjalista-ka-ds-kadr-i-płac-",
    "org": "other",
-   "title": "II edycja programu grantowego „Adaptacja Klimatyczna dla Północnej Polski”",
+   "title": "Specjalista/ka ds. kadr i płac WWF",
    "start": "2026-11-23",
-   "end": "2027-01-08",
+   "end": "2026-12-14",
    "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
+   "place": "Варшава",
+   "host": "",
    "tags": [
-    "грант"
+    "вакансия"
    ],
-   "url": "https://fundusze.ngo.pl/551686-ii-edycja-programu-grantowego-adaptacja-klimatyczna-dla-polnocnej-polski.html",
-   "note": "бюджет 4 mln PLN",
+   "url": "https://ogloszenia.ngo.pl/553066-specjalista-ka-ds-kadr-i-plac-wwf.html",
+   "note": "Nie musisz ratować zagrożonych gatunków w terenie, żeby mieć realny wpływ na ochronę przyrody! Za każdą skuteczną inicjatywą na rzecz przyrody stoją ludzie. A za dobrze działającym zespołem? Sprawne procesy,…",
    "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
-  },
-  {
-   "id": "ngo-fundusze-2026-11-23-ponad-2-6-mln-zł-na-lokalne-in",
-   "org": "other",
-   "title": "Ponad 2,6 mln zł na lokalne inicjatywy. Kaufland rusza z programem „Lepiej po sąsiedzku”",
-   "start": "2026-11-23",
-   "end": "2026-12-18",
-   "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
-   "tags": [
-    "грант"
-   ],
-   "url": "https://fundusze.ngo.pl/551352-ponad-2-6-mln-zl-na-lokalne-inicjatywy-kaufland-rusza-z-programem-lepiej-po-sasiedzku.html",
-   "note": "бюджет 2,6 mln",
-   "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
-  },
-  {
-   "id": "ngo-fundusze-2026-11-23-konkurs-proo-2027-priorytet-1a",
-   "org": "other",
-   "title": "Konkurs PROO 2027 - Priorytet 1a",
-   "start": "2026-11-23",
-   "end": "2026-12-16",
-   "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
-   "tags": [
-    "грант"
-   ],
-   "url": "https://fundusze.ngo.pl/552346-konkurs-proo-2027-priorytet-1a.html",
-   "note": "бюджет 45,08 mln PLN",
-   "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
-  },
-  {
-   "id": "ngo-fundusze-2026-11-23-nowefio-2027-priorytety-2-4-zł",
-   "org": "other",
-   "title": "NOWEFIO 2027 – Priorytety 2-4: złóż wniosek i wzmocnij swoją organizację",
-   "start": "2026-11-23",
-   "end": "2026-12-16",
-   "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
-   "tags": [
-    "грант"
-   ],
-   "url": "https://fundusze.ngo.pl/552270-nowefio-2027-priorytety-2-4-zloz-wniosek-i-wzmocnij-swoja-organizacje.html",
-   "note": "",
-   "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
-  },
-  {
-   "id": "ngo-fundusze-2026-11-23-otwarty-konkurs-ofert-na-reali",
-   "org": "other",
-   "title": "Otwarty konkurs ofert na realizację w 2027 roku zadań publicznych Powiatu Ciechanowskiego w zakresie prowadzenia...",
-   "start": "2026-11-23",
-   "end": "",
-   "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
-   "tags": [
-    "грант"
-   ],
-   "url": "https://fundusze.ngo.pl/551258-otwarty-konkurs-ofert-na-realizacje-w-2027-roku-zadan-publicznych-powiatu-ciechanowskiego-w-zakresie-prowadzenia-punktow-w-ktorych-bedzie-udzielana-nieodplatna-pomoc-prawna-i-swiadczone-nieodplatne-po.html",
-   "note": "бюджет 148,682 tys. PLN",
-   "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
-  },
-  {
-   "id": "ngo-fundusze-2026-11-23-konkurs-na-wkłady-własne-2026-",
-   "org": "other",
-   "title": "Konkurs na wkłady własne 2026-2028 – VI nabór ofert",
-   "start": "2026-11-23",
-   "end": "",
-   "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
-   "tags": [
-    "грант"
-   ],
-   "url": "https://fundusze.ngo.pl/551393-konkurs-na-wklady-wlasne-2026-2028-vi-nabor-ofert.html",
-   "note": "бюджет 302,605 tys. PLN",
-   "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
-  },
-  {
-   "id": "ngo-fundusze-2026-11-23-szkolenie-i-współzawodnictwo-s",
-   "org": "other",
-   "title": "Szkolenie i współzawodnictwo sportowe, szczególnie dzieci i młodzieży z Dzielnicy Wilanów m.st. Warszawy",
-   "start": "2026-11-23",
-   "end": "2026-12-18",
-   "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
-   "tags": [
-    "грант"
-   ],
-   "url": "https://fundusze.ngo.pl/552895-szkolenie-i-wspolzawodnictwo-sportowe-szczegolnie-dzieci-i-mlodziezy-z-dzielnicy-wilanow-m-st-warszawy-552895.html",
-   "note": "бюджет 150 tys. PLN",
-   "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
-  },
-  {
-   "id": "ngo-fundusze-2026-11-23-przygotowanie-i-realizacja-prz",
-   "org": "other",
-   "title": "Przygotowanie i realizacja przedsięwzięć kulturalno-artystycznych, integrujących i aktywizujących mieszkańców Dzielnicy Wilanów m.st. Warszawy w zakresie...",
-   "start": "2026-11-23",
-   "end": "2026-12-18",
-   "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
-   "tags": [
-    "грант"
-   ],
-   "url": "https://fundusze.ngo.pl/552778-przygotowanie-i-realizacja-przedsiewziec-kulturalno-artystycznych-integrujacych-i-aktywizujacych-mieszkancow-dzielnicy-wilanow-m-st-warszawy-w-zakresie-kultury-sztuki-ochrony-dobr-kultury-i-dziedzictw-552778.html",
-   "note": "бюджет 35 tys. PLN",
-   "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
-  },
-  {
-   "id": "ngo-fundusze-2026-11-23-konkurs-fesw-działanie-09-06-p",
-   "org": "other",
-   "title": "Konkurs FESW: Działanie 09.06 Podnoszenie potencjału partnerów społecznych i organizacji społeczeńs",
-   "start": "2026-11-23",
-   "end": "2027-01-22",
-   "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
-   "tags": [
-    "грант"
-   ],
-   "url": "https://fundusze.ngo.pl/552955-konkurs-fesw-dzialanie-09-06-podnoszenie-potencjalu-partnerow-spolecznych-i-organizacji-spoleczens.html",
-   "note": "бюджет 2,5 mln PLN",
-   "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
-  },
-  {
-   "id": "ngo-fundusze-2026-11-23-południowo-praskie-prezentacje",
-   "org": "other",
-   "title": "Południowo-Praskie Prezentacje",
-   "start": "2026-11-23",
-   "end": "2026-12-30",
-   "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
-   "tags": [
-    "грант"
-   ],
-   "url": "https://fundusze.ngo.pl/552863-poludniowo-praskie-prezentacje-552863.html",
-   "note": "бюджет 45 tys. PLN",
-   "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
-  },
-  {
-   "id": "ngo-fundusze-2026-11-23-działalność-wspomagająca-rozwó",
-   "org": "other",
-   "title": "Działalność wspomagająca rozwój wspólnot i społeczności lokalnych w Dzielnicy Praga-Południe m.st. Warszawy w latach 2027-2029...",
-   "start": "2026-11-23",
-   "end": "2026-12-18",
-   "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
-   "tags": [
-    "грант"
-   ],
-   "url": "https://fundusze.ngo.pl/552779-dzialalnosc-wspomagajaca-rozwoj-wspolnot-i-spolecznosci-lokalnych-w-dzielnicy-praga-poludnie-m-st-warszawy-w-latach-2027-2029-pod-nazwa-dzielnia-prowadzenie-podzielni-i-jadlodzielni-w-latach-2027-2029.html",
-   "note": "бюджет 746,934 tys. PLN",
-   "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
-  },
-  {
-   "id": "ngo-fundusze-2026-11-23-pomoc-społeczna-w-tym-pomoc-ro",
-   "org": "other",
-   "title": "Pomoc społeczna, w tym pomoc rodzinom i osobom w trudnej sytuacji życiowej oraz wyrównywania szans...",
-   "start": "2026-11-23",
-   "end": "2026-12-31",
-   "time": "",
-   "place": "Польша",
-   "host": "fundusze.ngo.pl",
-   "tags": [
-    "грант"
-   ],
-   "url": "https://fundusze.ngo.pl/552785-pomoc-spoleczna-w-tym-pomoc-rodzinom-i-osobom-w-trudnej-sytuacji-zyciowej-oraz-wyrownywania-szans-tych-rodzin-i-osob-w-dzielnicy-praga-poludnie-m-st-warszawy-w-2027-roku-pod-nazwa-zapobieganie-wyklucz.html",
-   "note": "бюджет 141 tys. PLN",
-   "ok": true,
-   "source": "ngo-fundusze",
-   "kind": "grant"
+   "source": "ngo-praca",
+   "kind": "job"
   },
   {
    "id": "pfm-glos-1124",
@@ -1733,6 +1463,24 @@
    "source": "cpk"
   },
   {
+   "id": "ngo-pl-2026-11-24-obliczanie-śladu-węglowego-pro",
+   "org": "ngopl",
+   "title": "Obliczanie śladu węglowego produktu",
+   "start": "2026-11-24",
+   "end": "",
+   "time": "",
+   "place": "Онлайн",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "онлайн"
+   ],
+   "url": "https://wydarzenia.ngo.pl/462982-obliczanie-sladu-weglowego-produktu.html",
+   "note": "Firmy i inne organizacje mają duży wpływ na zmiany klimatu. Żeby właściwie zarządzać tym wpływem oraz ograniczać go, niezbędne jest zrozumienie i wyliczenie śladu węglowego.",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
    "id": "ngo-pl-2026-11-24-najważniejsze-dzieje-się-pomię",
    "org": "ngopl",
    "title": "NAJWAŻNIEJSZE DZIEJE SIĘ POMIĘDZY WPŁATAMI - czego chcą Darczyńcy regularni i jak ich zatrzymać",
@@ -1748,24 +1496,6 @@
    ],
    "url": "https://wydarzenia.ngo.pl/552285-najwazniejsze-dzieje-sie-pomiedzy-wplatami-czego-chca-darczyncy-regularni-i-jak-ich-zatrzymac.html",
    "note": "WEBINAR O OBSŁUDZE DARCZYŃCÓW REGULARNYCH ZAPRASZA CIĘ DO UDZIAŁU! Jak wykorzystać zasoby organizacji w komunikacji z Regularnymi Darczyńcami? Jak sprawić, żeby wiedza i doświadczenie zespołu nie kończyły się na…",
-   "ok": true,
-   "source": "ngo-pl"
-  },
-  {
-   "id": "ngo-pl-2026-11-24-obliczanie-śladu-węglowego-pro",
-   "org": "ngopl",
-   "title": "Obliczanie śladu węglowego produktu",
-   "start": "2026-11-24",
-   "end": "",
-   "time": "",
-   "place": "Онлайн",
-   "host": "ngo.pl",
-   "tags": [
-    "НКО",
-    "онлайн"
-   ],
-   "url": "https://wydarzenia.ngo.pl/462982-obliczanie-sladu-weglowego-produktu.html",
-   "note": "Firmy i inne organizacje mają duży wpływ na zmiany klimatu. Żeby właściwie zarządzać tym wpływem oraz ograniczać go, niezbędne jest zrozumienie i wyliczenie śladu węglowego.",
    "ok": true,
    "source": "ngo-pl"
   },
@@ -1806,6 +1536,168 @@
    "note": "За твоїми плечима робота, освіта, навички, мови. Роботодавці шукають саме таких людей, і багато з них роблять це в LinkedIn. Залишається тільки показати себе так, щоб тебе помітили. Вівторок, 24 листопада, під час…",
    "ok": true,
    "source": "irc"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-24-ii-edycja-programu-grantowego-",
+   "org": "other",
+   "title": "II edycja programu grantowego „Adaptacja Klimatyczna dla Północnej Polski”",
+   "start": "2026-11-24",
+   "end": "2027-01-08",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/551686-ii-edycja-programu-grantowego-adaptacja-klimatyczna-dla-polnocnej-polski.html",
+   "note": "бюджет 4 mln PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-24-ponad-2-6-mln-zł-na-lokalne-in",
+   "org": "other",
+   "title": "Ponad 2,6 mln zł na lokalne inicjatywy. Kaufland rusza z programem „Lepiej po sąsiedzku”",
+   "start": "2026-11-24",
+   "end": "2026-12-18",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/551352-ponad-2-6-mln-zl-na-lokalne-inicjatywy-kaufland-rusza-z-programem-lepiej-po-sasiedzku.html",
+   "note": "бюджет 2,6 mln",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-24-konkurs-proo-2027-priorytet-1a",
+   "org": "other",
+   "title": "Konkurs PROO 2027 - Priorytet 1a",
+   "start": "2026-11-24",
+   "end": "2026-12-16",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/552346-konkurs-proo-2027-priorytet-1a.html",
+   "note": "бюджет 45,08 mln PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-24-nowefio-2027-priorytety-2-4-zł",
+   "org": "other",
+   "title": "NOWEFIO 2027 – Priorytety 2-4: złóż wniosek i wzmocnij swoją organizację",
+   "start": "2026-11-24",
+   "end": "2026-12-16",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/552270-nowefio-2027-priorytety-2-4-zloz-wniosek-i-wzmocnij-swoja-organizacje.html",
+   "note": "",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-24-prowadzenie-punktu-nieodpłatne",
+   "org": "other",
+   "title": "Prowadzenie punktu nieodpłatnej pomocy prawnej lub punktu nieodpłatnego poradnictwa obywatelskiego oraz edukacji prawnej w Powiecie...",
+   "start": "2026-11-24",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/551474-prowadzenie-punktu-nieodplatnej-pomocy-prawnej-lub-punktu-nieodplatnego-poradnictwa-obywatelskiego-oraz-edukacji-prawnej-w-powiecie-kepinskim-w-2027-r.html",
+   "note": "бюджет 75,508 tys. PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-24-konkurs-ofert-wspieranie-i-upo",
+   "org": "other",
+   "title": "Konkurs ofert: Wspieranie i upowszechnianie kultury fizycznej",
+   "start": "2026-11-24",
+   "end": "",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/552025-konkurs-ofert-wspieranie-i-upowszechnianie-kultury-fizycznej-552025.html",
+   "note": "бюджет 175 tys. PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-24-organizacja-zajęć-i-wydarzeń-s",
+   "org": "other",
+   "title": "Organizacja zajęć i wydarzeń sportowo-rekreacyjnych lub uczestnictwo w takich zajęciach lub wydarzeniach, połączonych z realizacją...",
+   "start": "2026-11-24",
+   "end": "2026-12-18",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/553196-organizacja-zajec-i-wydarzen-sportowo-rekreacyjnych-lub-uczestnictwo-w-takich-zajeciach-lub-wydarzeniach-polaczonych-z-realizacja-gminnego-programu-profilaktyki-i-rozwiazywania-problemow-alkoholowych-.html",
+   "note": "бюджет 490 tys. PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-24-świadczenie-usług-opiekuńczych",
+   "org": "other",
+   "title": "Świadczenie usług opiekuńczych w miejscu zamieszkania obejmujących pomoc w zaspokajaniu codziennych potrzeb życiowych, opiekę higieniczną...",
+   "start": "2026-11-24",
+   "end": "2026-12-18",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/553195-swiadczenie-uslug-opiekunczych-w-miejscu-zamieszkania-obejmujacych-pomoc-w-zaspokajaniu-codziennych-potrzeb-zyciowych-opieke-higieniczna-zalecona-przez-lekarza-pielegnacje-oraz-w-miare-mozliwosci-zape-553195.html",
+   "note": "бюджет 350 tys. PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
+  },
+  {
+   "id": "ngo-fundusze-2026-11-24-zarządzenie-nr-256-2026-burmis",
+   "org": "other",
+   "title": "Zarządzenie Nr 256/2026 Burmistrza Miasta Kobyłka z dnia 23 listopada 2026 r",
+   "start": "2026-11-24",
+   "end": "2026-12-14",
+   "time": "",
+   "place": "Польша",
+   "host": "fundusze.ngo.pl",
+   "tags": [
+    "грант"
+   ],
+   "url": "https://fundusze.ngo.pl/553174-zarzadzenie-nr-256-2026-burmistrza-miasta-kobylka-z-dnia-23-listopada-2026-r.html",
+   "note": "бюджет 835 tys. PLN",
+   "ok": true,
+   "source": "ngo-fundusze",
+   "kind": "grant"
   },
   {
    "id": "pfm-friends",
@@ -1880,6 +1772,23 @@
    "source": "ngo-pl"
   },
   {
+   "id": "ngo-pl-2026-11-25-planujesz-złożyć-wniosek-w-kon",
+   "org": "ngopl",
+   "title": "Planujesz złożyć wniosek w konkursie PROO lub NOWEFIO 2027? Przygotuj się razem z nami!!",
+   "start": "2026-11-25",
+   "end": "2026-12-09",
+   "time": "12:00",
+   "place": "Варшава",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО"
+   ],
+   "url": "https://wydarzenia.ngo.pl/551921-planujesz-zlozyc-wniosek-w-konkursie-proo-lub-nowefio-2027-przygotuj-sie-razem-z-nami.html",
+   "note": "Zapraszamy na spotkania pytań i odpowiedzi organizowane przez NIW-CRSO!",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
    "id": "ngo-pl-2026-11-25-photovoice-w-poznawaniu-progra",
    "org": "ngopl",
    "title": "Photovoice w poznawaniu programów i lokalnych społeczności – wprowadzenie",
@@ -1896,6 +1805,44 @@
    "note": "Polskie Towarzystwo Ewaluacyjne wraz z Photovoice Worldwide zaprasza na webinarium o metodzie fotografii uczestniczącej - photovoice, która łączy fotografię z dialogiem grupowym w celu zgłębienia doświadczeń, perspektyw…",
    "ok": true,
    "source": "ngo-pl"
+  },
+  {
+   "id": "ngo-pl-2026-11-25-warsztaty-na-starcie-minds-ahe",
+   "org": "ngopl",
+   "title": "Warsztaty \"Na Starcie\" - Minds Ahead",
+   "start": "2026-11-25",
+   "end": "",
+   "time": "",
+   "place": "Онлайн",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://wydarzenia.ngo.pl/552074-warsztaty-na-starcie-minds-ahead.html",
+   "note": "Warsztat „Na starcie”, realizowany w ramach programu Minds Ahead Poland: bezpłatne spotkanie online dla osób w wieku 20–30 lat, które kończą studia albo zaczynają pracę. 25 listopada, 17:30–20:00. Z doświadczeń…",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
+   "id": "irc-2026-11-25-цього-разу-без-лекц-й-та-презе",
+   "org": "irc",
+   "title": "Цього разу без лекцій та презентацій — тільки ваші запитання та відповіді експертів!",
+   "start": "2026-11-25",
+   "end": "",
+   "time": "17:00",
+   "place": "Онлайн",
+   "host": "International Rescue Committee Polska",
+   "tags": [
+    "миграция",
+    "поддержка",
+    "онлайн"
+   ],
+   "url": "https://t.me/IRCPoland/737",
+   "note": "Скільки разів під час пошуку роботи або оформлення документів у Польщі у вас виникали запитання, на які ви не могли знайти зрозумілої відповіді? Ми вирішили присвятити цілу зустріч саме вам! 💛 Запрошуємо на особливий…",
+   "ok": true,
+   "source": "irc"
   },
   {
    "id": "cpk-2026-11-26-inny-sposób-bycia-branie-pod-u",
@@ -1930,6 +1877,24 @@
    "note": "",
    "ok": true,
    "source": "rpo-patronaty"
+  },
+  {
+   "id": "ngo-pl-2026-11-26-szkolenie-odpady-komunalne-czy",
+   "org": "ngopl",
+   "title": "Szkolenie \"Odpady komunalne, czyli jak zachować czystość i porządek w gminie\"",
+   "start": "2026-11-26",
+   "end": "",
+   "time": "",
+   "place": "Онлайн",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "онлайн"
+   ],
+   "url": "https://wydarzenia.ngo.pl/528664-odpady-komunalne-czyli-jak-zachowac-czystosc-i-porzadek-w-gminie-528664.html",
+   "note": "Szkolenie przygotowuje do samodzielnego organizowania, prowadzenia, dokumentowania I weryfikowania systemu gospodarowania odpadami komunalnymi w gminie, w tym do opracowywania aktów prawa miejscowego, kalkulacji opłat…",
+   "ok": true,
+   "source": "ngo-pl"
   },
   {
    "id": "ngo-pl-2026-11-26-komornik-i-windykator-co-mogą-",
@@ -2074,11 +2039,29 @@
    "source": "batory"
   },
   {
+   "id": "ngo-pl-2026-11-30-szkolenia-niezbędnik-oceniając",
+   "org": "ngopl",
+   "title": "Szkolenia: \"Niezbędnik oceniającego w pigułce\"",
+   "start": "2026-11-30",
+   "end": "2026-12-07",
+   "time": "16:30",
+   "place": "Онлайн",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "онлайн"
+   ],
+   "url": "https://wydarzenia.ngo.pl/553176-szkolenia-niezbednik-oceniajacego-w-pigulce.html",
+   "note": "Zastanawiasz się, jak wygląda ocena ofert w konkursach dla organizacji pozarządowych? Chcesz lepiej przygotować się do udziału w pracach komisji konkursowej w m.st.",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
    "id": "ngo-pl-2026-11-30-dwudniowe-szkolenie-online-z-f",
    "org": "ngopl",
    "title": "Dwudniowe szkolenie online z fundraisingu",
    "start": "2026-11-30",
-   "end": "",
+   "end": "2026-12-01",
    "time": "00:00",
    "place": "Онлайн",
    "host": "ngo.pl",
@@ -2097,7 +2080,7 @@
    "title": "SCWO: Seminarium „Pisanie wniosków – NOWEFIO”",
    "start": "2026-11-30",
    "end": "",
-   "time": "10:00",
+   "time": "",
    "place": "Онлайн",
    "host": "SCWO",
    "tags": [
@@ -2146,21 +2129,19 @@
    "source": "rpo-patronaty"
   },
   {
-   "id": "ngo-pl-2026-12-01-scwo-seminarium-on-line-jak-kr",
-   "org": "scwo",
-   "title": "SCWO: Seminarium on-line \"Jak krok po kroku przygotować wniosek o dotację do Urzędu m. st. Warszawy?\"",
+   "id": "ngo-pl-2026-12-01-ważne-zmiany-w-prawie-pracy-ja",
+   "org": "ngopl",
+   "title": "Ważne zmiany w prawie pracy: jawność wynagrodzeń, przeciwdziałanie mobbingowi, zmiany w umowach",
    "start": "2026-12-01",
    "end": "",
-   "time": "10:00",
-   "place": "Онлайн",
-   "host": "SCWO",
+   "time": "15:00",
+   "place": "Варшава",
+   "host": "ngo.pl",
    "tags": [
-    "НКО",
-    "онлайн",
-    "бесплатно"
+    "НКО"
    ],
-   "url": "https://wydarzenia.ngo.pl/551880-scwo-seminarium-on-line-jak-krok-po-kroku-przygotowac-wniosek-o-dotacje-do-urzedu-m-st-warszawy.html",
-   "note": "Stołeczne Centrum Wspierania Organizacji Pozarządowych zaprasza przedstawicieli i przedstawicielki organizacji pozarządowych działających na rzecz mieszkańców/ek Warszawy na bezpłatne seminarium on-line, 1.12.2026 r. w…",
+   "url": "https://wydarzenia.ngo.pl/553132-wazne-zmiany-w-prawie-pracy-jawnosc-wynagrodzen-przeciwdzialanie-mobbingowi-zmiany-w-umowach.html",
+   "note": "Nowa definicja mobbingu, nowe uprawnienia PIP (Państwowej Inspekcji Pracy), przejrzystość wynagrodzeń. Znasz te hasła? Wiesz jakie przepisy to regulują? Od kiedy obowiązują? Jakie zmiany się z tym wiążą? Co masz zrobić…",
    "ok": true,
    "source": "ngo-pl"
   },
@@ -2307,25 +2288,6 @@
    "source": "ngo-pl"
   },
   {
-   "id": "ngo-pl-2026-12-04-scwo-seminarium-charytatywne-l",
-   "org": "scwo",
-   "title": "SCWO: Seminarium „Charytatywne loterie fantowe i inne imprezy”",
-   "start": "2026-12-04",
-   "end": "",
-   "time": "10:00",
-   "place": "Онлайн",
-   "host": "SCWO",
-   "tags": [
-    "НКО",
-    "онлайн",
-    "бесплатно"
-   ],
-   "url": "https://wydarzenia.ngo.pl/552672-scwo-seminarium-charytatywne-loterie-fantowe-i-inne-imprezy.html",
-   "note": "Stołeczne Centrum Wspierania Organizacji Pozarządowych zaprasza na bezpłatne seminarium „Charytatywne loterie fantowe i inne imprezy”. Na spotkaniu porozmawiamy o prawnych i praktycznych aspektach pozyskiwania środków…",
-   "ok": true,
-   "source": "ngo-pl"
-  },
-  {
    "id": "ngo-pl-2026-12-04-pkd-2025-aktualizacja-krs-i-do",
    "org": "ngopl",
    "title": "PKD 2025 – aktualizacja KRS i dokumentów NGO",
@@ -2432,6 +2394,25 @@
    "source": "cpk"
   },
   {
+   "id": "ngo-pl-2026-12-07-szkolenie-fimango-od-chaosu-do",
+   "org": "ngopl",
+   "title": "Szkolenie Fimango: Od chaosu do porządku. Praktyczne zarządzanie finansami w NGO",
+   "start": "2026-12-07",
+   "end": "",
+   "time": "10:00",
+   "place": "Онлайн",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://wydarzenia.ngo.pl/553158-szkolenie-fimango-od-chaosu-do-porzadku-praktyczne-zarzadzanie-finansami-w-ngo.html",
+   "note": "Fundacja Rozwoju Społeczeństwa Obywatelskiego zaprasza na bezpłatne szkolenie online „Od chaosu do porządku. Praktyczne zarządzanie finansami w organizacji pozarządowej” w ramach programu Fimango - Zarządzanie finansami…",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
    "id": "batory-2026-12-08-widzieć-rozumieć-reagować-prak",
    "org": "batory",
    "title": "Widzieć, rozumieć, reagować. Praktyczny warsztat o przeciwdziałaniu dyskryminacji - Fundacja im. Stefana Batorego",
@@ -2521,8 +2502,27 @@
   {
    "id": "ngo-pl-2026-12-10-szkolenie-fimango-uproszczona-",
    "org": "ngopl",
-   "title": "Szkolenie Fimango: Uproszczona ewidencja przychodów i kosztów (UEPiK) dla organizacji pozarządowych",
+   "title": "Szkolenie Fimango: Uproszczona ewidencja przychodów i kosztów (UEPiK) dla KGW",
    "start": "2026-12-10",
+   "end": "",
+   "time": "13:30",
+   "place": "Онлайн",
+   "host": "ngo.pl",
+   "tags": [
+    "НКО",
+    "онлайн",
+    "бесплатно"
+   ],
+   "url": "https://wydarzenia.ngo.pl/553041-szkolenie-fimango-uproszczona-ewidencja-przychodow-i-kosztow-uepik-dla-kgw.html",
+   "note": "Fundacja Rozwoju Społeczeństwa Obywatelskiego zaprasza na bezpłatne szkolenie online „Uproszczona ewidencja przychodów i kosztów (UEPiK) dla KGW” w ramach programu Fimango - Zarządzanie finansami w organizacjach…",
+   "ok": true,
+   "source": "ngo-pl"
+  },
+  {
+   "id": "ngo-pl-2026-12-11-fimango-pieniądze-w-ngo-planow",
+   "org": "ngopl",
+   "title": "Fimango: Pieniądze w NGO. Planowanie, kontrola, dobre praktyki, narzędzia dla zarządu, koordynatorów",
+   "start": "2026-12-11",
    "end": "",
    "time": "10:00",
    "place": "Онлайн",
@@ -2532,8 +2532,8 @@
     "онлайн",
     "бесплатно"
    ],
-   "url": "https://wydarzenia.ngo.pl/552945-szkolenie-fimango-uproszczona-ewidencja-przychodow-i-kosztow-uepik-dla-organizacji-pozarzadowych.html",
-   "note": "Fundacja Rozwoju Społeczeństwa Obywatelskiego zaprasza na bezpłatne szkolenie online „Uproszczona ewidencja przychodów i kosztów (UEPiK) dla organizacji pozarządowych” w ramach programu Fimango - Zarządzanie finansami w…",
+   "url": "https://wydarzenia.ngo.pl/553166-fimango-pieniadze-w-ngo-planowanie-kontrola-dobre-praktyki-narzedzia-dla-zarzadu-koordynatorow.html",
+   "note": "Fundacja Rozwoju Społeczeństwa Obywatelskiego zaprasza na bezpłatne szkolenie online „Pieniądze w NGO bez stresu. Planowanie, kontrola, dobre praktyki i narzędzia dla zarządu i koordynatorów” w ramach programu Fimango -…",
    "ok": true,
    "source": "ngo-pl"
   },
@@ -2752,34 +2752,34 @@
    "url": "https://bip.brpo.gov.pl/pl/content/konferencja-25-listopada-2026-zaproszenie"
   },
   {
+   "date": "23 ноября",
+   "iso": "2026-11-23",
+   "title": "Transkrypcja zagranicznych aktów małżeństw jednopłciowych. RPO pyta MSWiA o jednolite zasady dla urzędów",
+   "url": "https://bip.brpo.gov.pl/pl/content/rpo-mswia-transkrypcja-zagranicznych-aktow-malzenstw-jednoplciowych"
+  },
+  {
+   "date": "23 ноября",
+   "iso": "2026-11-23",
+   "title": "Rozmowa RPO z Centrum Edukacji Obywatelskiej o edukacji uczniów-cudzoziemców",
+   "url": "https://bip.brpo.gov.pl/pl/content/rpo-ceo-spotkanie"
+  },
+  {
+   "date": "23 ноября",
+   "iso": "2026-11-23",
+   "title": "Udział przedstawiciela RPO w konferencjach dotyczących wsparcia osób w kryzysie i ochronie praw dzieci",
+   "url": "https://bip.brpo.gov.pl/pl/content/glowny-koordynator-ochrony-zdrowia-psychicznego-udzial-konferencje"
+  },
+  {
+   "date": "23 ноября",
+   "iso": "2026-11-23",
+   "title": "Sylwia Gregorczyk-Abram spotkała się z przedstawicielkami Fundacji PoDRUGIE",
+   "url": "https://bip.brpo.gov.pl/pl/content/rpo-spotkanie-fundacja-podrugie"
+  },
+  {
    "date": "20 ноября",
    "iso": "2026-11-20",
    "title": "Uwagi RPO do projektu ustawy o nieodpłatnej pomocy prawnej",
    "url": "https://bip.brpo.gov.pl/pl/content/uwagi-rpo-do-projektu-ustawy-o-nieodplatnej-pomocy-prawnej"
-  },
-  {
-   "date": "19 ноября",
-   "iso": "2026-11-19",
-   "title": "RPO do Senatu o potrzebie wprowadzenia wstępnej kontroli prywatnych aktów oskarżenia",
-   "url": "https://bip.brpo.gov.pl/pl/content/rpo-wstepna-kontrola-prywatnych-aktow-oskarzenia-senat"
-  },
-  {
-   "date": "19 ноября",
-   "iso": "2026-11-19",
-   "title": "Seminarium sieci Equinet poświęcone równości w europejskim systemie ochrony zdrowia w Biurze RPO",
-   "url": "https://bip.brpo.gov.pl/pl/content/brpo-seminarium-equinet-rownosc-ochrona-zdrowia"
-  },
-  {
-   "date": "19 ноября",
-   "iso": "2026-11-19",
-   "title": "Jak wdrażać prawa człowieka w praktyce? Pełnomocnik Terenowy RPO debatowała o tym we Wrocławiu",
-   "url": "https://bip.brpo.gov.pl/pl/content/pelnomocnik-terenowy-rpo-wroclaw-wydarzenie"
-  },
-  {
-   "date": "19 ноября",
-   "iso": "2026-11-19",
-   "title": "Pacjenci mogą stracić ciągłość leczenia in vitro. RPO zwraca się do Minister Zdrowia",
-   "url": "https://bip.brpo.gov.pl/pl/content/rpo-mz-ciaglosc-leczenia-in-vitro"
   }
  ]
 }
